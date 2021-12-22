@@ -6,22 +6,32 @@ class navigationbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 25.0, horizontal: 30.0),
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
       child: Container(
-        height: 150,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.black,
+            width: 1.0,
+          ),
+        ),
+        height: 200,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
-              height: 140,
-              width: 140,
-              child: Image.asset('assets/images/logo.png'),
+              child: Image.asset(
+                'assets/images/logo.png',
+              ),
             ),
             Row(
               children: [
-                Text('Jak działa aplikacja?'),
-                Text('Zespół'),
-                Text('Kontakt'),
+                navbutton('O aplikacji'),
+                SizedBox(width: 20),
+                navbutton('Dla żeglarzy'),
+                SizedBox(width: 20),
+                navbutton('Dla portów'),
+                SizedBox(width: 20),
+                navbutton('Kontakt'),
               ],
             ),
           ],
@@ -29,4 +39,13 @@ class navigationbar extends StatelessWidget {
       ),
     );
   }
+}
+
+navbutton(String tekst) {
+  return Container(
+    child: Text(
+      tekst,
+      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+    ),
+  );
 }

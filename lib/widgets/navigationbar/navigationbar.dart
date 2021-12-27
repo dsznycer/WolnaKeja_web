@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class navigationbar extends StatelessWidget {
@@ -9,11 +10,11 @@ class navigationbar extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
       child: Container(
         decoration: BoxDecoration(
-          border: Border.all(
-            color: Colors.black,
-            width: 1.0,
-          ),
-        ),
+            border: Border.all(
+              color: Colors.blue,
+              width: 1.0,
+            ),
+            borderRadius: BorderRadius.circular(12)),
         height: 200,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,6 +33,7 @@ class navigationbar extends StatelessWidget {
                 navbutton('Dla portów'),
                 SizedBox(width: 20),
                 navbutton('Kontakt'),
+                SizedBox(width: 20),
               ],
             ),
           ],

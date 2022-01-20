@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class navigationbar extends StatelessWidget {
@@ -15,7 +14,7 @@ class navigationbar extends StatelessWidget {
               width: 1.0,
             ),
             borderRadius: BorderRadius.circular(12)),
-        height: 200,
+        height: 150,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

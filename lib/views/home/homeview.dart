@@ -12,11 +12,11 @@ class Homeview extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: CenteredView(
-        child: Column(
+        child: ListView(
           children: [
             navigationbar(),
             SizedBox(height: 20),
-            usprow(),
+            UspRow(),
             SizedBox(height: 120),
             footer(),
           ],

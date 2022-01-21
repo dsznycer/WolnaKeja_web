@@ -5,6 +5,8 @@ const Color ColFirst = Color(0xFF003459);
 const Color ColSecond = Color(0xFFFAFAFF);
 const Color ColThird = Color(0xFF849CB7);
 
+const Color Bgrd = Color(0xFFE5E5E5);
+
 //***TextStyle****//
 
 const TextStyle H2 = TextStyle(

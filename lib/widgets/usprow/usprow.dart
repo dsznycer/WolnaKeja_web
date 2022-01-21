@@ -77,6 +77,7 @@ class cardTile extends StatelessWidget {
           child: Text(
             dsc,
             style: description,
+            textAlign: TextAlign.center,
           ),
         ),
       ],

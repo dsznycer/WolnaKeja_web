@@ -13,13 +13,36 @@ class footer extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(28.0),
-        child: Row(
+        child: Column(
           children: [
-            SizedBox(
-              width: 150,
-              child: Image.asset(
-                'assets/images/logo.png',
-              ),
+            Row(
+              children: [
+                SizedBox(
+                  width: 150,
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                  ),
+                ),
+                Column(
+                  children: [
+                    Text(
+                      'Aplikacja dostępna wkrótce na urządzenia z systemem Android i iOS',
+                      style: description,
+                    ),
+                    Image.asset(
+                      '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/google-play-badge.png',
+                      height: 80,
+                    )
+                  ],
+                ), //logo
+              ],
+            ),
+            Divider(
+              color: ColFirst,
+            ),
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Text('All Rights Reserved © Wolna Keja'),
             ),
           ],
         ),

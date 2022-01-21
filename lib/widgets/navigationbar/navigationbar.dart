@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wolnakeja/style.dart';
 
 class navigationbar extends StatelessWidget {
   const navigationbar({Key? key}) : super(key: key);
@@ -6,22 +7,21 @@ class navigationbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
       child: Container(
         decoration: BoxDecoration(
+            color: Colors.white,
             border: Border.all(
-              color: Colors.blue,
+              color: ColFirst,
               width: 1.0,
             ),
             borderRadius: BorderRadius.circular(12)),
-        height: 150,
+        height: 120,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(
-              child: Image.asset(
-                'assets/images/logo.png',
-              ),
+            Image.asset(
+              'assets/images/logo.png',
             ),
             Row(
               children: [

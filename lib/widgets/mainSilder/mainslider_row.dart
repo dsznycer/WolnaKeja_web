@@ -16,28 +16,31 @@ class mainSlider2 extends StatelessWidget {
           '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/wolna-keja-mockup-tlo.png',
           width: size.width,
         ),
-        Expanded(
+        Positioned.fill(
+          bottom: 10,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Flexible(
-                flex: 3,
+              Padding(
+                padding: const EdgeInsets.only(right: 50),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Aplikacja do rezerwacji miejsc w portach mazurskich.',
+                      'Aplikacja do rezerwacji miejsc.',
+                      style: H2wht,
+                    ),
+                    Text(
+                      'w portach mazurskich.',
                       style: H2wht,
                     ),
                   ],
                 ),
               ),
-              Flexible(
-                flex: 1,
-                child: Image.asset(
-                  '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/mockup-app.png',
-                  width: sizeofmockup(),
-                ),
+              Image.asset(
+                '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/mockup-app.png',
+                width: sizeofmockup(),
               ),
             ],
           ),

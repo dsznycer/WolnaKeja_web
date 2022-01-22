@@ -12,7 +12,7 @@ class footer extends StatelessWidget {
         borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(28.0),
+        padding: const EdgeInsets.all(30.0),
         child: Column(
           children: [
             Row(
@@ -22,7 +22,7 @@ class footer extends StatelessWidget {
                   child: Image.asset(
                     'assets/images/logo.png',
                   ),
-                ),
+                ), //Logo
                 Column(
                   children: [
                     Text(
@@ -30,11 +30,13 @@ class footer extends StatelessWidget {
                       style: description,
                     ),
                     Image.asset(
-                      '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/google-play-badge.png',
-                      height: 80,
-                    )
+                        '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/google-play-badge.png',
+                        height: 70),
+                    Image.asset(
+                        '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/iosbadge.png',
+                        height: 50),
                   ],
-                ), //logo
+                ), //Badges
               ],
             ),
             Divider(

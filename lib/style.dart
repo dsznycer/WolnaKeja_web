@@ -9,6 +9,11 @@ const Color Bgrd = Color(0xFFE5E5E5);
 
 //***TextStyle****//
 
+const H2wht = TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.w700,
+  color: Colors.white,
+);
 const TextStyle H2 = TextStyle(
   fontSize: 24,
   fontWeight: FontWeight.w700,

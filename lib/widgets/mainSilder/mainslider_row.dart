@@ -11,41 +11,46 @@ class mainSlider2 extends StatelessWidget {
     double sizeofmockup() => size.width * 0.17;
 
     return Stack(
+      alignment: Alignment.center,
       children: [
         Image.asset(
           '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/wolna-keja-mockup-tlo.png',
           width: size.width,
         ),
-        Positioned.fill(
-          bottom: 10,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 50),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Aplikacja do rezerwacji miejsc.',
-                      style: H2wht,
-                    ),
-                    Text(
-                      'w portach mazurskich.',
-                      style: H2wht,
-                    ),
-                  ],
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Aplikacja do rezerwacji miejsc',
+                  style: H2wht,
                 ),
-              ),
-              Image.asset(
-                '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/mockup-app.png',
-                width: sizeofmockup(),
-              ),
-            ],
-          ),
+                Text(
+                  'w portach mazurskich.',
+                  style: H2wht,
+                ),
+                Divider(
+                  height: 2,
+                  color: Colors.white,
+                ),
+              ],
+            ),
+            SizedBox(width: 20),
+            Image.asset(
+              '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/mockup-app.png',
+              width: sizeofmockup(),
+            ),
+          ],
         ), //Mockup
-        navigationbar(),
+        Positioned(
+          top: 0,
+          right: 0,
+          left: 0,
+          child: navigationbar(),
+        ),
       ],
     );
   }

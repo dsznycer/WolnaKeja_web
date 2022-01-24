@@ -44,7 +44,10 @@ class footer extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.bottomLeft,
-              child: Text('All Rights Reserved © Wolna Keja'),
+              child: Row(children: [
+                SizedBox(width: 10),
+                Text('All Rights Reserved © Wolna Keja'),
+              ]),
             ),
           ],
         ),

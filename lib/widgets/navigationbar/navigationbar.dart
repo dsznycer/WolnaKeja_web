@@ -20,9 +20,9 @@ class navigationbar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset(
-              'assets/images/logo.png',
-            ),
+            // Image.asset(
+            //   'assets/images/logo.png',
+            // ),
             Row(
               children: [
                 navbutton('O aplikacji'),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 
 class footer extends StatelessWidget {
   const footer({Key? key}) : super(key: key);
@@ -14,29 +15,31 @@ class footer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               children: [
-                SizedBox(
-                  width: 150,
-                  child: Image.asset(
-                    'assets/images/logo.png',
+                logoWidget(), //Logo
+                Flexible(
+                  child: Column(
+                    children: [
+                      Text(
+                        'Aplikacja dostępna wkrótce na urządzenia z systemem Android i iOS',
+                        style: description,
+                      ),
+                      Image.asset(
+                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/google-play-badge.png',
+                          height: 70),
+                      Image.asset(
+                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/iosbadge.png',
+                          height: 50),
+                    ],
                   ),
-                ), //Logo
-                Column(
-                  children: [
-                    Text(
-                      'Aplikacja dostępna wkrótce na urządzenia z systemem Android i iOS',
-                      style: description,
-                    ),
-                    Image.asset(
-                        '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/google-play-badge.png',
-                        height: 70),
-                    Image.asset(
-                        '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/iosbadge.png',
-                        height: 50),
-                  ],
-                ), //Badges
+                ),
+                Flexible(
+                    child: Column(
+                  children: [Text('Kontakt')],
+                )) //Badges
               ],
             ),
             Divider(
@@ -48,7 +51,7 @@ class footer extends StatelessWidget {
                 SizedBox(width: 10),
                 Text('All Rights Reserved © Wolna Keja'),
               ]),
-            ),
+            ), // Copyright
           ],
         ),
       ),

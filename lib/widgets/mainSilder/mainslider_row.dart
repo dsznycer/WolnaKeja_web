@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationbar/navigationbar.dart';
@@ -21,21 +22,25 @@ class mainSlider2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Aplikacja do rezerwacji miejsc',
                   style: H2wht,
                 ),
-                Text(
+                const Text(
                   'w portach mazurskich.',
                   style: H2wht,
                 ),
-                Divider(
-                  height: 2,
-                  color: Colors.white,
-                ),
+                SizedBox(height: 30),
+                const Dividerek(),
+                SizedBox(height: 30),
+                const Text('Rezerwuj miejsce przy kei w aplikacji.',
+                    style: H3wht),
+                const Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
+                    style: H3wht),
+                const Text('Wszystko to w jednym miejscu.', style: H3wht),
               ],
             ),
             SizedBox(width: 20),
@@ -47,11 +52,27 @@ class mainSlider2 extends StatelessWidget {
         ), //Mockup
         Positioned(
           top: 0,
-          right: 0,
+          right: 40,
           left: 0,
-          child: navigationbar(),
+          child: navigationBar(),
         ),
       ],
+    );
+  }
+}
+
+class Dividerek extends StatelessWidget {
+  const Dividerek({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 70,
+      height: 4,
+      decoration: BoxDecoration(
+        color: ColSecond.withOpacity(0.3),
+        borderRadius: BorderRadius.circular(12),
+      ),
     );
   }
 }

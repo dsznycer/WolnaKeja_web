@@ -41,7 +41,6 @@ class mainSlider extends StatelessWidget {
             ),
           ),
         ), //Mockup
-        navigationbar(),
       ],
     );
   }

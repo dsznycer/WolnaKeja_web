@@ -34,7 +34,7 @@ class mainSlider2 extends StatelessWidget {
                   style: H2wht,
                 ),
                 SizedBox(height: 30),
-                const Dividerek(),
+                const _Dividerek(),
                 SizedBox(height: 30),
                 const Text('Rezerwuj miejsce przy kei w aplikacji.',
                     style: H3wht),
@@ -61,8 +61,8 @@ class mainSlider2 extends StatelessWidget {
   }
 }
 
-class Dividerek extends StatelessWidget {
-  const Dividerek({Key? key}) : super(key: key);
+class _Dividerek extends StatelessWidget {
+  const _Dividerek({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

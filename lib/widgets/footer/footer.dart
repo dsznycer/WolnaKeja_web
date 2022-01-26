@@ -28,10 +28,10 @@ class footer extends StatelessWidget {
                         style: description,
                       ),
                       Image.asset(
-                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/google-play-badge.png',
+                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/google-play-badge.png',
                           height: 70),
                       Image.asset(
-                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/badges/iosbadge.png',
+                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/iosbadge.png',
                           height: 50),
                     ],
                   ),

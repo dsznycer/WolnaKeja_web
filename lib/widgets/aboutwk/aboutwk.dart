@@ -1,35 +1,75 @@
 import 'package:flutter/material.dart';
+import 'package:wolnakeja/style.dart';
 
 class aboutwk extends StatelessWidget {
   const aboutwk({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
     return Column(
       children: [
-        Text('Wolna keja.'),
+        Text(
+          'Wolna keja.',
+          style: H2,
+        ),
         Row(
           children: [
-            Container(
-              width: 680,
-              height: 466,
-              padding: EdgeInsets.all(40),
-              child: Image.asset(
-                '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/aboutwk/reservations.png',
-                fit: BoxFit.fill,
+            Flexible(
+              child: Container(
+                margin: EdgeInsets.all(40),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(14),
+                  child: Image.asset(
+                    '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/aboutwk/reservations-kopia.png',
+                    fit: BoxFit.fitWidth,
+                  ),
+                ),
               ),
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(12)),
             ),
-            Column(
-              children: [
-                Text('Wygodnie rezerwuj miejsce przy kei.'),
-              ],
-            )
+            Flexible(
+              child: Container(
+                margin: EdgeInsets.all(40),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Wygodnie zarezerwuj i opłać miejsce przy kei.',
+                      style: H3,
+                    ),
+                    _Dividerek(),
+                    Text(
+                      'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiadzać lokalne atrakcje? A może szukacie miejsca, aby zagrać w paintball?   ',
+                      style: description,
+                      textAlign: TextAlign.justify,
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         )
+      ],
+    );
+  }
+}
+
+class _Dividerek extends StatelessWidget {
+  const _Dividerek({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(height: 20),
+        Container(
+          width: 50,
+          height: 3,
+          decoration: BoxDecoration(
+            color: ColThird,
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
+        SizedBox(height: 20),
       ],
     );
   }

@@ -9,7 +9,7 @@ class aboutwk extends StatelessWidget {
     return Column(
       children: [
         Text(
-          'Wolna keja.',
+          'O aplikacji',
           style: H2,
         ),
         Row(

@@ -16,6 +16,7 @@ class UspRow extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(width: 15),
             Flexible(
               child: const cardTile(
                   img:
@@ -48,6 +49,7 @@ class UspRow extends StatelessWidget {
                   dsc:
                       "Pozostało jedynie wpłynąć do portu i rozkoszować się pięknem mazurskiej przyrody!  "),
             ),
+            SizedBox(width: 15),
           ],
         )
       ],

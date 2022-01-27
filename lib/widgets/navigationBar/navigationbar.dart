@@ -12,26 +12,27 @@ class navigationBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          logoWidget(),
+          logoWidget(150),
           Container(
-            height: 60,
+            height: 55,
             decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(
-                  color: ColFirst,
+                  color: ColThird,
                   width: 1.0,
                 ),
-                borderRadius: BorderRadius.circular(12)),
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [shadow1]),
             child: Row(
               children: [
                 SizedBox(width: 40),
-                navbutton('O aplikacji'),
+                navButton(tekst: 'O aplikacji'),
                 SizedBox(width: 40),
-                navbutton('Dla żeglarzy'),
+                navButton(tekst: 'Dla żeglarzy'),
                 SizedBox(width: 40),
-                navbutton('Dla portów'),
+                navButton(tekst: 'Dla portów'),
                 SizedBox(width: 40),
-                navbutton('Kontakt'),
+                navButton(tekst: 'Kontakt'),
                 SizedBox(width: 40),
               ],
             ),
@@ -42,14 +43,33 @@ class navigationBar extends StatelessWidget {
   }
 }
 
-navbutton(String tekst) {
-  return Row(
-    children: [
-      Text(
-        tekst,
-        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+class navButton extends StatelessWidget {
+  const navButton({
+    required this.tekst,
+    required this.itemKey,
+  });
+
+  final String tekst;
+  final itemKey = GlobalKey();
+
+  Future scrollToItem() async {
+    final context = itemKey.currentContext!;
+    await Scrollable.ensureVisible(context);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: scrollToItem,
+      child: Row(
+        children: [
+          Text(
+            tekst,
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ),
+          Icon(Icons.keyboard_arrow_down_sharp),
+        ],
       ),
-      Icon(Icons.keyboard_arrow_down_sharp),
-    ],
-  );
+    );
+  }
 }

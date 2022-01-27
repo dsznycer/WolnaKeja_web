@@ -41,6 +41,8 @@ class mainSlider2 extends StatelessWidget {
                 const Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
                     style: H3wht),
                 const Text('Wszystko to w jednym miejscu.', style: H3wht),
+                SizedBox(height: 30),
+                buttonMain('Sprawdź'),
               ],
             ),
             SizedBox(width: 20),
@@ -74,5 +76,32 @@ class _Dividerek extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
     );
+  }
+}
+
+class buttonMain extends StatelessWidget {
+  const buttonMain(this.tekst);
+
+  final String tekst;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+        child: Container(
+      width: 120,
+      height: 60,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+        color: ColFour,
+        border: Border.all(
+          color: ColThird,
+          width: 1,
+        ),
+      ),
+      child: Text(
+        tekst,
+        style: H3wht,
+      ),
+    ));
   }
 }

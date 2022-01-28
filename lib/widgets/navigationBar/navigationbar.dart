@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/views/home/homeview.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 
 class navigationBar extends StatelessWidget {
-  const navigationBar({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,13 +25,21 @@ class navigationBar extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(width: 40),
-                navButton(tekst: 'O aplikacji'),
+                navButton(
+                  tekst: 'O aplikacji',
+                ),
                 SizedBox(width: 40),
-                navButton(tekst: 'Dla żeglarzy'),
+                navButton(
+                  tekst: 'Dla żeglarzy',
+                ),
                 SizedBox(width: 40),
-                navButton(tekst: 'Dla portów'),
+                navButton(
+                  tekst: 'Dla portów',
+                ),
                 SizedBox(width: 40),
-                navButton(tekst: 'Kontakt'),
+                navButton(
+                  tekst: 'Kontakt',
+                ),
                 SizedBox(width: 40),
               ],
             ),
@@ -46,21 +53,14 @@ class navigationBar extends StatelessWidget {
 class navButton extends StatelessWidget {
   const navButton({
     required this.tekst,
-    required this.itemKey,
   });
 
   final String tekst;
-  final itemKey = GlobalKey();
-
-  Future scrollToItem() async {
-    final context = itemKey.currentContext!;
-    await Scrollable.ensureVisible(context);
-  }
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: scrollToItem,
+      onTap: () => scrollToItem(),
       child: Row(
         children: [
           Text(

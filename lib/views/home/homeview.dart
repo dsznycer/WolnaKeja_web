@@ -8,6 +8,15 @@ import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
 import 'package:wolnakeja/widgets/usprow/usprow.dart';
 import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
 
+final itemKeyA = GlobalKey();
+final itemKeyB = GlobalKey();
+
+Future scrollToItem() async {
+  final context = itemKeyA.currentContext!;
+
+  await Scrollable.ensureVisible(context);
+}
+
 class Homeview extends StatelessWidget {
   const Homeview({Key? key}) : super(key: key);
 
@@ -21,7 +30,7 @@ class Homeview extends StatelessWidget {
             children: [
               mainSlider2(),
               SizedBox(height: 40),
-              aboutwk(),
+              Container(key: itemKeyA, child: aboutwk()),
               SizedBox(height: 40),
               UspRow(),
               SizedBox(height: 70),

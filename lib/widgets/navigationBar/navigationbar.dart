@@ -11,7 +11,7 @@ class navigationBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          logoWidget(150),
+          logoWidget(160),
           Container(
             height: 55,
             decoration: BoxDecoration(

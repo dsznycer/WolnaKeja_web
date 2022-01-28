@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationbar/navigationbar.dart';
 
@@ -42,7 +43,7 @@ class mainSlider2 extends StatelessWidget {
                     style: H3wht),
                 const Text('Wszystko to w jednym miejscu.', style: H3wht),
                 SizedBox(height: 30),
-                buttonMain('Sprawdź'),
+                buttonMain('Więcej'),
               ],
             ),
             SizedBox(width: 20),
@@ -92,15 +93,18 @@ class buttonMain extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: ColFour,
+        color: ColThird.withOpacity(0.6),
         border: Border.all(
           color: ColThird,
           width: 1,
         ),
       ),
-      child: Text(
-        tekst,
-        style: H3wht,
+      child: Align(
+        alignment: Alignment.center,
+        child: Text(
+          tekst,
+          style: H3wht,
+        ),
       ),
     ));
   }

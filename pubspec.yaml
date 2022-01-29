@@ -1,5 +1,5 @@
 name: wolnakeja
-description: Strona aplikacji Wolna Keja.
+description: Rezerwuj miejsce postojowe dla Twojego jachtu. Wygodnie, szybko i pewnie.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -25,14 +25,16 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 
 flutter:
-
-
   uses-material-design: true
-
-
   assets:
+    - assets/images/footer/
+    - assets/images/mainSlider/
+    - assets/images/party&events/
+    - assets/images/portPanel/
+    - assets/images/uspRow/
+    - assets/images/valuesProduct/
     - assets/images/
-
+    - assets/images/aboutwk/
 
   fonts:
     - family: Nunito

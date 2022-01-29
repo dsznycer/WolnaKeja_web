@@ -16,7 +16,7 @@ class mainSlider2 extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Image.asset(
-          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/wolna-keja-mockup-tlo.png',
+          'assets/Images/mainSlider/wolna-keja-mockup-tlo.png',
           width: size.width,
         ),
         Row(

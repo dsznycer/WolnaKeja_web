@@ -30,8 +30,7 @@ class portPanel extends StatelessWidget {
             Flexible(
               flex: 2,
               child: Container(
-                child: Image.asset(
-                    '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/portPanel/ipad_wk.png'),
+                child: Image.asset('assets/images/portPanel/ipad_wk.png'),
               ),
             ),
             Flexible(

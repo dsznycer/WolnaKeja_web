@@ -39,7 +39,7 @@ class partyEvent extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(14),
                 child: Image.asset(
-                  '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/party&events/partyEvents_k.png',
+                  'assets/images/party&events/partyEvents_k.png',
                   fit: BoxFit.fitWidth,
                 ),
               ),

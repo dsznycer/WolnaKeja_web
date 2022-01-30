@@ -16,7 +16,7 @@ class mainSlider2 extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Image.asset(
-          'assets/Images/mainSlider/wolna-keja-mockup-tlo.png',
+          'assets/images/mainSlider/wolna-keja-mockup-tlo.png',
           width: size.width,
         ),
         Row(
@@ -48,7 +48,7 @@ class mainSlider2 extends StatelessWidget {
             ),
             SizedBox(width: 20),
             Image.asset(
-              '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/mainSlider/mockup-app.png',
+              'assets/images/mainSlider/mockup-app.png',
               width: sizeofmockup(),
             ),
           ],

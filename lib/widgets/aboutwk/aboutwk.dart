@@ -20,7 +20,7 @@ class aboutwk extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(14),
                   child: Image.asset(
-                    '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/aboutwk/reservations-kopia.png',
+                    'assets/images/aboutwk/reservations-kopia.png',
                     fit: BoxFit.fitWidth,
                   ),
                 ),

@@ -23,7 +23,7 @@ class valuesProduct extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(14),
                   child: Image.asset(
-                    '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/valuesProduct/valueofproduct.png',
+                    'assets/images/valuesProduct/valueofproduct.png',
                     width: widthP,
                     fit: BoxFit.fitWidth,
                   ),

@@ -40,12 +40,10 @@ class footer extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Image.asset(
-                              '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/fb_logo.png',
+                          Image.asset('assets/images/footer/fb_logo.png',
                               height: 30),
                           SizedBox(width: 10),
-                          Image.asset(
-                              '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/insta_logo.png',
+                          Image.asset('assets/images/footer/insta_logo.png',
                               height: 30),
                         ],
                       ),
@@ -66,7 +64,7 @@ class footer extends StatelessWidget {
                       Row(
                         children: [
                           Image.asset(
-                            '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/phone_icon.png',
+                            'assets/images/footer/phone_icon.png',
                             width: 40,
                           ),
                           SizedBox(width: 20),
@@ -77,7 +75,7 @@ class footer extends StatelessWidget {
                       Row(
                         children: [
                           Image.asset(
-                            '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/mail_icon.png',
+                            'assets/images/footer/mail_icon.png',
                             width: 40,
                           ),
                           SizedBox(width: 20),
@@ -96,11 +94,9 @@ class footer extends StatelessWidget {
                         style: description,
                         textAlign: TextAlign.justify,
                       ),
-                      Image.asset(
-                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/google-play-badge.png',
+                      Image.asset('assets/images/footer/google-play-badge.png',
                           height: 67),
-                      Image.asset(
-                          '/Users/dominiksznycer/StudioProjects/WolnaKeja_web/assets/Images/footer/iosbadge.png',
+                      Image.asset('assets/images/footer/iosbadge.png',
                           height: 50),
                     ],
                   ),

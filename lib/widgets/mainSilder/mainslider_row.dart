@@ -10,13 +10,13 @@ class mainSlider2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    double sizeofmockup() => size.width * 0.17;
+    double sizeofmockup() => size.width * 0.18;
 
     return Stack(
       alignment: Alignment.center,
       children: [
         Image.asset(
-          'assets/images/mainSlider/wolna-keja-mockup-tlo.png',
+          'assets/images/mainSlider/background2.png',
           width: size.width,
         ),
         Row(
@@ -28,20 +28,19 @@ class mainSlider2 extends StatelessWidget {
               children: [
                 const Text(
                   'Aplikacja do rezerwacji miejsc',
-                  style: H2wht,
+                  style: H2drk,
                 ),
                 const Text(
                   'w portach mazurskich.',
-                  style: H2wht,
+                  style: H2drk,
                 ),
                 SizedBox(height: 30),
                 const _Dividerek(),
                 SizedBox(height: 30),
-                const Text('Rezerwuj miejsce przy kei w aplikacji.',
-                    style: H3wht),
+                const Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3),
                 const Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
-                    style: H3wht),
-                const Text('Wszystko to w jednym miejscu.', style: H3wht),
+                    style: H3),
+                const Text('Wszystko to w jednym miejscu.', style: H3),
                 SizedBox(height: 30),
                 buttonMain('Więcej'),
               ],
@@ -73,7 +72,7 @@ class _Dividerek extends StatelessWidget {
       width: 70,
       height: 4,
       decoration: BoxDecoration(
-        color: ColSecond.withOpacity(0.3),
+        color: ColFirst.withOpacity(0.6),
         borderRadius: BorderRadius.circular(12),
       ),
     );
@@ -93,17 +92,17 @@ class buttonMain extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: ColThird.withOpacity(0.6),
+        color: ColFour.withOpacity(0.6),
         border: Border.all(
-          color: ColThird,
-          width: 1,
+          color: ColFour,
+          width: 0.8,
         ),
       ),
       child: Align(
         alignment: Alignment.center,
         child: Text(
           tekst,
-          style: H3wht,
+          style: H3,
         ),
       ),
     ));

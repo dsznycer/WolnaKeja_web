@@ -4,13 +4,14 @@ import 'package:flutter/painting.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationbar/navigationbar.dart';
 
-class mainSlider2 extends StatelessWidget {
-  const mainSlider2({Key? key}) : super(key: key);
+class MainSlider2 extends StatelessWidget {
+  const MainSlider2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     double sizeofmockup() => size.width * 0.18;
+    double WidthSize() => size.width * 0.04;
 
     return Stack(
       alignment: Alignment.center,
@@ -18,6 +19,7 @@ class mainSlider2 extends StatelessWidget {
         Image.asset(
           'assets/images/mainSlider/background2.png',
           width: size.width,
+          fit: BoxFit.fitWidth,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -25,22 +27,22 @@ class mainSlider2 extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
+              children: const [
+                Text(
                   'Aplikacja do rezerwacji miejsc',
                   style: H2drk,
                 ),
-                const Text(
+                Text(
                   'w portach mazurskich.',
                   style: H2drk,
                 ),
                 SizedBox(height: 30),
-                const _Dividerek(),
+                _Dividerek(),
                 SizedBox(height: 30),
-                const Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3),
-                const Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
+                Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3),
+                Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
                     style: H3),
-                const Text('Wszystko to w jednym miejscu.', style: H3),
+                Text('Wszystko to w jednym miejscu.', style: H3),
                 SizedBox(height: 30),
                 buttonMain('Więcej'),
               ],
@@ -54,8 +56,8 @@ class mainSlider2 extends StatelessWidget {
         ), //Mockup
         Positioned(
           top: 0,
-          right: 40,
-          left: 0,
+          right: WidthSize(),
+          left: WidthSize(),
           child: navigationBar(),
         ),
       ],
@@ -92,9 +94,9 @@ class buttonMain extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: ColFour.withOpacity(0.6),
+        color: ColFive,
         border: Border.all(
-          color: ColFour,
+          color: ColFive,
           width: 0.8,
         ),
       ),

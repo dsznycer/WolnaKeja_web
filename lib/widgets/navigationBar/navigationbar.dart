@@ -6,22 +6,23 @@ import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 class navigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          logoWidget(160),
+          logoWidget(170),
           Container(
             height: 55,
             decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border.all(
-                  color: ColThird,
-                  width: 1.0,
-                ),
-                borderRadius: BorderRadius.circular(12),
-                boxShadow: [shadow1]),
+              color: ColFive,
+              // border: Border(
+              //   bottom: BorderSide(
+              //       color: ColFirst, width: 0.1, style: BorderStyle.solid),
+              // ),
+              borderRadius: BorderRadius.circular(12),
+              // boxShadow: [shadow1]),
+            ),
             child: Row(
               children: [
                 SizedBox(width: 40),
@@ -51,9 +52,7 @@ class navigationBar extends StatelessWidget {
 }
 
 class navButton extends StatelessWidget {
-  const navButton({
-    required this.tekst,
-  });
+  const navButton({required this.tekst});
 
   final String tekst;
 
@@ -65,7 +64,11 @@ class navButton extends StatelessWidget {
         children: [
           Text(
             tekst,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: ColFirst,
+            ),
           ),
           Icon(Icons.keyboard_arrow_down_sharp),
         ],

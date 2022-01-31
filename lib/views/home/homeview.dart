@@ -24,25 +24,30 @@ class Homeview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: CenteredView(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              mainSlider2(),
-              SizedBox(height: 40),
-              Container(key: itemKeyA, child: aboutwk()),
-              SizedBox(height: 40),
-              UspRow(),
-              SizedBox(height: 70),
-              partyEvent(),
-              SizedBox(height: 70),
-              valuesProduct(),
-              SizedBox(height: 100),
-              portPanel(),
-              SizedBox(height: 120),
-              footer(),
-            ],
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            MainSlider2(),
+            SizedBox(height: 40),
+            CenteredView(
+              child: Column(
+                children: [
+                  Container(key: itemKeyA, child: aboutwk()),
+                  SizedBox(height: 40),
+                  UspRow(),
+                  SizedBox(height: 70),
+                  partyEvent(),
+                  SizedBox(height: 70),
+                  valuesProduct(),
+                  SizedBox(height: 100),
+                  portPanel(),
+                  SizedBox(height: 120),
+                ],
+              ),
+            ),
+            footer(),
+          ],
         ),
       ),
     );

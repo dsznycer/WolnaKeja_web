@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 //***Colors***//
 
 const Color ColFirst = Color(0xFF003459);
-const Color ColSecond = Color(0xFFFAFAFF);
+const Color ColSecond = Color(0xFFA9C9F8);
 const Color ColThird = Color(0xFF849CB7);
 const Color ColFour = Color(0xFFDDA01E);
+const Color ColFive = Color(0xFFF1F1E6);
+const Color ColSix = Color(0xFFFAFAFF);
 
 const Color Bgrd = Color(0xFFE5E5E5);
 
@@ -42,7 +44,8 @@ const TextStyle description = TextStyle(
 //****Shadows****//
 
 const BoxShadow shadow1 = BoxShadow(
-    color: Color(0x30A2ACBD),
-    blurRadius: 6,
-    spreadRadius: 3,
-    offset: Offset(2.0, 2.0));
+  color: Colors.white38,
+  blurRadius: 5,
+  spreadRadius: 3,
+  offset: Offset(2.0, 2.0),
+);

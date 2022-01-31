@@ -68,7 +68,7 @@ class _textTile extends StatelessWidget {
           shadow1,
         ],
         borderRadius: BorderRadius.circular(12),
-        color: ColSecond,
+        color: ColSix,
       ),
       child: Text(
         tekst,

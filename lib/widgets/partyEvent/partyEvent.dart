@@ -9,7 +9,7 @@ class partyEvent extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: ColSecond,
+        color: ColSix,
       ),
       child: Row(
         children: [

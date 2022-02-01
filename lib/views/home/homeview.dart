@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
+
 import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';

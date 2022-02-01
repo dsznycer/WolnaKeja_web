@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/views/home/homeview.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
+import 'navButton.dart';
 
 class navigationBar extends StatelessWidget {
   @override
@@ -45,32 +45,6 @@ class navigationBar extends StatelessWidget {
               ],
             ),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class navButton extends StatelessWidget {
-  const navButton({required this.tekst});
-
-  final String tekst;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => scrollToItem(),
-      child: Row(
-        children: [
-          Text(
-            tekst,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: ColFirst,
-            ),
-          ),
-          Icon(Icons.keyboard_arrow_down_sharp),
         ],
       ),
     );

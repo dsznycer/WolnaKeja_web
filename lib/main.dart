@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/views/home/homeview.dart';
+import 'package:wolnakeja/views/home/homeview2.dart';
 
 void main() {
   runApp(const MyApp());

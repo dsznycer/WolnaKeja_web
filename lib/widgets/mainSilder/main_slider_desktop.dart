@@ -4,8 +4,8 @@ import 'package:flutter/painting.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationbar/navigationbar.dart';
 
-class MainSlider2 extends StatelessWidget {
-  const MainSlider2({Key? key}) : super(key: key);
+class MainSliderDesktop extends StatelessWidget {
+  const MainSliderDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -93,13 +93,13 @@ class buttonMain extends StatelessWidget {
       width: 120,
       height: 60,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(16),
-        color: ColFive,
-        border: Border.all(
+          borderRadius: BorderRadius.circular(16),
           color: ColFive,
-          width: 0.8,
-        ),
-      ),
+          border: Border.all(
+            color: ColFive,
+            width: 0.8,
+          ),
+          boxShadow: [shadow1]),
       child: Align(
         alignment: Alignment.center,
         child: Text(

@@ -44,7 +44,7 @@ const TextStyle description = TextStyle(
 //****Shadows****//
 
 const BoxShadow shadow1 = BoxShadow(
-  color: Colors.white38,
+  color: Colors.black12,
   blurRadius: 5,
   spreadRadius: 3,
   offset: Offset(2.0, 2.0),

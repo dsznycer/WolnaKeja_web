@@ -5,7 +5,7 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
-import 'package:wolnakeja/widgets/mainSilder/mainslider_row.dart';
+import 'package:wolnakeja/widgets/mainSilder/main_slider_desktop.dart';
 import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
 import 'package:wolnakeja/widgets/usprow/usprow.dart';
@@ -37,7 +37,7 @@ class _ScrollHomeViewState extends State<ScrollHomeView> {
       scrollDirection: scrollDirection,
       controller: controller,
       children: [
-        MainSlider2(),
+        MainSliderDesktop(),
         SizedBox(height: 40),
         FloatingActionButton(
           onPressed: () {

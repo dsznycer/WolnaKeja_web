@@ -6,7 +6,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
-import 'package:wolnakeja/widgets/mainSilder/mainslider_row.dart';
+import 'package:wolnakeja/widgets/mainSilder/main_slider_desktop.dart';
 import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
 import 'package:wolnakeja/widgets/usprow/usprow.dart';
@@ -30,7 +30,7 @@ class _ScrollHomeViewState extends State<ScrollHomeView> {
       itemScrollController: itemScrollController,
       itemPositionsListener: itemPositionsListener,
       children: [
-        MainSlider2(),
+        MainSliderDesktop(),
         SizedBox(height: 40),
         FloatingActionButton(
           onPressed: () {},

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class UspRow_desktop extends StatelessWidget {
+  const UspRow_desktop({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class partyEvent extends StatelessWidget {
-  const partyEvent({Key? key}) : super(key: key);
+class partyEvent_desktop extends StatelessWidget {
+  const partyEvent_desktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

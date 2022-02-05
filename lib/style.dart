@@ -11,7 +11,7 @@ const Color ColSix = Color(0xFFFAFAFF);
 
 const Color Bgrd = Color(0xFFE5E5E5);
 
-//****TextStyle****//
+//****TextStyle/Desktop****//
 
 const H2drk = TextStyle(
   fontSize: 32,
@@ -39,6 +39,25 @@ const TextStyle description = TextStyle(
   fontSize: 17,
   color: Color(0xFF565656),
   overflow: TextOverflow.clip,
+);
+
+//****TextStyle/Mobile****//
+
+const TextStyle H2M = TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.w900,
+  color: Color(0xFF003459),
+);
+
+const TextStyle H3M = TextStyle(
+  fontSize: 17,
+  fontWeight: FontWeight.w700,
+  color: Color(0xFF565656),
+);
+
+const TextStyle descriptionM = TextStyle(
+  fontSize: 15,
+  color: Color(0xFF565656),
 );
 
 //****Shadows****//

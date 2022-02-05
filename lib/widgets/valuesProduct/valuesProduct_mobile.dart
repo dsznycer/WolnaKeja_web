@@ -1,45 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class aboutwk_mobile extends StatelessWidget {
-  const aboutwk_mobile({Key? key}) : super(key: key);
+class valuesProduct_mobile extends StatelessWidget {
+  const valuesProduct_mobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    double widthP = size.width * 0.65;
+
     return Column(
       children: [
-        Text(
-          'O aplikacji',
-          style: H2,
+        Container(
+          alignment: Alignment.center,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(14),
+            child: Image.asset(
+              'assets/images/valuesProduct/valueofproduct.png',
+              width: widthP,
+              fit: BoxFit.fitWidth,
+            ),
+          ),
         ),
         Container(
-          margin: EdgeInsets.all(20),
+          margin: EdgeInsets.all(40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Wygodnie zarezerwuj i opłać miejsce przy kei.',
+                'Planuj, rezerwuj i ciesz się mazurami.',
                 style: H3,
               ),
               _Dividerek(),
               Text(
-                'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiadzać lokalne atrakcje? A może szukacie miejsca, aby zagrać w paintball?   ',
+                'Mazury to polska perełka żeglarska. Niestety coraz więcej jachtów chce cumować w marinach, które niestety nie powiększają się z każdym rokiem. Z naszą aplikacją zaplanujesz podróż po Krainie Wielkich Jezior oraz wykupisz miejsca w dogodnych portach. Nigdy więcej nie martw się czy znajdziesz miejsce w porcie. I ciesz się przyrodą.  ',
                 style: description,
                 textAlign: TextAlign.justify,
               )
             ],
           ),
-        ),
-        Container(
-          margin: EdgeInsets.all(20),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(14),
-            child: Image.asset(
-              'assets/images/aboutwk/reservations-kopia.png',
-              fit: BoxFit.fitWidth,
-            ),
-          ),
-        ),
+        )
       ],
     );
   }

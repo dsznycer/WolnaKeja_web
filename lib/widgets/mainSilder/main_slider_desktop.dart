@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationbar/navigationbar.dart';
+import 'ButtonMain.dart';
 
 class MainSliderDesktop extends StatelessWidget {
   const MainSliderDesktop({Key? key}) : super(key: key);
@@ -78,35 +79,5 @@ class _Dividerek extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
     );
-  }
-}
-
-class buttonMain extends StatelessWidget {
-  const buttonMain(this.tekst);
-
-  final String tekst;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-        child: Container(
-      width: 120,
-      height: 60,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: ColFive,
-          border: Border.all(
-            color: ColFive,
-            width: 0.8,
-          ),
-          boxShadow: [shadow1]),
-      child: Align(
-        alignment: Alignment.center,
-        child: Text(
-          tekst,
-          style: H3,
-        ),
-      ),
-    ));
   }
 }

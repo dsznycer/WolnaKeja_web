@@ -7,9 +7,13 @@ import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/main_slider_desktop.dart';
 import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
+import 'package:wolnakeja/widgets/partyEvent/partyEvent_desktop.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
-import 'package:wolnakeja/widgets/usprow/usprow.dart';
+import 'package:wolnakeja/widgets/portPanel/portPanel_desktop.dart';
+import 'package:wolnakeja/widgets/uspRow/usprow.dart';
+import 'package:wolnakeja/widgets/usprow/usprow_desktop.dart';
 import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
+import 'package:wolnakeja/widgets/valuesProduct/valuesProduct_desktop.dart';
 
 class ScrollHomeView extends StatefulWidget {
   const ScrollHomeView({Key? key}) : super(key: key);
@@ -49,7 +53,7 @@ class _ScrollHomeViewState extends State<ScrollHomeView> {
             children: [
               aboutwk(),
               SizedBox(height: 40),
-              UspRow(),
+              usprow(),
               SizedBox(height: 70),
               partyEvent(),
               SizedBox(height: 70),

@@ -37,6 +37,8 @@ flutter:
     - assets/images/valuesProduct/
     - assets/images/
     - assets/images/aboutwk/
+    - assets/images/NavigationBarMobile/
+
 
   fonts:
     - family: Nunito

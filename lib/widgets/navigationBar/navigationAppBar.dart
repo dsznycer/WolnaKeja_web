@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/NavigationDrawer/NavigationDrawer.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 
-class navigationBarMobile extends StatelessWidget {
-  const navigationBarMobile({Key? key}) : super(key: key);
+class navigationAppBar extends StatelessWidget {
+  const navigationAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -20,10 +18,8 @@ class navigationBarMobile extends StatelessWidget {
           ),
           IconButton(
             onPressed: () => Scaffold.of(context).openDrawer(),
-            icon: Icon(
-              Icons.menu,
-            ),
-            color: ColFirst,
+            icon: Image.asset('assets/images/NavigationBarMobile/menu.png',
+                width: 80),
           )
         ],
       ),

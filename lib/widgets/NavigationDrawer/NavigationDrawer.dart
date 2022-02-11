@@ -15,14 +15,22 @@ class NavigationDrawer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 10),
-          Container(
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [
-                    ColFive,
-                    Colors.white,
-                  ]),
-                  boxShadow: [shadow1]),
-              child: logoWidget(160)),
+          Stack(
+            alignment: AlignmentDirectional.center,
+            children: [
+              Container(
+                width: 250,
+                height: 200,
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [
+                      ColFive,
+                      Colors.white,
+                    ]),
+                    boxShadow: [shadow1]),
+              ),
+              logoWidget(160),
+            ],
+          ),
           ButtonDrawer(tekst: 'O aplikacji'),
           ButtonDrawer(tekst: 'Dla żeglarzy'),
           ButtonDrawer(tekst: 'Dla portów'),

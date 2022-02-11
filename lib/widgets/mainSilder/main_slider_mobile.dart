@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/navigationBar/navigation_bar_mobile.dart';
 
 class MainSliderMobile extends StatelessWidget {
   const MainSliderMobile({Key? key}) : super(key: key);
@@ -23,14 +22,14 @@ class MainSliderMobile extends StatelessWidget {
             SizedBox(height: 200),
           ],
         ),
+        // Positioned(
+        //   top: 20,
+        //   left: 30,
+        //   right: 30,
+        //   child: navigationBarMobile(),
+        // ),
         Positioned(
-          top: 20,
-          left: 30,
-          right: 30,
-          child: navigationBarMobile(),
-        ),
-        Positioned(
-          top: 150,
+          top: 50,
           child: Column(
             children: [
               Container(
@@ -50,11 +49,8 @@ class MainSliderMobile extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 50),
-              Image.asset(
-                'assets/images/mainSlider/mockupMobile.png',
-                width: size.width * 0.7,
-                fit: BoxFit.contain,
-              ),
+              Image.asset('assets/images/mainSlider/mockupMobile.png',
+                  width: size.width * 0.75, fit: BoxFit.contain),
             ],
           ),
         ),

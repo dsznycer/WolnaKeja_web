@@ -116,9 +116,9 @@ class footerMobile extends StatelessWidget {
                               ),
                               Image.asset(
                                   'assets/images/footer/google-play-badge.png',
-                                  height: 67),
+                                  height: 52),
                               Image.asset('assets/images/footer/iosbadge.png',
-                                  height: 50),
+                                  height: 40),
                             ],
                           ),
                         ),

@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:wolnakeja/widgets/NavigationDrawer/NavigationDrawer.dart';
-
 import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
+import 'package:wolnakeja/widgets/navigationBar/navigationAppBar.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_mobile.dart';
 import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
 import 'package:wolnakeja/widgets/uspRow/usprow.dart';
 import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
+import 'package:wolnakeja/style.dart';
 
 final itemKeyA = GlobalKey();
 final itemKeyB = GlobalKey();
 
 Future scrollToItem() async {
   final context = itemKeyA.currentContext!;
-
   await Scrollable.ensureVisible(context);
 }
 
@@ -28,9 +28,21 @@ class Homeview extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-        // appBar: AppBar(
-        //   title: Text('chuj'),
-        // ),
+        appBar: sizingInformation.deviceScreenType == DeviceScreenType.mobile
+            ? AppBar(
+                backgroundColor: Colors.white,
+                toolbarHeight: 80,
+                title: Image.asset(
+                  'assets/images/NavigationBarMobile/logoMobile.png',
+                  height: 65,
+                ),
+                centerTitle: true,
+                iconTheme: IconThemeData(
+                  color: ColFirst,
+                  size: 35,
+                ),
+              )
+            : null,
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
             ? NavigationDrawer()
             : null,

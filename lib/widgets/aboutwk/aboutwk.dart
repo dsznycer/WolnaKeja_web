@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/aboutwk/aboutwk_desktop.dart';
 import 'package:wolnakeja/widgets/aboutwk/aboutwk_mobile.dart';
 

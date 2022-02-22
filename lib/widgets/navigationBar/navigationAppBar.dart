@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
 
 class navigationAppBar extends StatelessWidget {
   const navigationAppBar({Key? key}) : super(key: key);

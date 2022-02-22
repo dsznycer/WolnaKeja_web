@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class footerMobile extends StatelessWidget {
   const footerMobile({Key? key}) : super(key: key);
+
+  final String urlInsta = 'https://www.instagram.com';
+  final String phone = 'sms: 516 248 020';
+  void _urlLauncher(String urlString) async {
+    await (launch(urlString));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +56,14 @@ class footerMobile extends StatelessWidget {
                                       'assets/images/footer/fb_logo.png',
                                       height: 30),
                                   SizedBox(width: 10),
-                                  Image.asset(
-                                      'assets/images/footer/insta_logo.png',
-                                      height: 30),
+                                  GestureDetector(
+                                    onTap: () {
+                                      _urlLauncher(urlInsta);
+                                    },
+                                    child: Image.asset(
+                                        'assets/images/footer/insta_logo.png',
+                                        height: 30),
+                                  ),
                                 ],
                               ),
                             ],
@@ -84,7 +96,11 @@ class footerMobile extends StatelessWidget {
                                     width: 40,
                                   ),
                                   SizedBox(width: 20),
-                                  Text('516 248 020'),
+                                  GestureDetector(
+                                      onTap: () {
+                                        _urlLauncher(phone);
+                                      },
+                                      child: Text('516 248 020')),
                                 ],
                               ),
                               SizedBox(height: 10),

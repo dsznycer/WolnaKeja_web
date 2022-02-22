@@ -13,7 +13,7 @@ class navigationBarTab extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          logoWidget(120),
+          logoWidget(130),
           Container(
             height: 55,
             decoration: BoxDecoration(
@@ -23,23 +23,27 @@ class navigationBarTab extends StatelessWidget {
             ),
             child: Row(
               children: [
-                SizedBox(width: 40),
+                SizedBox(width: 20),
                 navButton(
+                  fontSize: 14,
                   tekst: 'O aplikacji',
                 ),
-                SizedBox(width: 40),
+                SizedBox(width: 20),
                 navButton(
+                  fontSize: 14,
                   tekst: 'Dla żeglarzy',
                 ),
-                SizedBox(width: 40),
+                SizedBox(width: 20),
                 navButton(
+                  fontSize: 14,
                   tekst: 'Dla portów',
                 ),
-                SizedBox(width: 40),
+                SizedBox(width: 20),
                 navButton(
+                  fontSize: 14,
                   tekst: 'Kontakt',
                 ),
-                SizedBox(width: 40),
+                SizedBox(width: 20),
               ],
             ),
           ),

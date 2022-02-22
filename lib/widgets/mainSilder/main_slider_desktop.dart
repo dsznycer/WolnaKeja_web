@@ -6,8 +6,19 @@ import 'package:wolnakeja/widgets/navigationbar/navigationbar.dart';
 import 'ButtonMain.dart';
 
 class MainSliderDesktop extends StatelessWidget {
-  const MainSliderDesktop({Key? key}) : super(key: key);
-
+  MainSliderDesktop(
+      {Key? key,
+      required this.functA1,
+      required this.keyA1,
+      required this.keyA2,
+      required this.keyA3,
+      required this.keyA4})
+      : super(key: key);
+  final Function functA1;
+  final GlobalKey keyA1;
+  final GlobalKey keyA2;
+  final GlobalKey keyA3;
+  final GlobalKey keyA4;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -59,7 +70,12 @@ class MainSliderDesktop extends StatelessWidget {
           top: 0,
           right: WidthSize(),
           left: WidthSize(),
-          child: navigationBar(),
+          child: navigationBar(
+              funct1: functA1,
+              keyA: keyA1,
+              keyB: keyA2,
+              keyC: keyA3,
+              keyD: keyA4),
         ),
       ],
     );

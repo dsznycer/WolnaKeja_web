@@ -22,12 +22,6 @@ class MainSliderMobile extends StatelessWidget {
             SizedBox(height: 200),
           ],
         ),
-        // Positioned(
-        //   top: 20,
-        //   left: 30,
-        //   right: 30,
-        //   child: navigationBarMobile(),
-        // ),
         Positioned(
           top: 50,
           child: Column(

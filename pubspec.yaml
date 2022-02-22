@@ -12,13 +12,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  scroll_to_index: ^2.1.1
-  scrollable_positioned_list: ^0.2.3
 
   responsive_builder: ^0.4.1
-
-
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.20
 
 dev_dependencies:
   flutter_test:

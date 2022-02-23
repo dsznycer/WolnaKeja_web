@@ -44,7 +44,7 @@ class UspRow_mobile extends StatelessWidget {
                   picture: 'assets/images/uspRow/kotwica.png',
                   title: 'Czas zacumować',
                   descript:
-                      'Pozostało jedynie wpłynąć do portu i rozkoszować się pięknem mazurskiej przyrody! ',
+                      'Pozostało jedynie wpłynąć do portu i rozkoszować się pięknem mazurskiej przyrody!',
                 ),
               ],
             ),

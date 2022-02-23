@@ -38,7 +38,7 @@ class MainSliderMobile extends StatelessWidget {
                 width: size.width * 0.7,
                 child: Text(
                   'Rezerwuj miejsce przy kei w aplikacji. Przeglądaj porty, imprezy oraz lokalne atrakcje. '
-                  'Wszysto to w jednym miejscu. ',
+                  'Wszysto to w jednym miejscu.',
                   style: H3M,
                 ),
               ),

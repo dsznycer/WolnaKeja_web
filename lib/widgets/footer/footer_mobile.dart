@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:wolnakeja/widgets/urlService.dart';
 
 class footerMobile extends StatelessWidget {
-  const footerMobile({Key? key}) : super(key: key);
+  footerMobile({Key? key}) : super(key: key);
 
-  final String urlInsta = 'https://www.instagram.com';
-  final String phone = 'sms: 516 248 020';
-  void _urlLauncher(String urlString) async {
-    await (launch(urlString));
-  }
+  final urlService urlservice = urlService();
 
   @override
   Widget build(BuildContext context) {
@@ -49,22 +45,22 @@ class footerMobile extends StatelessWidget {
                                 style: H3,
                               ),
                               SizedBox(height: 30),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Image.asset(
-                                      'assets/images/footer/fb_logo.png',
-                                      height: 30),
-                                  SizedBox(width: 10),
-                                  GestureDetector(
-                                    onTap: () {
-                                      _urlLauncher(urlInsta);
-                                    },
-                                    child: Image.asset(
+                              GestureDetector(
+                                onTap: () {
+                                  urlservice.urlLauncher(urlservice.urlInsta);
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                        'assets/images/footer/fb_logo.png',
+                                        height: 30),
+                                    SizedBox(width: 10),
+                                    Image.asset(
                                         'assets/images/footer/insta_logo.png',
                                         height: 30),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ],
                           ),
@@ -89,30 +85,36 @@ class footerMobile extends StatelessWidget {
                                 textAlign: TextAlign.justify,
                               ),
                               SizedBox(height: 25),
-                              Row(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/footer/phone_icon.png',
-                                    width: 40,
-                                  ),
-                                  SizedBox(width: 20),
-                                  GestureDetector(
-                                      onTap: () {
-                                        _urlLauncher(phone);
-                                      },
-                                      child: Text('516 248 020')),
-                                ],
+                              GestureDetector(
+                                onTap: () {
+                                  urlservice.urlLauncher(urlservice.phone);
+                                },
+                                child: Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/footer/phone_icon.png',
+                                      width: 40,
+                                    ),
+                                    SizedBox(width: 20),
+                                    Text('516 248 020')
+                                  ],
+                                ),
                               ),
                               SizedBox(height: 10),
-                              Row(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/footer/mail_icon.png',
-                                    width: 40,
-                                  ),
-                                  SizedBox(width: 20),
-                                  Text('kontakt@wolnakeja.pl'),
-                                ],
+                              GestureDetector(
+                                onTap: () {
+                                  urlservice.urlLauncher(urlservice.email);
+                                },
+                                child: Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/footer/mail_icon.png',
+                                      width: 40,
+                                    ),
+                                    SizedBox(width: 20),
+                                    Text('kontakt@wolnakeja.pl'),
+                                  ],
+                                ),
                               ),
                             ],
                           ),

@@ -3,8 +3,21 @@ import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'navButton.dart';
 
-class navigationBarTab extends StatelessWidget {
-  const navigationBarTab({Key? key}) : super(key: key);
+class NavigationBarTablet extends StatelessWidget {
+  const NavigationBarTablet(
+      {Key? key,
+      required this.funct,
+      required this.key1,
+      required this.key2,
+      required this.key3,
+      required this.key4})
+      : super(key: key);
+
+  final Function funct;
+  final GlobalKey key1;
+  final GlobalKey key2;
+  final GlobalKey key3;
+  final GlobalKey key4;
 
   @override
   Widget build(BuildContext context) {
@@ -24,24 +37,44 @@ class navigationBarTab extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(width: 20),
-                navButton(
-                  fontSize: 14,
-                  tekst: 'O aplikacji',
+                GestureDetector(
+                  onTap: () {
+                    funct(key1);
+                  },
+                  child: navButton(
+                    fontSize: 14,
+                    tekst: 'O aplikacji',
+                  ),
                 ),
                 SizedBox(width: 20),
-                navButton(
-                  fontSize: 14,
-                  tekst: 'Dla żeglarzy',
+                GestureDetector(
+                  onTap: () {
+                    funct(key2);
+                  },
+                  child: navButton(
+                    fontSize: 14,
+                    tekst: 'Dla żeglarzy',
+                  ),
                 ),
                 SizedBox(width: 20),
-                navButton(
-                  fontSize: 14,
-                  tekst: 'Dla portów',
+                GestureDetector(
+                  onTap: () {
+                    funct(key3);
+                  },
+                  child: navButton(
+                    fontSize: 14,
+                    tekst: 'Dla portów',
+                  ),
                 ),
                 SizedBox(width: 20),
-                navButton(
-                  fontSize: 14,
-                  tekst: 'Kontakt',
+                GestureDetector(
+                  onTap: () {
+                    funct(key4);
+                  },
+                  child: navButton(
+                    fontSize: 14,
+                    tekst: 'Kontakt',
+                  ),
                 ),
                 SizedBox(width: 20),
               ],

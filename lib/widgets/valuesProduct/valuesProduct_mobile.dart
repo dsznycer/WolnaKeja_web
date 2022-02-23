@@ -12,6 +12,7 @@ class valuesProduct_mobile extends StatelessWidget {
     return Column(
       children: [
         Container(
+          constraints: BoxConstraints(maxWidth: 400),
           alignment: Alignment.center,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),

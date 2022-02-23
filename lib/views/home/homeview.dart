@@ -5,7 +5,6 @@ import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
-import 'package:wolnakeja/widgets/navigationBar/navigationAppBar.dart';
 import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
 import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';

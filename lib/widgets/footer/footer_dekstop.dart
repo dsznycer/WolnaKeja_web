@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
+import 'package:wolnakeja/widgets/urlService.dart';
 
 class footerDesktop extends StatelessWidget {
-  const footerDesktop({Key? key}) : super(key: key);
+  footerDesktop({Key? key}) : super(key: key);
+
+  urlService urlservice = urlService();
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +45,14 @@ class footerDesktop extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Image.asset('assets/images/footer/fb_logo.png',
-                                  height: 30),
+                              GestureDetector(
+                                onTap: () {
+                                  urlservice.urlLauncher(urlservice.fb);
+                                },
+                                child: Image.asset(
+                                    'assets/images/footer/fb_logo.png',
+                                    height: 30),
+                              ),
                               SizedBox(width: 10),
                               Image.asset('assets/images/footer/insta_logo.png',
                                   height: 30),
@@ -65,26 +74,36 @@ class footerDesktop extends StatelessWidget {
                             textAlign: TextAlign.justify,
                           ),
                           SizedBox(height: 25),
-                          Row(
-                            children: [
-                              Image.asset(
-                                'assets/images/footer/phone_icon.png',
-                                width: 40,
-                              ),
-                              SizedBox(width: 20),
-                              Text('516 248 020'),
-                            ],
+                          GestureDetector(
+                            onTap: () {
+                              urlservice.urlLauncher(urlservice.phone);
+                            },
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                  'assets/images/footer/phone_icon.png',
+                                  width: 40,
+                                ),
+                                SizedBox(width: 20),
+                                Text('516 248 020'),
+                              ],
+                            ),
                           ),
                           SizedBox(height: 10),
-                          Row(
-                            children: [
-                              Image.asset(
-                                'assets/images/footer/mail_icon.png',
-                                width: 40,
-                              ),
-                              SizedBox(width: 20),
-                              Text('kontakt@wolnakeja.pl'),
-                            ],
+                          GestureDetector(
+                            onTap: () {
+                              urlservice.urlLauncher(urlservice.email);
+                            },
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                  'assets/images/footer/mail_icon.png',
+                                  width: 40,
+                                ),
+                                SizedBox(width: 20),
+                                Text('kontakt@wolnakeja.pl'),
+                              ],
+                            ),
                           ),
                         ],
                       ),

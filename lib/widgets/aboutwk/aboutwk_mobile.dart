@@ -17,13 +17,13 @@ class aboutwk_mobile extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'Wygodnie zarezerwuj i opłać miejsce przy kei.',
                 style: H3,
               ),
               _Dividerek(),
-              Text(
-                'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiadzać lokalne atrakcje? A może szukacie miejsca, aby zagrać w paintball?   ',
+              const Text(
+                'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiadzać lokalne atrakcje? A może szukacie miejsca, aby zagrać w paintball?',
                 style: description,
                 textAlign: TextAlign.justify,
               )

@@ -30,6 +30,7 @@ class portInfo_mobile extends StatelessWidget {
           ),
         ),
         Container(
+          constraints: BoxConstraints(maxWidth: 500),
           alignment: Alignment.center,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),

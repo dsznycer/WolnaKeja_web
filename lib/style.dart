@@ -60,6 +60,25 @@ const TextStyle descriptionM = TextStyle(
   color: Color(0xFF565656),
 );
 
+//****TextStyle/Tablet****//
+
+const TextStyle H2Tab = TextStyle(
+  fontSize: 26,
+  fontWeight: FontWeight.w900,
+  color: Color(0xFF003459),
+);
+
+const TextStyle H3Tab = TextStyle(
+  fontSize: 19,
+  fontWeight: FontWeight.w700,
+  color: Color(0xFF565656),
+);
+
+const TextStyle descriptionTab = TextStyle(
+  fontSize: 15,
+  color: Color(0xFF565656),
+);
+
 //****Shadows****//
 
 const BoxShadow shadow1 = BoxShadow(

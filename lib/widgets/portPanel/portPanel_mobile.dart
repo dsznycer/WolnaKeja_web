@@ -30,7 +30,7 @@ class portPanel_mobile extends StatelessWidget {
                       SizedBox(height: 25),
                       textTile('Nadchodzące wydarzenia w Twoim porcie'),
                       SizedBox(height: 25),
-                      textTile('Moduł statystyk z przychodami i rezerwacjami '),
+                      textTile('Moduł statystyk z przychodami i rezerwacjami'),
                     ],
                   ),
                 ),
@@ -39,7 +39,7 @@ class portPanel_mobile extends StatelessWidget {
                   child: Column(
                     children: [
                       textTile(
-                          'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone '),
+                          'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone'),
                       SizedBox(height: 25),
                       textTile('Ostatnie rezerwacje w porcie'),
                       SizedBox(height: 25),

@@ -30,9 +30,12 @@ class NavigationDrawer extends StatelessWidget {
           Stack(
             alignment: AlignmentDirectional.center,
             children: [
-              Image.asset(
-                'assets/images/drawerWave.png',
-                fit: BoxFit.cover,
+              Container(
+                padding: EdgeInsets.only(right: 10),
+                child: Image.asset(
+                  'assets/images/drawerWave.png',
+                  fit: BoxFit.cover,
+                ),
               ),
               logoWidget(160),
             ],

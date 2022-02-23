@@ -8,8 +8,7 @@ class buttonMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-        child: Container(
+    return Container(
       width: 120,
       height: 60,
       decoration: BoxDecoration(
@@ -27,6 +26,6 @@ class buttonMain extends StatelessWidget {
           style: H3,
         ),
       ),
-    ));
+    );
   }
 }

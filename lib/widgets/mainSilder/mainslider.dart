@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:wolnakeja/widgets/mainSilder/main_slider_desktop.dart';
 import 'package:wolnakeja/widgets/mainSilder/main_slider_mobile.dart';
+import 'package:wolnakeja/widgets/mainSilder/main_slider_tablet.dart';
 
 class MainSlider extends StatelessWidget {
   const MainSlider(
@@ -22,7 +23,7 @@ class MainSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: MainSliderMobile(),
-      tablet: MainSliderDesktop(
+      tablet: MainSliderTablet(
           functA1: functB1,
           keyA1: keyB1,
           keyA2: keyB2,

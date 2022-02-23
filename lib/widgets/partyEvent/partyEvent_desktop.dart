@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
 
 class partyEvent_desktop extends StatelessWidget {
@@ -24,10 +25,12 @@ class partyEvent_desktop extends StatelessWidget {
                     style: H3,
                   ),
                   _Dividerek(),
-                  Text(
-                    'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będziecie mogli sprawdzić co się w nim dzieje. ',
-                    style: description,
-                    textAlign: TextAlign.justify,
+                  TextRenderer(
+                    text: Text(
+                      'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będziecie mogli sprawdzić co się w nim dzieje. ',
+                      style: description,
+                      textAlign: TextAlign.justify,
+                    ),
                   ),
                 ],
               ),

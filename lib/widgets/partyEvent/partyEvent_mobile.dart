@@ -14,25 +14,25 @@ class PartyEvent_mobile extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.all(30),
+            margin: const EdgeInsets.all(30),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   'Przejrzyj koncerty i wydarzenia, które dzieją się w portach',
                   style: H3,
                 ),
                 _Dividerek(),
                 Text(
-                  'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będziecie mogli sprawdzić co się w nim dzieje. ',
-                  style: description,
+                  'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będzieci mogli sprawdzić co się w nim dzieje.',
                   textAlign: TextAlign.justify,
+                  style: description,
                 ),
               ],
             ),
           ),
           Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(14),
               child: Image.asset(
@@ -54,7 +54,7 @@ class _Dividerek extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -63,7 +63,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

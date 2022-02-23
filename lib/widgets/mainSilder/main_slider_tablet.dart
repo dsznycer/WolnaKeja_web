@@ -1,12 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/navigationBar/navigation_bar_desktop.dart';
+import 'package:wolnakeja/widgets/navigationBar/navigation_bar_tablet.dart';
 
-class MainSliderDesktop extends StatelessWidget {
-  MainSliderDesktop(
+class MainSliderTablet extends StatelessWidget {
+  MainSliderTablet(
       {Key? key,
       required this.functA1,
       required this.keyA1,
@@ -22,7 +20,7 @@ class MainSliderDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    double sizeofmockup() => size.width * 0.18;
+    double sizeofmockup() => size.width * 0.20;
     double WidthSize() => size.width * 0.04;
 
     return Stack(
@@ -40,26 +38,23 @@ class MainSliderDesktop extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextRenderer(
-                  text: Text(
-                    'Aplikacja do rezerwacji miejsc',
-                    style: H2drk,
-                  ),
+                SizedBox(height: 20),
+                Text(
+                  'Aplikacja do rezerwacji miejsc',
+                  style: H2Tab,
                 ),
-                TextRenderer(
-                  text: Text(
-                    'w portach mazurskich',
-                    style: H2drk,
-                  ),
+                Text(
+                  'w portach mazurskich',
+                  style: H2Tab,
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 15),
                 _Dividerek(),
-                SizedBox(height: 30),
-                Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3),
+                SizedBox(height: 15),
+                Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3Tab),
                 Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
-                    style: H3),
-                Text('Wszystko to w jednym miejscu.', style: H3),
-                SizedBox(height: 30),
+                    style: H3Tab),
+                Text('Wszystko to w jednym miejscu.', style: H3Tab),
+                SizedBox(height: 15),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
@@ -69,11 +64,11 @@ class MainSliderDesktop extends StatelessWidget {
                     ),
                     Image.asset(
                       'assets/images/footer/google-play-badge.png',
-                      width: 140,
+                      width: 90,
                     ),
                     Image.asset(
                       'assets/images/footer/iosbadge.png',
-                      width: 115,
+                      width: 75,
                     ),
                   ],
                 ),
@@ -90,7 +85,7 @@ class MainSliderDesktop extends StatelessWidget {
           top: 0,
           right: WidthSize(),
           left: WidthSize(),
-          child: NavigationBarDesktop(
+          child: NavigationBarTablet(
               funct: functA1,
               key1: keyA1,
               key2: keyA2,

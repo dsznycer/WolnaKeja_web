@@ -32,8 +32,9 @@ class NavigationDrawer extends StatelessWidget {
             children: [
               Container(
                 padding: EdgeInsets.only(right: 10),
-                child: Image.asset(
-                  'assets/images/drawerWave.png',
+                child: Image(
+                  image: NetworkImage(
+                      'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a'),
                   fit: BoxFit.cover,
                 ),
               ),

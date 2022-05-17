@@ -24,7 +24,7 @@ class PartyEvent_mobile extends StatelessWidget {
                 ),
                 _Dividerek(),
                 Text(
-                  'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będzieci mogli sprawdzić co się w nim dzieje.',
+                  'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będziecie mogli sprawdzić co się w nim dzieje.',
                   textAlign: TextAlign.justify,
                   style: description,
                 ),

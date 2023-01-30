@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
-import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
+import 'package:wolnakeja/widgets/about_app/about_app.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
 import 'package:wolnakeja/widgets/navigation_drawer/navigation_drawer.dart';
@@ -31,6 +30,7 @@ class Homeview extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
+        backgroundColor: Colors.white,
         appBar: sizingInformation.deviceScreenType == DeviceScreenType.mobile
             ? AppBar(
                 backgroundColor: Colors.white,
@@ -55,7 +55,6 @@ class Homeview extends StatelessWidget {
                 key4: itemKeyE,
               )
             : null,
-        backgroundColor: Colors.white,
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -67,23 +66,27 @@ class Homeview extends StatelessWidget {
                 keyB3: itemKeyD,
                 keyB4: itemKeyE,
               ),
-              SizedBox(height: 40),
-              CenteredView(
-                child: Column(
-                  children: [
-                    aboutwk(key: itemKeyA),
-                    SizedBox(height: 40),
-                    usprow(key: itemKeyB),
-                    SizedBox(height: 70),
-                    partyEvent(key: itemKeyC),
-                    SizedBox(height: 70),
-                    valuesProduct(),
-                    SizedBox(height: 100),
-                    portPanel(key: itemKeyD),
-                    SizedBox(height: 80),
-                    portInfo(),
-                    SizedBox(height: 80),
-                  ],
+              const SizedBox(height: 40),
+              Container(
+                alignment: Alignment.topCenter,
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 1400),
+                  child: Column(
+                    children: [
+                      AboutApp(key: itemKeyA),
+                      const SizedBox(height: 40),
+                      usprow(key: itemKeyB),
+                      const SizedBox(height: 70),
+                      partyEvent(key: itemKeyC),
+                      const SizedBox(height: 70),
+                      valuesProduct(),
+                      const SizedBox(height: 100),
+                      portPanel(key: itemKeyD),
+                      const SizedBox(height: 80),
+                      portInfo(),
+                      const SizedBox(height: 80),
+                    ],
+                  ),
                 ),
               ),
               footer(key: itemKeyE),

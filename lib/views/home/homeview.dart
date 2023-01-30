@@ -24,7 +24,7 @@ class Homeview extends StatelessWidget {
   Future scrollToItem(GlobalKey key) async {
     final context = key.currentContext!;
     await Scrollable.ensureVisible(context,
-        duration: Duration(milliseconds: 600));
+        duration: const Duration(milliseconds: 600));
   }
 
   @override
@@ -40,7 +40,7 @@ class Homeview extends StatelessWidget {
                   height: 60,
                 ),
                 centerTitle: true,
-                iconTheme: IconThemeData(
+                iconTheme: const IconThemeData(
                   color: ColFirst,
                   size: 35,
                 ),

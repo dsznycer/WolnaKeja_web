@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 
 const splashPath =
@@ -86,7 +86,7 @@ class _NavigationDrawerItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 15),
           child: Text(
             tekst,
-            style: H3,
+            style: AppTextStyles.H3,
           ),
         ),
         const Icon(

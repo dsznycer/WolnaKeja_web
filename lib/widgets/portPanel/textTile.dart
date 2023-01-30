@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_shadows.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 
 class textTile extends StatelessWidget {
   const textTile(this.tekst);
@@ -9,17 +11,17 @@ class textTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
       decoration: BoxDecoration(
-        boxShadow: [
-          shadow1,
+        boxShadow: const [
+          AppShadows.shadow1,
         ],
         borderRadius: BorderRadius.circular(12),
-        color: ColSix,
+        color: AppColors.ColSix,
       ),
       child: Text(
         tekst,
-        style: description,
+        style: AppTextStyles.descriptionStyle,
         textAlign: TextAlign.justify,
         maxLines: 3,
       ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:seo_renderer/seo_renderer.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 
 part 'about_app_desktop.dart';
 part 'about_app_mobile.dart';
@@ -30,7 +31,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: ColThird,
+            color: AppColors.ColThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),
@@ -47,7 +48,7 @@ class _AboutAppTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'O aplikacji',
-      style: H2,
+      style: AppTextStyles.H2,
     );
   }
 }
@@ -59,7 +60,7 @@ class _AboutAppSubtitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Wygodnie zarezerwuj i opłać miejsce przy kei.',
-      style: H3,
+      style: AppTextStyles.H3,
     );
   }
 }
@@ -71,7 +72,7 @@ class _AboutAppDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiedzać lokalne atrakcje? A może szukasz miejsca, aby zagrać w paintball?   ',
-      style: description,
+      style: AppTextStyles.descriptionStyle,
       textAlign: TextAlign.justify,
     );
   }

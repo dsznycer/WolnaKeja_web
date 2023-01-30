@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 
 class portInfo_mobile extends StatelessWidget {
   const portInfo_mobile({Key? key}) : super(key: key);
@@ -18,12 +19,12 @@ class portInfo_mobile extends StatelessWidget {
             children: [
               Text(
                 'Nowoczesny system zarządzania portem',
-                style: H3,
+                style: AppTextStyles.H3,
               ),
               _Dividerek(),
               Text(
                 'Wprowadź zupełnie za darmo nowoczesny system zarządzania swoim portem. Reklamuj port oraz jego infrastrukturę w aplikacji mobilnej i docieraj do nowych klientów. Dodatkowo sprzedawaj miejsca oraz zarządzaj rezerwacjami. Wszystko to w jednym miejscu.',
-                style: description,
+                style: AppTextStyles.descriptionStyle,
                 textAlign: TextAlign.justify,
               )
             ],
@@ -58,7 +59,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: ColThird,
+            color: AppColors.ColThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),

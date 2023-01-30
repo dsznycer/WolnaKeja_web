@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_tablet.dart';
 
 class MainSliderTablet extends StatelessWidget {
@@ -41,26 +42,28 @@ class MainSliderTablet extends StatelessWidget {
                 SizedBox(height: 20),
                 Text(
                   'Aplikacja do rezerwacji miejsc',
-                  style: H2Tab,
+                  style: AppTextStyles.H2Tab,
                 ),
                 Text(
                   'w portach mazurskich',
-                  style: H2Tab,
+                  style: AppTextStyles.H2Tab,
                 ),
                 SizedBox(height: 15),
                 _Dividerek(),
                 SizedBox(height: 15),
-                Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3Tab),
+                Text('Rezerwuj miejsce przy kei w aplikacji.',
+                    style: AppTextStyles.H3Tab),
                 Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
-                    style: H3Tab),
-                Text('Wszystko to w jednym miejscu.', style: H3Tab),
+                    style: AppTextStyles.H3Tab),
+                Text('Wszystko to w jednym miejscu.',
+                    style: AppTextStyles.H3Tab),
                 SizedBox(height: 15),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       "Wkrótce na:",
-                      style: H3Tab,
+                      style: AppTextStyles.H3Tab,
                     ),
                     Image.asset(
                       'assets/images/footer/google-play-badge.png',
@@ -106,7 +109,7 @@ class _Dividerek extends StatelessWidget {
       width: 70,
       height: 4,
       decoration: BoxDecoration(
-        color: ColFirst.withOpacity(0.6),
+        color: AppColors.ColFirst.withOpacity(0.6),
         borderRadius: BorderRadius.circular(12),
       ),
     );

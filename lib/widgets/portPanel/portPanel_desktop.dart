@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'textTile.dart';
 
 class portPanel_desktop extends StatelessWidget {
@@ -10,7 +10,7 @@ class portPanel_desktop extends StatelessWidget {
     return Column(
       children: [
         Text('Żeglarze rezerwują miejsca, Ty wygodnie zarządzasz portem',
-            style: H2),
+            style: AppTextStyles.H2),
         SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

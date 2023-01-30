@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'package:wolnakeja/widgets/urlService.dart';
 
@@ -12,7 +13,7 @@ class footerDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: ColThird.withOpacity(0.3),
+        color: AppColors.ColThird.withOpacity(0.3),
         borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
       ),
       child: Padding(
@@ -39,7 +40,7 @@ class footerDesktop extends StatelessWidget {
                         children: [
                           Text(
                             'Śledź nas w mediach społecznościowych!',
-                            style: H3,
+                            style: AppTextStyles.H3,
                           ),
                           SizedBox(height: 40),
                           Row(
@@ -70,7 +71,7 @@ class footerDesktop extends StatelessWidget {
                         children: [
                           Text(
                             'Masz pytania? Pomysły? Odezwij się do nas.',
-                            style: H3,
+                            style: AppTextStyles.H3,
                             textAlign: TextAlign.justify,
                           ),
                           SizedBox(height: 25),
@@ -117,7 +118,7 @@ class footerDesktop extends StatelessWidget {
                         children: [
                           Text(
                             'Aplikacja dostępna wkrótce na urządzenia z systemem Android i iOS',
-                            style: description,
+                            style: AppTextStyles.descriptionStyle,
                             textAlign: TextAlign.justify,
                           ),
                           Image.asset(
@@ -133,7 +134,7 @@ class footerDesktop extends StatelessWidget {
               ),
             ),
             Divider(
-              color: ColFirst,
+              color: AppColors.ColFirst,
             ),
             Align(
               alignment: Alignment.bottomLeft,

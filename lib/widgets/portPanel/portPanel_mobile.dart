@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'textTile.dart';
 
 class portPanel_mobile extends StatelessWidget {
@@ -11,7 +11,7 @@ class portPanel_mobile extends StatelessWidget {
       children: [
         Text(
           'Żeglarze rezerwują miejsca, Ty wygodnie zarządzasz portem',
-          style: H2,
+          style: AppTextStyles.H2,
           textAlign: TextAlign.center,
         ),
         SizedBox(height: 20),

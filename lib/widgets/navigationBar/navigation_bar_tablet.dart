@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_shadows.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'navButton.dart';
 
@@ -30,9 +31,9 @@ class NavigationBarTablet extends StatelessWidget {
           Container(
             height: 55,
             decoration: BoxDecoration(
-              color: ColFive,
+              color: AppColors.ColFive,
               borderRadius: BorderRadius.circular(12),
-              boxShadow: [shadow1],
+              boxShadow: const [AppShadows.shadow1],
             ),
             child: Row(
               children: [

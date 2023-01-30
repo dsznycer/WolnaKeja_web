@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 
 class valuesProduct_desktop extends StatelessWidget {
   const valuesProduct_desktop({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class valuesProduct_desktop extends StatelessWidget {
       children: [
         Text(
           'Wolna keja.',
-          style: H2,
+          style: AppTextStyles.H2,
         ),
         Row(
           children: [
@@ -38,12 +39,12 @@ class valuesProduct_desktop extends StatelessWidget {
                   children: [
                     Text(
                       'Planuj, rezerwuj i ciesz się mazurami.',
-                      style: H3,
+                      style: AppTextStyles.H3,
                     ),
                     _Dividerek(),
                     Text(
                       'Mazury to polska perełka żeglarska. Niestety coraz więcej jachtów chce cumować w marinach, które niestety nie powiększają się z każdym rokiem. Z naszą aplikacją zaplanujesz podróż po Krainie Wielkich Jezior oraz wykupisz miejsca w dogodnych portach. Nigdy więcej nie martw się czy znajdziesz miejsce w porcie. I ciesz się przyrodą.  ',
-                      style: description,
+                      style: AppTextStyles.descriptionStyle,
                       textAlign: TextAlign.justify,
                     )
                   ],
@@ -69,7 +70,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: ColThird,
+            color: AppColors.ColThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),

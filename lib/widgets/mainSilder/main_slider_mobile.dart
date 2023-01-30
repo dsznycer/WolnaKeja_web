@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 
 class MainSliderMobile extends StatelessWidget {
   const MainSliderMobile({Key? key}) : super(key: key);
@@ -30,7 +30,7 @@ class MainSliderMobile extends StatelessWidget {
                 width: size.width * 0.7,
                 child: Text(
                   'Aplikacja do rezerwacji miejsc w portach mazurskich.',
-                  style: H2M,
+                  style: AppTextStyles.H2M,
                 ),
               ),
               SizedBox(height: 20),
@@ -39,7 +39,7 @@ class MainSliderMobile extends StatelessWidget {
                 child: Text(
                   'Rezerwuj miejsce przy kei w aplikacji. Przeglądaj porty, imprezy oraz lokalne atrakcje. '
                   'Wszysto to w jednym miejscu.',
-                  style: H3M,
+                  style: AppTextStyles.H3M,
                 ),
               ),
               SizedBox(height: 50),

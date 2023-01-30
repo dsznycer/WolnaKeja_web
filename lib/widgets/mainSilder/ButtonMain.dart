@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/styles/app_shadows.dart';
+import 'package:wolnakeja/styles/app_text_styles.dart';
 
 class buttonMain extends StatelessWidget {
   const buttonMain(this.tekst);
@@ -13,17 +15,17 @@ class buttonMain extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: ColFive,
+          color: AppColors.ColFive,
           border: Border.all(
-            color: ColFive,
+            color: AppColors.ColFive,
             width: 0.8,
           ),
-          boxShadow: [shadow1]),
+          boxShadow: [AppShadows.shadow1]),
       child: Align(
         alignment: Alignment.center,
         child: Text(
           tekst,
-          style: H3,
+          style: AppTextStyles.H3,
         ),
       ),
     );

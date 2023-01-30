@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:wolnakeja/styles/app_colors.dart';
 import 'package:wolnakeja/widgets/about_app/about_app.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
@@ -7,9 +8,8 @@ import 'package:wolnakeja/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
 import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
-import 'package:wolnakeja/widgets/uspRow/usprow.dart';
+import 'package:wolnakeja/widgets/how_it_works/how_it_works.dart';
 import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
-import 'package:wolnakeja/style.dart';
 
 class Homeview extends StatelessWidget {
   Homeview({Key? key}) : super(key: key);
@@ -41,7 +41,7 @@ class Homeview extends StatelessWidget {
                 ),
                 centerTitle: true,
                 iconTheme: const IconThemeData(
-                  color: ColFirst,
+                  color: AppColors.ColFirst,
                   size: 35,
                 ),
               )
@@ -75,7 +75,7 @@ class Homeview extends StatelessWidget {
                     children: [
                       AboutApp(key: itemKeyA),
                       const SizedBox(height: 40),
-                      usprow(key: itemKeyB),
+                      HowItWorks(key: itemKeyB),
                       const SizedBox(height: 70),
                       partyEvent(key: itemKeyC),
                       const SizedBox(height: 70),

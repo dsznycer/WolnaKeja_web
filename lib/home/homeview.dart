@@ -9,7 +9,7 @@ import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
 import 'package:wolnakeja/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
-import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
+import 'package:wolnakeja/home/sections/for_ports/for_ports.dart';
 
 class Homeview extends StatelessWidget {
   Homeview({Key? key}) : super(key: key);
@@ -83,7 +83,7 @@ class Homeview extends StatelessWidget {
                       const SizedBox(height: 70),
                       const ProductValue(),
                       const SizedBox(height: 100),
-                      portPanel(key: itemKeyD),
+                      ForPorts(key: itemKeyD),
                       const SizedBox(height: 80),
                       portInfo(),
                       const SizedBox(height: 80),

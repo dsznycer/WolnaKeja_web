@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:wolnakeja/styles/app_colors.dart';
-import 'package:wolnakeja/widgets/about_app/about_app.dart';
+import 'package:wolnakeja/views/home/sections/Events/events.dart';
+import 'package:wolnakeja/views/home/sections/about_app/about_app.dart';
+import 'package:wolnakeja/views/home/sections/how_it_works/how_it_works.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
 import 'package:wolnakeja/widgets/navigation_drawer/navigation_drawer.dart';
-import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
 import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
-import 'package:wolnakeja/widgets/how_it_works/how_it_works.dart';
 import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
 
 class Homeview extends StatelessWidget {
@@ -22,8 +22,10 @@ class Homeview extends StatelessWidget {
 
   Future scrollToItem(GlobalKey key) async {
     final context = key.currentContext!;
-    await Scrollable.ensureVisible(context,
-        duration: const Duration(milliseconds: 600));
+    await Scrollable.ensureVisible(
+      context,
+      duration: const Duration(milliseconds: 600),
+    );
   }
 
   @override
@@ -77,7 +79,7 @@ class Homeview extends StatelessWidget {
                       const SizedBox(height: 40),
                       HowItWorks(key: itemKeyB),
                       const SizedBox(height: 70),
-                      partyEvent(key: itemKeyC),
+                      Events(key: itemKeyC),
                       const SizedBox(height: 70),
                       valuesProduct(),
                       const SizedBox(height: 100),

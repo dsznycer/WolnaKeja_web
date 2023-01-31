@@ -4,17 +4,17 @@ import 'package:wolnakeja/models/app_models.dart';
 import 'package:wolnakeja/styles/app_shadows.dart';
 import 'package:wolnakeja/styles/app_text_styles.dart';
 
-part 'how_it_works_mobile.dart';
-part 'how_it_works_desktop.dart';
+part 'for_sailors_mobile.dart';
+part 'for_sailors_desktop.dart';
 
-class HowItWorks extends StatelessWidget {
-  const HowItWorks({Key? key}) : super(key: key);
+class ForSailors extends StatelessWidget {
+  const ForSailors({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: const HowItWorksMobile(),
-      desktop: const HowItWorksDesktop(),
+      mobile: const ForSailorsMobile(),
+      desktop: const ForSailorsDesktop(),
     );
   }
 }
@@ -52,8 +52,8 @@ const _tilesData = [
   _moorTileData
 ];
 
-class _HowItWorksTitle extends StatelessWidget {
-  const _HowItWorksTitle({Key? key}) : super(key: key);
+class _ForSailorsTitle extends StatelessWidget {
+  const _ForSailorsTitle({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

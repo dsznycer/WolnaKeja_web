@@ -1,11 +1,11 @@
 part of 'events.dart';
 
-class EventsMobile extends StatelessWidget {
-  const EventsMobile({Key? key}) : super(key: key);
+class _EventsMobile extends StatelessWidget {
+  const _EventsMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return EventsBase(
+    return _EventsBase(
       child: Column(
         children: const [
           _TextColumn(padding: 30),

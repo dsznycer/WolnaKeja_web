@@ -1,14 +1,14 @@
-part of 'how_it_works.dart';
+part of 'for_sailors.dart';
 
-class HowItWorksDesktop extends StatelessWidget {
-  const HowItWorksDesktop({Key? key}) : super(key: key);
+class ForSailorsDesktop extends StatelessWidget {
+  const ForSailorsDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        const _HowItWorksTitle(),
+        const _ForSailorsTitle(),
         const SizedBox(height: 15),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

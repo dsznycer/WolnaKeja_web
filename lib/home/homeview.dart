@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:wolnakeja/home/sections/about_app/about_app.dart';
+import 'package:wolnakeja/home/sections/events/events.dart';
+import 'package:wolnakeja/home/sections/for_sailors/for_sailors.dart';
+import 'package:wolnakeja/home/sections/product_value/product_value.dart';
 import 'package:wolnakeja/styles/app_colors.dart';
-import 'package:wolnakeja/views/home/sections/Events/events.dart';
-import 'package:wolnakeja/views/home/sections/about_app/about_app.dart';
-import 'package:wolnakeja/views/home/sections/how_it_works/how_it_works.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
 import 'package:wolnakeja/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
 import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
-import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
 
 class Homeview extends StatelessWidget {
   Homeview({Key? key}) : super(key: key);
@@ -53,8 +53,8 @@ class Homeview extends StatelessWidget {
                 functOnGest: scrollToItem,
                 key1: itemKeyA,
                 key2: itemKeyB,
-                key3: itemKeyD,
-                key4: itemKeyE,
+                key3: itemKeyC,
+                key4: itemKeyD,
               )
             : null,
         body: SingleChildScrollView(
@@ -77,11 +77,11 @@ class Homeview extends StatelessWidget {
                     children: [
                       AboutApp(key: itemKeyA),
                       const SizedBox(height: 40),
-                      HowItWorks(key: itemKeyB),
+                      ForSailors(key: itemKeyB),
                       const SizedBox(height: 70),
-                      Events(key: itemKeyC),
+                      const Events(),
                       const SizedBox(height: 70),
-                      valuesProduct(),
+                      const ProductValue(),
                       const SizedBox(height: 100),
                       portPanel(key: itemKeyD),
                       const SizedBox(height: 80),

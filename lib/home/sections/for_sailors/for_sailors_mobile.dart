@@ -1,13 +1,13 @@
-part of 'how_it_works.dart';
+part of 'for_sailors.dart';
 
-class HowItWorksMobile extends StatelessWidget {
-  const HowItWorksMobile({Key? key}) : super(key: key);
+class ForSailorsMobile extends StatelessWidget {
+  const ForSailorsMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const _HowItWorksTitle(),
+        const _ForSailorsTitle(),
         SizedBox(
           height: 350,
           child: ListView(

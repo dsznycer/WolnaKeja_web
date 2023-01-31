@@ -13,8 +13,8 @@ class Events extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: const EventsMobile(),
-      desktop: const EventsDesktop(),
+      mobile: const _EventsMobile(),
+      desktop: const _EventsDesktop(),
     );
   }
 }
@@ -97,8 +97,8 @@ class _Photo extends StatelessWidget {
   }
 }
 
-class EventsBase extends StatelessWidget {
-  const EventsBase({
+class _EventsBase extends StatelessWidget {
+  const _EventsBase({
     Key? key,
     required this.child,
   }) : super(key: key);

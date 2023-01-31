@@ -1,11 +1,11 @@
 part of 'events.dart';
 
-class EventsDesktop extends StatelessWidget {
-  const EventsDesktop({Key? key}) : super(key: key);
+class _EventsDesktop extends StatelessWidget {
+  const _EventsDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return EventsBase(
+    return _EventsBase(
       child: Row(
         children: const [
           Flexible(

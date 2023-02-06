@@ -18,7 +18,7 @@ dependencies:
   url_launcher: ^6.0.20
   seo_renderer: ^0.4.0
   spaced: ^1.0.3
-
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,25 +1,16 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
-import 'package:wolnakeja/styles/app_colors.dart';
-import 'package:wolnakeja/styles/app_text_styles.dart';
-import 'package:wolnakeja/widgets/navigationBar/navigation_bar_desktop.dart';
+part of 'main_navigation_bar.dart';
 
-class MainSliderDesktop extends StatelessWidget {
-  MainSliderDesktop(
-      {Key? key,
-      required this.functA1,
-      required this.keyA1,
-      required this.keyA2,
-      required this.keyA3,
-      required this.keyA4})
-      : super(key: key);
-  final Function functA1;
-  final GlobalKey keyA1;
-  final GlobalKey keyA2;
-  final GlobalKey keyA3;
-  final GlobalKey keyA4;
+class MainNavigationBarDesktop extends StatelessWidget {
+  const MainNavigationBarDesktop({
+    Key? key,
+    required this.onItemTap,
+    required this.navigationItemsKeys,
+  }) : super(key: key);
+
+  final Future<void> Function(GlobalKey<State<StatefulWidget>>) onItemTap;
+
+  final List<GlobalKey> navigationItemsKeys;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -54,7 +45,11 @@ class MainSliderDesktop extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30),
-                _Dividerek(),
+                Dividerek(
+                  width: 70,
+                  height: 4,
+                  color: AppColors.ColFirst.withOpacity(0.6),
+                ),
                 SizedBox(height: 30),
                 Text('Rezerwuj miejsce przy kei w aplikacji.',
                     style: AppTextStyles.H3),
@@ -92,30 +87,15 @@ class MainSliderDesktop extends StatelessWidget {
           top: 0,
           right: WidthSize(),
           left: WidthSize(),
-          child: NavigationBarDesktop(
-              funct: functA1,
-              key1: keyA1,
-              key2: keyA2,
-              key3: keyA3,
-              key4: keyA4),
+          child: AppNavigationBar(
+            navigationItemsKeys: navigationItemsKeys,
+            onItemTap: onItemTap,
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            logoSize: 170,
+            spacing: 40,
+          ),
         ),
       ],
-    );
-  }
-}
-
-class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 70,
-      height: 4,
-      decoration: BoxDecoration(
-        color: AppColors.ColFirst.withOpacity(0.6),
-        borderRadius: BorderRadius.circular(12),
-      ),
     );
   }
 }

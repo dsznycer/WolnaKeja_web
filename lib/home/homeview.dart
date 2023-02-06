@@ -2,28 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:wolnakeja/home/sections/about_app/about_app.dart';
 import 'package:wolnakeja/home/sections/events/events.dart';
+import 'package:wolnakeja/home/sections/for_port_subsection/for_port_subsection.dart';
+import 'package:wolnakeja/home/sections/for_ports/for_ports.dart';
 import 'package:wolnakeja/home/sections/for_sailors/for_sailors.dart';
 import 'package:wolnakeja/home/sections/product_value/product_value.dart';
 import 'package:wolnakeja/styles/app_colors.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
-import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
-import 'package:wolnakeja/widgets/navigation_drawer/navigation_drawer.dart';
-import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
-import 'package:wolnakeja/home/sections/for_ports/for_ports.dart';
+import 'package:wolnakeja/widgets/main_navigation_bar/main_navigation_bar.dart';
+import 'package:wolnakeja/widgets/navigation_drawer.dart';
 
 class Homeview extends StatelessWidget {
   Homeview({Key? key}) : super(key: key);
 
-  final itemKeyA = GlobalKey();
-  final itemKeyB = GlobalKey();
-  final itemKeyC = GlobalKey();
-  final itemKeyD = GlobalKey();
-  final itemKeyE = GlobalKey();
+  final navigationItemsKeys = [
+    GlobalKey(),
+    GlobalKey(),
+    GlobalKey(),
+    GlobalKey(),
+  ];
 
-  Future scrollToItem(GlobalKey key) async {
-    final context = key.currentContext!;
+  Future<void> scrollToItem(GlobalKey key) async {
     await Scrollable.ensureVisible(
-      context,
+      key.currentContext!,
       duration: const Duration(milliseconds: 600),
     );
   }
@@ -50,48 +50,39 @@ class Homeview extends StatelessWidget {
             : null,
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
             ? NavigationDrawer(
-                functOnGest: scrollToItem,
-                key1: itemKeyA,
-                key2: itemKeyB,
-                key3: itemKeyC,
-                key4: itemKeyD,
+                onItemTap: scrollToItem,
+                navigationItemsKeys: navigationItemsKeys,
               )
             : null,
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MainSlider(
-                functB1: scrollToItem,
-                keyB1: itemKeyA,
-                keyB2: itemKeyB,
-                keyB3: itemKeyD,
-                keyB4: itemKeyE,
+              MainNavigationBar(
+                onItemTap: scrollToItem,
+                navigationItemsKeys: navigationItemsKeys,
               ),
               const SizedBox(height: 40),
-              Container(
-                alignment: Alignment.topCenter,
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1400),
-                  child: Column(
-                    children: [
-                      AboutApp(key: itemKeyA),
-                      const SizedBox(height: 40),
-                      ForSailors(key: itemKeyB),
-                      const SizedBox(height: 70),
-                      const Events(),
-                      const SizedBox(height: 70),
-                      const ProductValue(),
-                      const SizedBox(height: 100),
-                      ForPorts(key: itemKeyD),
-                      const SizedBox(height: 80),
-                      portInfo(),
-                      const SizedBox(height: 80),
-                    ],
-                  ),
+              ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1400),
+                child: Column(
+                  children: [
+                    AboutApp(key: navigationItemsKeys[0]),
+                    const SizedBox(height: 40),
+                    ForSailors(key: navigationItemsKeys[1]),
+                    const SizedBox(height: 70),
+                    const Events(),
+                    const SizedBox(height: 70),
+                    const ProductValue(),
+                    const SizedBox(height: 100),
+                    ForPorts(key: navigationItemsKeys[2]),
+                    const SizedBox(height: 80),
+                    const ForPortSubsection(),
+                    const SizedBox(height: 80),
+                  ],
                 ),
               ),
-              footer(key: itemKeyE),
+              footer(key: navigationItemsKeys[3]),
             ],
           ),
         ),

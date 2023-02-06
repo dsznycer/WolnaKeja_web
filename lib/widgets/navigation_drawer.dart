@@ -6,20 +6,15 @@ const splashPath =
     'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a';
 
 class NavigationDrawer extends StatelessWidget {
-  final Function functOnGest;
-  final GlobalKey key1;
-  final GlobalKey key2;
-  final GlobalKey key3;
-  final GlobalKey key4;
+  const NavigationDrawer({
+    Key? key,
+    required this.onItemTap,
+    required this.navigationItemsKeys,
+  }) : super(key: key);
 
-  const NavigationDrawer(
-      {Key? key,
-      required this.functOnGest,
-      required this.key1,
-      required this.key2,
-      required this.key3,
-      required this.key4})
-      : super(key: key);
+  final Future<void> Function(GlobalKey<State<StatefulWidget>>) onItemTap;
+
+  final List<GlobalKey> navigationItemsKeys;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +22,6 @@ class NavigationDrawer extends StatelessWidget {
       width: 250,
       color: Colors.white,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Stack(
             alignment: AlignmentDirectional.center,
@@ -44,19 +38,19 @@ class NavigationDrawer extends StatelessWidget {
           ),
           _NavigationDrawerItem(
             tekst: 'O aplikacji',
-            onTap: () => functOnGest(key1),
+            onTap: () async => onItemTap(navigationItemsKeys[0]),
           ),
           _NavigationDrawerItem(
             tekst: 'Dla żeglarzy',
-            onTap: () => functOnGest(key2),
+            onTap: () async => onItemTap(navigationItemsKeys[1]),
           ),
           _NavigationDrawerItem(
             tekst: 'Dla portów',
-            onTap: () => functOnGest(key3),
+            onTap: () async => onItemTap(navigationItemsKeys[2]),
           ),
           _NavigationDrawerItem(
             tekst: 'Kontakt',
-            onTap: () => functOnGest(key4),
+            onTap: () async => onItemTap(navigationItemsKeys[3]),
           ),
         ],
       ),
@@ -77,10 +71,12 @@ class _NavigationDrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        onTap();
-        Navigator.pop(context);
-      },
+      onTap: onTap,
+
+      // () {
+      //   onTap();
+      //   Navigator.pop(context);
+      // },
       child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 15),

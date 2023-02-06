@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:wolnakeja/styles/app_text_styles.dart';
+part of 'main_navigation_bar.dart';
 
-class MainSliderMobile extends StatelessWidget {
-  const MainSliderMobile({Key? key}) : super(key: key);
+class MainNavigationBarMobile extends StatelessWidget {
+  const MainNavigationBarMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

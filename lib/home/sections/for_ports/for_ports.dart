@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:wolnakeja/styles/app_colors.dart';
-import 'package:wolnakeja/styles/app_shadows.dart';
+import 'package:spaced/spaced.dart';
+import 'package:wolnakeja/home/sections/for_ports/widgets/text_tile.dart';
 import 'package:wolnakeja/styles/app_text_styles.dart';
 
 part 'for_ports_desktop.dart';
@@ -37,32 +37,6 @@ class _Title extends StatelessWidget {
   }
 }
 
-class _TextTile extends StatelessWidget {
-  const _TextTile(this.tekst);
-
-  final String tekst;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-      decoration: BoxDecoration(
-        boxShadow: const [
-          AppShadows.shadow1,
-        ],
-        borderRadius: BorderRadius.circular(12),
-        color: AppColors.ColSix,
-      ),
-      child: Text(
-        tekst,
-        style: AppTextStyles.descriptionStyle,
-        textAlign: TextAlign.justify,
-        maxLines: 3,
-      ),
-    );
-  }
-}
-
 class _Body extends StatelessWidget {
   const _Body({
     Key? key,
@@ -79,14 +53,13 @@ class _Body extends StatelessWidget {
       children: [
         const SizedBox(width: 10),
         Flexible(
-          child: Column(
+          child: SpacedColumn(
+            spacing: 25,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              _TextTile('Miejsca zajęte i wolne'),
-              SizedBox(height: 25),
-              _TextTile('Nadchodzące wydarzenia w Twoim porcie'),
-              SizedBox(height: 25),
-              _TextTile('Moduł statystyk z przychodami i rezerwacjami '),
+              TextTile(text: 'Miejsca zajęte i wolne'),
+              TextTile(text: 'Nadchodzące wydarzenia w Twoim porcie'),
+              TextTile(text: 'Moduł statystyk z przychodami i rezerwacjami '),
             ],
           ),
         ),
@@ -98,18 +71,17 @@ class _Body extends StatelessWidget {
         else
           const SizedBox(width: 10),
         Flexible(
-          child: Column(
+          child: SpacedColumn(
+            spacing: 25,
             mainAxisAlignment: desktop
                 ? MainAxisAlignment.spaceEvenly
                 : MainAxisAlignment.start,
             children: const [
-              _TextTile(
-                'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone ',
-              ),
-              SizedBox(height: 25),
-              _TextTile('Ostatnie rezerwacje w porcie'),
-              SizedBox(height: 25),
-              _TextTile('Osobne dane dostępu dla pracowników '),
+              TextTile(
+                  text:
+                      'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone '),
+              TextTile(text: 'Ostatnie rezerwacje w porcie'),
+              TextTile(text: 'Osobne dane dostępu dla pracowników '),
             ],
           ),
         ),

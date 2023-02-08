@@ -9,11 +9,8 @@ class AppNavigationBar extends StatelessWidget {
     required this.padding,
     required this.logoSize,
     required this.spacing,
-    required this.onItemTap,
     required this.navigationItemsKeys,
   }) : super(key: key);
-
-  final Future<void> Function(GlobalKey<State<StatefulWidget>>) onItemTap;
 
   final List<GlobalKey> navigationItemsKeys;
 
@@ -21,6 +18,13 @@ class AppNavigationBar extends StatelessWidget {
       padding; //const EdgeInsets.symmetric(vertical: 20, horizontal: 20) / const EdgeInsets.symmetric(vertical: 10, horizontal: 10)
   final double logoSize; // 170/130
   final double spacing; // 40/20
+
+  Future<void> scrollToItem(GlobalKey key) async {
+    await Scrollable.ensureVisible(
+      key.currentContext!,
+      duration: const Duration(milliseconds: 600),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,25 +46,25 @@ class AppNavigationBar extends StatelessWidget {
                 const SizedBox(width: 40),
                 _NavigationBarItem(
                   tekst: 'O aplikacji',
-                  onTap: () async => onItemTap(navigationItemsKeys[0]),
+                  onTap: () async => scrollToItem(navigationItemsKeys[0]),
                   fontSize: 18,
                 ),
                 const SizedBox(width: 40),
                 _NavigationBarItem(
                   tekst: 'Dla zeglarzy',
-                  onTap: () async => onItemTap(navigationItemsKeys[1]),
+                  onTap: () async => scrollToItem(navigationItemsKeys[1]),
                   fontSize: 18,
                 ),
                 const SizedBox(width: 40),
                 _NavigationBarItem(
                   tekst: 'Dla portów',
-                  onTap: () async => onItemTap(navigationItemsKeys[2]),
+                  onTap: () async => scrollToItem(navigationItemsKeys[2]),
                   fontSize: 18,
                 ),
                 const SizedBox(width: 40),
                 _NavigationBarItem(
                   tekst: 'Kontakt',
-                  onTap: () => () async => onItemTap(navigationItemsKeys[3]),
+                  onTap: () => () async => scrollToItem(navigationItemsKeys[3]),
                   fontSize: 18,
                 ),
                 const SizedBox(width: 40),

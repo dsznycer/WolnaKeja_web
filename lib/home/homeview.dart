@@ -18,71 +18,78 @@ class Homeview extends StatelessWidget {
     for (var i = 0; i < 4; i++) GlobalKey(),
   ];
 
-  Future<void> scrollToItem(GlobalKey key) async {
-    await Scrollable.ensureVisible(
-      key.currentContext!,
-      duration: const Duration(milliseconds: 600),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
-      builder: (context, sizingInformation) => Scaffold(
-        backgroundColor: Colors.white,
-        appBar: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? AppBar(
-                backgroundColor: Colors.white,
-                toolbarHeight: 80,
-                title: Image.asset(
-                  'assets/images/NavigationBarMobile/logoMobile.png',
-                  height: 60,
+      builder: (context, sizingInformation) {
+        final isMobile =
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile;
+
+        return Scaffold(
+          backgroundColor: Colors.white,
+          appBar: isMobile ? const _MobileAppBar() : null,
+          drawer: isMobile
+              ? NavigationDrawer(
+                  navigationItemsKeys: navigationItemsKeys,
+                )
+              : null,
+          body: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MainNavigationBar(
+                  navigationItemsKeys: navigationItemsKeys,
                 ),
-                centerTitle: true,
-                iconTheme: const IconThemeData(
-                  color: AppColors.ColFirst,
-                  size: 35,
+                const SizedBox(height: 40),
+                ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 1400),
+                  child: Column(
+                    children: [
+                      AboutApp(key: navigationItemsKeys[0]),
+                      const SizedBox(height: 40),
+                      ForSailors(key: navigationItemsKeys[1]),
+                      const SizedBox(height: 70),
+                      const Events(),
+                      const SizedBox(height: 70),
+                      const ProductValue(),
+                      const SizedBox(height: 100),
+                      ForPorts(key: navigationItemsKeys[2]),
+                      const SizedBox(height: 80),
+                      const ForPortSubsection(),
+                      const SizedBox(height: 80),
+                    ],
+                  ),
                 ),
-              )
-            : null,
-        drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? NavigationDrawer(
-                onItemTap: scrollToItem,
-                navigationItemsKeys: navigationItemsKeys,
-              )
-            : null,
-        body: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              MainNavigationBar(
-                onItemTap: scrollToItem,
-                navigationItemsKeys: navigationItemsKeys,
-              ),
-              const SizedBox(height: 40),
-              ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 1400),
-                child: Column(
-                  children: [
-                    AboutApp(key: navigationItemsKeys[0]),
-                    const SizedBox(height: 40),
-                    ForSailors(key: navigationItemsKeys[1]),
-                    const SizedBox(height: 70),
-                    const Events(),
-                    const SizedBox(height: 70),
-                    const ProductValue(),
-                    const SizedBox(height: 100),
-                    ForPorts(key: navigationItemsKeys[2]),
-                    const SizedBox(height: 80),
-                    const ForPortSubsection(),
-                    const SizedBox(height: 80),
-                  ],
-                ),
-              ),
-              Footer(key: navigationItemsKeys[3]),
-            ],
+                Footer(key: navigationItemsKeys[3]),
+              ],
+            ),
           ),
-        ),
+        );
+      },
+    );
+  }
+}
+
+class _MobileAppBar extends StatelessWidget with PreferredSizeWidget {
+  const _MobileAppBar({Key? key}) : super(key: key);
+
+  @override
+  Size get preferredSize => const Size.fromHeight(height);
+  static const double height = 80;
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      backgroundColor: Colors.white,
+      toolbarHeight: 80,
+      title: Image.asset(
+        'assets/images/NavigationBarMobile/logoMobile.png',
+        height: 60,
+      ),
+      centerTitle: true,
+      iconTheme: const IconThemeData(
+        color: AppColors.ColFirst,
+        size: 35,
       ),
     );
   }

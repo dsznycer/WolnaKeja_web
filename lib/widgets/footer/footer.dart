@@ -79,14 +79,18 @@ class _SocialMedia extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () async => launch(UrlService.urlFb),
-                  child: Image.asset('assets/images/footer/fb_logo.png',
-                      height: 30),
+                  child: Image.asset(
+                    'assets/images/footer/fb_logo.png',
+                    height: 30,
+                  ),
                 ),
                 const SizedBox(width: 10),
                 InkWell(
                   onTap: () async => launch(UrlService.urlInsta),
-                  child: Image.asset('assets/images/footer/insta_logo.png',
-                      height: 30),
+                  child: Image.asset(
+                    'assets/images/footer/insta_logo.png',
+                    height: 30,
+                  ),
                 ),
               ],
             ),

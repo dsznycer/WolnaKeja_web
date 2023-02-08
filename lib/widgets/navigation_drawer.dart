@@ -8,13 +8,17 @@ const splashPath =
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({
     Key? key,
-    required this.onItemTap,
     required this.navigationItemsKeys,
   }) : super(key: key);
 
-  final Future<void> Function(GlobalKey<State<StatefulWidget>>) onItemTap;
-
   final List<GlobalKey> navigationItemsKeys;
+
+  Future<void> scrollToItem(GlobalKey key) async {
+    await Scrollable.ensureVisible(
+      key.currentContext!,
+      duration: const Duration(milliseconds: 600),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,19 +42,19 @@ class NavigationDrawer extends StatelessWidget {
           ),
           _NavigationDrawerItem(
             tekst: 'O aplikacji',
-            onTap: () async => onItemTap(navigationItemsKeys[0]),
+            onTap: () async => scrollToItem(navigationItemsKeys[0]),
           ),
           _NavigationDrawerItem(
             tekst: 'Dla żeglarzy',
-            onTap: () async => onItemTap(navigationItemsKeys[1]),
+            onTap: () async => scrollToItem(navigationItemsKeys[1]),
           ),
           _NavigationDrawerItem(
             tekst: 'Dla portów',
-            onTap: () async => onItemTap(navigationItemsKeys[2]),
+            onTap: () async => scrollToItem(navigationItemsKeys[2]),
           ),
           _NavigationDrawerItem(
             tekst: 'Kontakt',
-            onTap: () async => onItemTap(navigationItemsKeys[3]),
+            onTap: () async => scrollToItem(navigationItemsKeys[3]),
           ),
         ],
       ),

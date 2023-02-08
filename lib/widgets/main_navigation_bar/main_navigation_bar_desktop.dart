@@ -3,11 +3,8 @@ part of 'main_navigation_bar.dart';
 class MainNavigationBarDesktop extends StatelessWidget {
   const MainNavigationBarDesktop({
     Key? key,
-    required this.onItemTap,
     required this.navigationItemsKeys,
   }) : super(key: key);
-
-  final Future<void> Function(GlobalKey<State<StatefulWidget>>) onItemTap;
 
   final List<GlobalKey> navigationItemsKeys;
 
@@ -89,7 +86,6 @@ class MainNavigationBarDesktop extends StatelessWidget {
           left: WidthSize(),
           child: AppNavigationBar(
             navigationItemsKeys: navigationItemsKeys,
-            onItemTap: onItemTap,
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             logoSize: 170,
             spacing: 40,

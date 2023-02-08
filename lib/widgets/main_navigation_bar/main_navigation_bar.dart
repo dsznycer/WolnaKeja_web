@@ -13,11 +13,8 @@ part 'main_navigation_bar_desktop.dart';
 class MainNavigationBar extends StatelessWidget {
   const MainNavigationBar({
     Key? key,
-    required this.onItemTap,
     required this.navigationItemsKeys,
   }) : super(key: key);
-
-  final Future<void> Function(GlobalKey<State<StatefulWidget>>) onItemTap;
 
   final List<GlobalKey> navigationItemsKeys;
 
@@ -27,11 +24,9 @@ class MainNavigationBar extends StatelessWidget {
       mobile: const MainNavigationBarMobile(),
       tablet: MainNavigationBarTablet(
         navigationItemsKeys: navigationItemsKeys,
-        onItemTap: onItemTap,
       ),
       desktop: MainNavigationBarDesktop(
         navigationItemsKeys: navigationItemsKeys,
-        onItemTap: onItemTap,
       ),
     );
   }

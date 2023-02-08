@@ -15,10 +15,7 @@ class Homeview extends StatelessWidget {
   Homeview({Key? key}) : super(key: key);
 
   final navigationItemsKeys = [
-    GlobalKey(),
-    GlobalKey(),
-    GlobalKey(),
-    GlobalKey(),
+    for (var i = 0; i < 4; i++) GlobalKey(),
   ];
 
   Future<void> scrollToItem(GlobalKey key) async {
@@ -82,7 +79,7 @@ class Homeview extends StatelessWidget {
                   ],
                 ),
               ),
-              footer(key: navigationItemsKeys[3]),
+              Footer(key: navigationItemsKeys[3]),
             ],
           ),
         ),

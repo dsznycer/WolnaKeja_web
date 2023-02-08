@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/styles/app_colors.dart';
 import 'package:wolnakeja/styles/app_shadows.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
+import 'package:wolnakeja/widgets/logo/logo.dart';
 
 class AppNavigationBar extends StatelessWidget {
   const AppNavigationBar({
@@ -29,7 +29,7 @@ class AppNavigationBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const logoWidget(170),
+          const Logo(width: 170),
           Container(
             height: 55,
             decoration: BoxDecoration(

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class logoWidget extends StatelessWidget {
-  const logoWidget(this.width);
+class Logo extends StatelessWidget {
+  const Logo({Key? key, required this.width}) : super(key: key);
 
   final double width;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: width,
       child: Image.asset(
         'assets/images/logo.png',

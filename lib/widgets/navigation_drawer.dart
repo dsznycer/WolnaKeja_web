@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/styles/app_text_styles.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
+import 'package:wolnakeja/widgets/logo/logo.dart';
 
 const splashPath =
     'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a';
@@ -33,7 +33,7 @@ class NavigationDrawer extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              const logoWidget(160),
+              const Logo(width: 160),
             ],
           ),
           _NavigationDrawerItem(

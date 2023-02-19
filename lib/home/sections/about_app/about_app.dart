@@ -8,7 +8,7 @@ part 'about_app_desktop.dart';
 part 'about_app_mobile.dart';
 
 class AboutApp extends StatelessWidget {
-  const AboutApp({Key? key}) : super(key: key);
+  const AboutApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class AboutApp extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: AppColors.ColThird,
+            color: AppColors.colThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),
@@ -42,31 +42,31 @@ class _Dividerek extends StatelessWidget {
 }
 
 class _AboutAppTitle extends StatelessWidget {
-  const _AboutAppTitle({Key? key}) : super(key: key);
+  const _AboutAppTitle();
 
   @override
   Widget build(BuildContext context) {
     return const Text(
       'O aplikacji',
-      style: AppTextStyles.H2,
+      style: AppTextStyles.h2,
     );
   }
 }
 
 class _AboutAppSubtitle extends StatelessWidget {
-  const _AboutAppSubtitle({Key? key}) : super(key: key);
+  const _AboutAppSubtitle();
 
   @override
   Widget build(BuildContext context) {
     return const Text(
       'Wygodnie zarezerwuj i opłać miejsce przy kei.',
-      style: AppTextStyles.H3,
+      style: AppTextStyles.h3,
     );
   }
 }
 
 class _AboutAppDescription extends StatelessWidget {
-  const _AboutAppDescription({Key? key}) : super(key: key);
+  const _AboutAppDescription();
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +79,7 @@ class _AboutAppDescription extends StatelessWidget {
 }
 
 class _AboutAppPhoto extends StatelessWidget {
-  const _AboutAppPhoto({Key? key}) : super(key: key);
+  const _AboutAppPhoto();
 
   @override
   Widget build(BuildContext context) {

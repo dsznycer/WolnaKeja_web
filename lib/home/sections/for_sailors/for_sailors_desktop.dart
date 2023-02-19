@@ -55,7 +55,7 @@ class _CardTile extends StatelessWidget {
         const SizedBox(height: 20),
         Text(
           title,
-          style: AppTextStyles.H2,
+          style: AppTextStyles.h2,
         ),
         const SizedBox(height: 15),
         Padding(

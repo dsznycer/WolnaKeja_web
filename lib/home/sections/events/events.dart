@@ -31,7 +31,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: AppColors.ColThird,
+            color: AppColors.colThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),
@@ -58,7 +58,7 @@ class _TextColumn extends StatelessWidget {
         children: const [
           Text(
             'Przejrzyj koncerty i wydarzenia, które dzieją się w portach',
-            style: AppTextStyles.H3,
+            style: AppTextStyles.h3,
           ),
           _Dividerek(),
           TextRenderer(
@@ -110,7 +110,7 @@ class _EventsBase extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: AppColors.ColSix,
+        color: AppColors.colSix,
       ),
       child: child,
     );

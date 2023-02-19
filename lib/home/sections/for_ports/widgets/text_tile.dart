@@ -20,7 +20,7 @@ class TextTile extends StatelessWidget {
           AppShadows.shadow1,
         ],
         borderRadius: BorderRadius.circular(12),
-        color: AppColors.ColSix,
+        color: AppColors.colSix,
       ),
       child: Text(
         text,

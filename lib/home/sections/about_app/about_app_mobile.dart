@@ -1,7 +1,7 @@
 part of 'about_app.dart';
 
 class AboutAppMobile extends StatelessWidget {
-  const AboutAppMobile({Key? key}) : super(key: key);
+  const AboutAppMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

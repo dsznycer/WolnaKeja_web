@@ -1,7 +1,7 @@
 part of 'about_app.dart';
 
 class AboutDesktop extends StatelessWidget {
-  const AboutDesktop({Key? key}) : super(key: key);
+  const AboutDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

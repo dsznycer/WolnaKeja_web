@@ -9,7 +9,7 @@ class ProductValueDesktop extends StatelessWidget {
       children: [
         const Text(
           'Wolna keja.',
-          style: AppTextStyles.H2,
+          style: AppTextStyles.h2,
         ),
         Row(
           children: const [

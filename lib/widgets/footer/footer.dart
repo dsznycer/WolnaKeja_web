@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:spaced/spaced.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:wolnakeja/services/urlService.dart';
+import 'package:wolnakeja/services/url_service.dart';
 import 'package:wolnakeja/styles/app_colors.dart';
 import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'package:wolnakeja/widgets/logo/logo.dart';
@@ -34,7 +34,7 @@ class _FooterBase extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.ColThird.withOpacity(0.3),
+        color: AppColors.colThird.withOpacity(0.3),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(18)),
       ),
       child: Padding(
@@ -47,7 +47,7 @@ class _FooterBase extends StatelessWidget {
               child: child,
             ),
             const Divider(
-              color: AppColors.ColFirst,
+              color: AppColors.colFirst,
             ),
             const _RightsNote(),
           ],
@@ -72,13 +72,13 @@ class _SocialMedia extends StatelessWidget {
           children: [
             const Text(
               'Śledź nas w mediach społecznościowych!',
-              style: AppTextStyles.H3,
+              style: AppTextStyles.h3,
             ),
             const SizedBox(height: 40),
             Row(
               children: [
                 InkWell(
-                  onTap: () async => launch(UrlService.urlFb),
+                  onTap: () async => launchUrl(Uri.parse(UrlService.urlFb)),
                   child: Image.asset(
                     'assets/images/footer/fb_logo.png',
                     height: 30,
@@ -86,7 +86,7 @@ class _SocialMedia extends StatelessWidget {
                 ),
                 const SizedBox(width: 10),
                 InkWell(
-                  onTap: () async => launch(UrlService.urlInsta),
+                  onTap: () async => launchUrl(Uri.parse(UrlService.urlInsta)),
                   child: Image.asset(
                     'assets/images/footer/insta_logo.png',
                     height: 30,
@@ -113,12 +113,12 @@ class _ContactUs extends StatelessWidget {
           children: [
             const Text(
               'Masz pytania? Pomysły? Odezwij się do nas.',
-              style: AppTextStyles.H3,
+              style: AppTextStyles.h3,
               textAlign: TextAlign.justify,
             ),
             const SizedBox(height: 25),
             GestureDetector(
-              onTap: () async => launch(UrlService.phone),
+              onTap: () async => launchUrl(Uri.parse(UrlService.phone)),
               child: Row(
                 children: [
                   Image.asset(
@@ -132,7 +132,7 @@ class _ContactUs extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             GestureDetector(
-              onTap: () async => launch(UrlService.email),
+              onTap: () async => launchUrl(Uri.parse(UrlService.email)),
               child: Row(
                 children: [
                   Image.asset(

@@ -14,10 +14,9 @@ class AppNavigationBar extends StatelessWidget {
 
   final List<GlobalKey> navigationItemsKeys;
 
-  final EdgeInsets
-      padding; //const EdgeInsets.symmetric(vertical: 20, horizontal: 20) / const EdgeInsets.symmetric(vertical: 10, horizontal: 10)
-  final double logoSize; // 170/130
-  final double spacing; // 40/20
+  final EdgeInsets padding;
+  final double logoSize;
+  final double spacing;
 
   Future<void> scrollToItem(GlobalKey key) async {
     await Scrollable.ensureVisible(
@@ -37,7 +36,7 @@ class AppNavigationBar extends StatelessWidget {
           Container(
             height: 55,
             decoration: BoxDecoration(
-              color: AppColors.ColFive,
+              color: AppColors.colFive,
               borderRadius: BorderRadius.circular(12),
               boxShadow: const [AppShadows.shadow1],
             ),
@@ -99,7 +98,7 @@ class _NavigationBarItem extends StatelessWidget {
             style: TextStyle(
               fontSize: fontSize.toDouble(),
               fontWeight: FontWeight.bold,
-              color: AppColors.ColFirst,
+              color: AppColors.colFirst,
             ),
           ),
           const Icon(Icons.keyboard_arrow_down_sharp),

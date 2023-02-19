@@ -60,7 +60,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: AppColors.ColThird,
+            color: AppColors.colThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),
@@ -82,7 +82,7 @@ class _Text extends StatelessWidget {
         children: const [
           Text(
             'Planuj, rezerwuj i ciesz się mazurami.',
-            style: AppTextStyles.H3,
+            style: AppTextStyles.h3,
           ),
           _Dividerek(),
           Text(
@@ -95,6 +95,3 @@ class _Text extends StatelessWidget {
     );
   }
 }
-
-
-//TODO Factor out divider

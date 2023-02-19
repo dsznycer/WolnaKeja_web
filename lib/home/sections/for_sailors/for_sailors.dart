@@ -20,16 +20,18 @@ class ForSailors extends StatelessWidget {
 }
 
 const _choosePortTileData = PictureWithTitleAndDescription(
-    path: 'assets/images/uspRow/latarnia.png',
-    title: 'Wybór portu',
-    description:
-        'Pływający przegląda porty w okolicy i wybiera ten, który interesuje go najbardziej. Może sprawdzić jaką port posiada infrastrukturę, co znajduje się w okolicy oraz czy organizuje jakieś wydarzenia.');
+  path: 'assets/images/uspRow/latarnia.png',
+  title: 'Wybór portu',
+  description:
+      'Pływający przegląda porty w okolicy i wybiera ten, który interesuje go najbardziej. Może sprawdzić jaką port posiada infrastrukturę, co znajduje się w okolicy oraz czy organizuje jakieś wydarzenia.',
+);
 
 const _choosePlaceTileData = PictureWithTitleAndDescription(
-    path: 'assets/images/uspRow/moring.png',
-    title: 'Wybór miejsca',
-    description:
-        'Po wybraniu portu wystarczy wpisać jaką długość ma łódź, ile osób na niej przebywa oraz jaką ma nazwę. Następnie można wybrać miejsce do cumowania.');
+  path: 'assets/images/uspRow/moring.png',
+  title: 'Wybór miejsca',
+  description:
+      'Po wybraniu portu wystarczy wpisać jaką długość ma łódź, ile osób na niej przebywa oraz jaką ma nazwę. Następnie można wybrać miejsce do cumowania.',
+);
 
 const _payTileData = PictureWithTitleAndDescription(
   path: 'assets/images/uspRow/platnosc.png',
@@ -59,7 +61,7 @@ class _ForSailorsTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Jak to działa?',
-      style: AppTextStyles.H2,
+      style: AppTextStyles.h2,
     );
   }
 }

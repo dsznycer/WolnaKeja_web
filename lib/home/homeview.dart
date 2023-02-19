@@ -7,62 +7,62 @@ import 'package:wolnakeja/home/sections/for_ports/for_ports.dart';
 import 'package:wolnakeja/home/sections/for_sailors/for_sailors.dart';
 import 'package:wolnakeja/home/sections/product_value/product_value.dart';
 import 'package:wolnakeja/styles/app_colors.dart';
+import 'package:wolnakeja/widgets/app_navigation_drawer.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
-import 'package:wolnakeja/widgets/main_navigation_bar/main_navigation_bar.dart';
-import 'package:wolnakeja/widgets/navigation_drawer.dart';
+import 'package:wolnakeja/widgets/header/header.dart';
+
+final navigationItemsKeys = [
+  for (var i = 0; i < 4; i++) GlobalKey(),
+];
+
+ScreenType _getScreenType(SizingInformation sizingInformation) {
+  if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
+    return ScreenType.desktop;
+  }
+  if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
+    return ScreenType.tablet;
+  }
+  return ScreenType.mobile;
+}
 
 class Homeview extends StatelessWidget {
-  Homeview({Key? key}) : super(key: key);
-
-  final navigationItemsKeys = [
-    for (var i = 0; i < 4; i++) GlobalKey(),
-  ];
+  const Homeview({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
-        final isMobile =
-            sizingInformation.deviceScreenType == DeviceScreenType.mobile;
+        final screenType = _getScreenType(sizingInformation);
 
         return Scaffold(
           backgroundColor: Colors.white,
-          appBar: isMobile ? const _MobileAppBar() : null,
-          drawer: isMobile
-              ? NavigationDrawer(
-                  navigationItemsKeys: navigationItemsKeys,
-                )
-              : null,
-          body: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                MainNavigationBar(
-                  navigationItemsKeys: navigationItemsKeys,
+          appBar: screenType.appBar,
+          drawer: screenType.drawer,
+          body: ListView(
+            children: [
+              const Header(),
+              const SizedBox(height: 40),
+              ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1400),
+                child: Column(
+                  children: [
+                    AboutApp(key: navigationItemsKeys[0]),
+                    const SizedBox(height: 40),
+                    ForSailors(key: navigationItemsKeys[1]),
+                    const SizedBox(height: 70),
+                    const Events(),
+                    const SizedBox(height: 70),
+                    const ProductValue(),
+                    const SizedBox(height: 100),
+                    ForPorts(key: navigationItemsKeys[2]),
+                    const SizedBox(height: 80),
+                    const ForPortSubsection(),
+                    const SizedBox(height: 80),
+                  ],
                 ),
-                const SizedBox(height: 40),
-                ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1400),
-                  child: Column(
-                    children: [
-                      AboutApp(key: navigationItemsKeys[0]),
-                      const SizedBox(height: 40),
-                      ForSailors(key: navigationItemsKeys[1]),
-                      const SizedBox(height: 70),
-                      const Events(),
-                      const SizedBox(height: 70),
-                      const ProductValue(),
-                      const SizedBox(height: 100),
-                      ForPorts(key: navigationItemsKeys[2]),
-                      const SizedBox(height: 80),
-                      const ForPortSubsection(),
-                      const SizedBox(height: 80),
-                    ],
-                  ),
-                ),
-                Footer(key: navigationItemsKeys[3]),
-              ],
-            ),
+              ),
+              Footer(key: navigationItemsKeys[3]),
+            ],
           ),
         );
       },
@@ -70,8 +70,36 @@ class Homeview extends StatelessWidget {
   }
 }
 
-class _MobileAppBar extends StatelessWidget with PreferredSizeWidget {
-  const _MobileAppBar({Key? key}) : super(key: key);
+enum ScreenType {
+  mobile,
+  tablet,
+  desktop;
+
+  PreferredSizeWidget? get appBar => _appBar();
+  PreferredSizeWidget? _appBar() {
+    switch (this) {
+      case ScreenType.mobile:
+      case ScreenType.tablet:
+        return const _AppBarMobile();
+      case ScreenType.desktop:
+        return null;
+    }
+  }
+
+  Widget? get drawer => _drawer();
+  Widget? _drawer() {
+    switch (this) {
+      case ScreenType.mobile:
+      case ScreenType.tablet:
+        return const AppNavigationDrawer();
+      case ScreenType.desktop:
+        return null;
+    }
+  }
+}
+
+class _AppBarMobile extends StatelessWidget with PreferredSizeWidget {
+  const _AppBarMobile();
 
   @override
   Size get preferredSize => const Size.fromHeight(height);
@@ -83,12 +111,12 @@ class _MobileAppBar extends StatelessWidget with PreferredSizeWidget {
       backgroundColor: Colors.white,
       toolbarHeight: 80,
       title: Image.asset(
-        'assets/images/NavigationBarMobile/logoMobile.png',
+        'assets/images/header/logoMobile.png',
         height: 60,
       ),
       centerTitle: true,
       iconTheme: const IconThemeData(
-        color: AppColors.ColFirst,
+        color: AppColors.colFirst,
         size: 35,
       ),
     );

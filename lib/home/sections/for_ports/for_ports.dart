@@ -31,7 +31,7 @@ class _Title extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Żeglarze rezerwują miejsca, Ty wygodnie zarządzasz portem',
-      style: AppTextStyles.H2,
+      style: AppTextStyles.h2,
       textAlign: TextAlign.center,
     );
   }
@@ -78,8 +78,9 @@ class _Body extends StatelessWidget {
                 : MainAxisAlignment.start,
             children: const [
               TextTile(
-                  text:
-                      'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone '),
+                text:
+                    'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone ',
+              ),
               TextTile(text: 'Ostatnie rezerwacje w porcie'),
               TextTile(text: 'Osobne dane dostępu dla pracowników '),
             ],

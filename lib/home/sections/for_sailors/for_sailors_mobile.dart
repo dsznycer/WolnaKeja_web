@@ -15,9 +15,10 @@ class ForSailorsMobile extends StatelessWidget {
             children: [
               for (final tileData in _tilesData)
                 _TileMobileRow(
-                    picture: tileData.path,
-                    title: tileData.title,
-                    description: tileData.description)
+                  picture: tileData.path,
+                  title: tileData.title,
+                  description: tileData.description,
+                )
             ],
           ),
         ),
@@ -50,7 +51,6 @@ class _TileMobileRow extends StatelessWidget {
         boxShadow: const [AppShadows.shadow1],
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Image.asset(
             picture,
@@ -59,7 +59,7 @@ class _TileMobileRow extends StatelessWidget {
           const SizedBox(height: 15),
           Text(
             title,
-            style: AppTextStyles.H2M,
+            style: AppTextStyles.h2M,
           ),
           Padding(
             padding: const EdgeInsets.all(7),

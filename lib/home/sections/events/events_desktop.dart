@@ -1,7 +1,7 @@
 part of 'events.dart';
 
 class _EventsDesktop extends StatelessWidget {
-  const _EventsDesktop({Key? key}) : super(key: key);
+  const _EventsDesktop();
 
   @override
   Widget build(BuildContext context) {

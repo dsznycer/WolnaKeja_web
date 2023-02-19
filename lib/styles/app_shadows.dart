@@ -5,7 +5,7 @@ class AppShadows {
     color: Colors.black12,
     blurRadius: 5,
     spreadRadius: 3,
-    offset: Offset(2.0, 2.0),
+    offset: Offset(2, 2),
   );
 }
 

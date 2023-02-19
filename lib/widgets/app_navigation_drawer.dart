@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:wolnakeja/home/homeview.dart';
 import 'package:wolnakeja/styles/app_text_styles.dart';
 import 'package:wolnakeja/widgets/logo/logo.dart';
 
 const splashPath =
     'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a';
 
-class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({
-    Key? key,
-    required this.navigationItemsKeys,
-  }) : super(key: key);
-
-  final List<GlobalKey> navigationItemsKeys;
+class AppNavigationDrawer extends StatelessWidget {
+  const AppNavigationDrawer({
+    super.key,
+  });
 
   Future<void> scrollToItem(GlobalKey key) async {
     await Scrollable.ensureVisible(
@@ -32,8 +30,8 @@ class NavigationDrawer extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.only(right: 10),
-                child: const Image(
-                  image: NetworkImage(splashPath),
+                child: Image.asset(
+                  'assets/images/drawerWave.webp',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -64,10 +62,10 @@ class NavigationDrawer extends StatelessWidget {
 
 class _NavigationDrawerItem extends StatelessWidget {
   const _NavigationDrawerItem({
-    Key? key,
+    super.key,
     required this.tekst,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String tekst;
   final VoidCallback onTap;
@@ -76,24 +74,22 @@ class _NavigationDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-
-      // () {
-      //   onTap();
-      //   Navigator.pop(context);
-      // },
-      child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 15),
-          child: Text(
-            tekst,
-            style: AppTextStyles.H3,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 15),
+            child: Text(
+              tekst,
+              style: AppTextStyles.h3,
+            ),
           ),
-        ),
-        const Icon(
-          Icons.keyboard_arrow_down_sharp,
-          size: 18,
-        ),
-      ]),
+          const Icon(
+            Icons.keyboard_arrow_down_sharp,
+            size: 18,
+          ),
+        ],
+      ),
     );
   }
 }

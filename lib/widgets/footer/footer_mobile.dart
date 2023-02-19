@@ -1,7 +1,7 @@
 part of 'footer.dart';
 
 class FooterMobile extends StatelessWidget {
-  const FooterMobile({Key? key}) : super(key: key);
+  const FooterMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

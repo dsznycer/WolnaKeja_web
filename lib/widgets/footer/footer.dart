@@ -11,7 +11,7 @@ part 'footer_mobile.dart';
 part 'footer_dekstop.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key? key}) : super(key: key);
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +24,8 @@ class Footer extends StatelessWidget {
 
 class _FooterBase extends StatelessWidget {
   const _FooterBase({
-    Key? key,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget child;
 
@@ -58,7 +57,7 @@ class _FooterBase extends StatelessWidget {
 }
 
 class _SocialMedia extends StatelessWidget {
-  const _SocialMedia({Key? key, required this.spacing}) : super(key: key);
+  const _SocialMedia({required this.spacing});
 
   final double spacing; //30/40
 
@@ -102,7 +101,7 @@ class _SocialMedia extends StatelessWidget {
 }
 
 class _ContactUs extends StatelessWidget {
-  const _ContactUs({Key? key}) : super(key: key);
+  const _ContactUs();
 
   @override
   Widget build(BuildContext context) {
@@ -153,10 +152,9 @@ class _ContactUs extends StatelessWidget {
 
 class _SoonAvailable extends StatelessWidget {
   const _SoonAvailable({
-    Key? key,
     required this.androidLogoHeight,
     required this.iosLogoHeight,
-  }) : super(key: key);
+  });
 
   final double androidLogoHeight; // 52/ 67
   final double iosLogoHeight; // 50/40
@@ -190,7 +188,7 @@ class _SoonAvailable extends StatelessWidget {
 }
 
 class _RightsNote extends StatelessWidget {
-  const _RightsNote({Key? key}) : super(key: key);
+  const _RightsNote();
 
   @override
   Widget build(BuildContext context) {

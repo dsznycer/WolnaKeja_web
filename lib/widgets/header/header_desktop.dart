@@ -1,12 +1,7 @@
 part of 'header.dart';
 
 class HeaderDesktop extends StatelessWidget {
-  const HeaderDesktop({
-    Key? key,
-    required this.navigationItemsKeys,
-  }) : super(key: key);
-
-  final List<GlobalKey> navigationItemsKeys;
+  const HeaderDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -83,9 +78,8 @@ class HeaderDesktop extends StatelessWidget {
         Positioned(
           top: 0,
           right: width * 0.04,
-          child: AppNavigationBar(
-            navigationItemsKeys: navigationItemsKeys,
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+          child: const AppNavigationBar(
+            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             logoSize: 170,
             spacing: 40,
           ),

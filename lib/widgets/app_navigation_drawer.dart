@@ -7,9 +7,7 @@ const splashPath =
     'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a';
 
 class AppNavigationDrawer extends StatelessWidget {
-  const AppNavigationDrawer({
-    super.key,
-  });
+  const AppNavigationDrawer({super.key});
 
   Future<void> scrollToItem(GlobalKey key) async {
     await Scrollable.ensureVisible(
@@ -62,7 +60,6 @@ class AppNavigationDrawer extends StatelessWidget {
 
 class _NavigationDrawerItem extends StatelessWidget {
   const _NavigationDrawerItem({
-    super.key,
     required this.tekst,
     required this.onTap,
   });

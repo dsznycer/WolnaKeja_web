@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Logo extends StatelessWidget {
-  const Logo({Key? key, required this.width}) : super(key: key);
+  const Logo({super.key, required this.width});
 
   final double width;
 

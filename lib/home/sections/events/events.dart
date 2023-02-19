@@ -8,7 +8,7 @@ part 'events_desktop.dart';
 part 'events_mobile.dart';
 
 class Events extends StatelessWidget {
-  const Events({Key? key}) : super(key: key);
+  const Events({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class Events extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
@@ -43,9 +43,8 @@ class _Dividerek extends StatelessWidget {
 
 class _TextColumn extends StatelessWidget {
   const _TextColumn({
-    Key? key,
     required this.padding,
-  }) : super(key: key);
+  });
 
   final double padding;
 
@@ -76,9 +75,8 @@ class _TextColumn extends StatelessWidget {
 
 class _Photo extends StatelessWidget {
   const _Photo({
-    Key? key,
     required this.padding,
-  }) : super(key: key);
+  });
 
   final double padding;
 
@@ -99,9 +97,8 @@ class _Photo extends StatelessWidget {
 
 class _EventsBase extends StatelessWidget {
   const _EventsBase({
-    Key? key,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget child;
 

@@ -1,7 +1,7 @@
 part of 'product_value.dart';
 
 class ProductValueMobile extends StatelessWidget {
-  const ProductValueMobile({Key? key}) : super(key: key);
+  const ProductValueMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

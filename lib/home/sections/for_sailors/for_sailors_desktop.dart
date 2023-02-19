@@ -1,7 +1,7 @@
 part of 'for_sailors.dart';
 
 class ForSailorsDesktop extends StatelessWidget {
-  const ForSailorsDesktop({Key? key}) : super(key: key);
+  const ForSailorsDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +33,10 @@ class ForSailorsDesktop extends StatelessWidget {
 
 class _CardTile extends StatelessWidget {
   const _CardTile({
-    Key? key,
     required this.imagePath,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   final String imagePath;
   final String title;

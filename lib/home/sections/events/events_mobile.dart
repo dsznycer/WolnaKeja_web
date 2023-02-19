@@ -1,7 +1,7 @@
 part of 'events.dart';
 
 class _EventsMobile extends StatelessWidget {
-  const _EventsMobile({Key? key}) : super(key: key);
+  const _EventsMobile();
 
   @override
   Widget build(BuildContext context) {

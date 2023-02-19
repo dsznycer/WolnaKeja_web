@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class Dividerek extends StatelessWidget {
   const Dividerek({
-    Key? key,
+    super.key,
     required this.height,
     required this.width,
     required this.color,
-  }) : super(key: key);
+  });
 
   final double width;
   final double height;

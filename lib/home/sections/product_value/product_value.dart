@@ -7,7 +7,7 @@ part 'product_value_desktop.dart';
 part 'product_value_mobile.dart';
 
 class ProductValue extends StatelessWidget {
-  const ProductValue({Key? key}) : super(key: key);
+  const ProductValue({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +20,9 @@ class ProductValue extends StatelessWidget {
 
 class _Photo extends StatelessWidget {
   const _Photo({
-    Key? key,
     this.boxConstraints,
     required this.widthScaler,
-  }) : super(key: key);
+  });
 
   final BoxConstraints? boxConstraints;
   final double widthScaler;
@@ -49,7 +48,7 @@ class _Photo extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +70,7 @@ class _Dividerek extends StatelessWidget {
 }
 
 class _Text extends StatelessWidget {
-  const _Text({Key? key}) : super(key: key);
+  const _Text();
 
   @override
   Widget build(BuildContext context) {

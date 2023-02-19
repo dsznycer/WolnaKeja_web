@@ -15,16 +15,6 @@ final navigationItemsKeys = [
   for (var i = 0; i < 4; i++) GlobalKey(),
 ];
 
-ScreenType _getScreenType(SizingInformation sizingInformation) {
-  if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
-    return ScreenType.desktop;
-  }
-  if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
-    return ScreenType.tablet;
-  }
-  return ScreenType.mobile;
-}
-
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
 
@@ -32,37 +22,35 @@ class Homeview extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
-        final screenType = _getScreenType(sizingInformation);
+        final screenType = sizingInformation.deviceScreenType;
 
         return Scaffold(
           backgroundColor: Colors.white,
           appBar: screenType.appBar,
           drawer: screenType.drawer,
-          body: ListView(
-            children: [
-              const Header(),
-              const SizedBox(height: 40),
-              ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 1400),
-                child: Column(
-                  children: [
-                    AboutApp(key: navigationItemsKeys[0]),
-                    const SizedBox(height: 40),
-                    ForSailors(key: navigationItemsKeys[1]),
-                    const SizedBox(height: 70),
-                    const Events(),
-                    const SizedBox(height: 70),
-                    const ProductValue(),
-                    const SizedBox(height: 100),
-                    ForPorts(key: navigationItemsKeys[2]),
-                    const SizedBox(height: 80),
-                    const ForPortSubsection(),
-                    const SizedBox(height: 80),
-                  ],
-                ),
+          body: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1400),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  const Header(),
+                  const SizedBox(height: 40),
+                  AboutApp(key: navigationItemsKeys[0]),
+                  const SizedBox(height: 40),
+                  ForSailors(key: navigationItemsKeys[1]),
+                  const SizedBox(height: 70),
+                  const Events(),
+                  const SizedBox(height: 70),
+                  const ProductValue(),
+                  const SizedBox(height: 100),
+                  ForPorts(key: navigationItemsKeys[2]),
+                  const SizedBox(height: 80),
+                  const ForPortSubsection(),
+                  const SizedBox(height: 80),
+                  Footer(key: navigationItemsKeys[3]),
+                ],
               ),
-              Footer(key: navigationItemsKeys[3]),
-            ],
+            ),
           ),
         );
       },
@@ -70,18 +58,14 @@ class Homeview extends StatelessWidget {
   }
 }
 
-enum ScreenType {
-  mobile,
-  tablet,
-  desktop;
-
+extension ScreenType on DeviceScreenType {
   PreferredSizeWidget? get appBar => _appBar();
   PreferredSizeWidget? _appBar() {
     switch (this) {
-      case ScreenType.mobile:
-      case ScreenType.tablet:
+      case DeviceScreenType.mobile:
+      case DeviceScreenType.tablet:
         return const _AppBarMobile();
-      case ScreenType.desktop:
+      default:
         return null;
     }
   }
@@ -89,10 +73,10 @@ enum ScreenType {
   Widget? get drawer => _drawer();
   Widget? _drawer() {
     switch (this) {
-      case ScreenType.mobile:
-      case ScreenType.tablet:
+      case DeviceScreenType.mobile:
+      case DeviceScreenType.tablet:
         return const AppNavigationDrawer();
-      case ScreenType.desktop:
+      default:
         return null;
     }
   }

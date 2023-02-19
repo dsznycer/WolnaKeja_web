@@ -8,7 +8,7 @@ part 'for_sailors_mobile.dart';
 part 'for_sailors_desktop.dart';
 
 class ForSailors extends StatelessWidget {
-  const ForSailors({Key? key}) : super(key: key);
+  const ForSailors({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ const _tilesData = [
 ];
 
 class _ForSailorsTitle extends StatelessWidget {
-  const _ForSailorsTitle({Key? key}) : super(key: key);
+  const _ForSailorsTitle();
 
   @override
   Widget build(BuildContext context) {

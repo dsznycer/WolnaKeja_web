@@ -1,7 +1,7 @@
 part of 'product_value.dart';
 
 class ProductValueDesktop extends StatelessWidget {
-  const ProductValueDesktop({Key? key}) : super(key: key);
+  const ProductValueDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 part of 'for_ports.dart';
 
 class _ForPortsDesktop extends StatelessWidget {
-  const _ForPortsDesktop({Key? key}) : super(key: key);
+  const _ForPortsDesktop();
 
   @override
   Widget build(BuildContext context) {

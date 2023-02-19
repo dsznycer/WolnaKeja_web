@@ -4,7 +4,7 @@ import 'package:wolnakeja/styles/app_colors.dart';
 import 'package:wolnakeja/styles/app_text_styles.dart';
 
 class ForPortSubsection extends StatelessWidget {
-  const ForPortSubsection({Key? key}) : super(key: key);
+  const ForPortSubsection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class ForPortSubsection extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
@@ -57,9 +57,8 @@ class _Dividerek extends StatelessWidget {
 
 class _Text extends StatelessWidget {
   const _Text({
-    Key? key,
     required this.desktop,
-  }) : super(key: key);
+  });
 
   final bool desktop;
 
@@ -89,9 +88,8 @@ class _Text extends StatelessWidget {
 
 class _Photo extends StatelessWidget {
   const _Photo({
-    Key? key,
     required this.desktop,
-  }) : super(key: key);
+  });
 
   final bool desktop;
 

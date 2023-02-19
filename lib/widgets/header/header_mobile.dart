@@ -1,7 +1,7 @@
 part of 'header.dart';
 
 class HeaderMobile extends StatelessWidget {
-  const HeaderMobile({Key? key}) : super(key: key);
+  const HeaderMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

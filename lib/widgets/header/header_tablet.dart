@@ -1,18 +1,11 @@
 part of 'header.dart';
 
 class HeaderTablet extends StatelessWidget {
-  const HeaderTablet({
-    Key? key,
-    required this.navigationItemsKeys,
-  }) : super(key: key);
-
-  final List<GlobalKey> navigationItemsKeys;
+  const HeaderTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final sizeofmockup = width * 0.20;
-    final widthSize = width * 0.04;
+    final sizeofmockup = MediaQuery.of(context).size.width * 0.2;
 
     return Stack(
       alignment: Alignment.center,

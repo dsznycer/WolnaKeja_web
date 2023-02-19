@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +19,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Nunito'),
       ),
-      home: Homeview(),
+      home: const Homeview(),
     );
   }
 }
 
 class MyCustomScrollBehavior extends MaterialScrollBehavior {
-  // Override behavior methods and getters like dragDevices
   @override
   Set<PointerDeviceKind> get dragDevices => {
         PointerDeviceKind.touch,

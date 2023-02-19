@@ -1,7 +1,7 @@
 part of 'for_sailors.dart';
 
 class ForSailorsMobile extends StatelessWidget {
-  const ForSailorsMobile({Key? key}) : super(key: key);
+  const ForSailorsMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +29,10 @@ class ForSailorsMobile extends StatelessWidget {
 
 class _TileMobileRow extends StatelessWidget {
   const _TileMobileRow({
-    Key? key,
     required this.picture,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   final String picture;
   final String title;

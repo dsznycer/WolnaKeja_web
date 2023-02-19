@@ -1,7 +1,7 @@
 part of 'footer.dart';
 
 class FooterDesktop extends StatelessWidget {
-  const FooterDesktop({Key? key}) : super(key: key);
+  const FooterDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

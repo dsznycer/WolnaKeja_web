@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/NavigationDrawer/ButtonDrawer.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 
-class NavigationDrawer extends StatelessWidget {
+class NavigDrawer extends StatelessWidget {
   final Function functOnGest;
   final GlobalKey key1;
   final GlobalKey key2;
   final GlobalKey key3;
   final GlobalKey key4;
 
-  const NavigationDrawer(
+  const NavigDrawer(
       {Key? key,
       required this.functOnGest,
       required this.key1,
@@ -32,9 +33,11 @@ class NavigationDrawer extends StatelessWidget {
             children: [
               Container(
                 padding: EdgeInsets.only(right: 10),
-                child: Image(
-                  image: NetworkImage(
-                      'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a'),
+                height: 220,
+                child: FadeInImage.memoryNetwork(
+                  placeholder: kTransparentImage,
+                  image:
+                      'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2FdrawerWave.webp?alt=media&token=5bf01435-ffd1-4466-a417-df1d3aab569a',
                   fit: BoxFit.cover,
                 ),
               ),

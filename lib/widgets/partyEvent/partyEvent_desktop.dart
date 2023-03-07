@@ -10,7 +10,7 @@ class partyEvent_desktop extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: ColSix,
+        color: colSix,
       ),
       child: Row(
         children: [
@@ -19,8 +19,8 @@ class partyEvent_desktop extends StatelessWidget {
               margin: EdgeInsets.all(40),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
+                children: const [
+                  const Text(
                     'Przejrzyj koncerty i wydarzenia, które dzieją się w portach',
                     style: H3,
                   ),
@@ -66,7 +66,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: ColThird,
+            color: colThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_tablet.dart';
 
@@ -26,8 +27,8 @@ class MainSliderTablet extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: [
-        Image.asset(
-          'assets/images/mainSlider/background2.png',
+        Image.network(
+          'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2Fbackground-kopia-slider.webp?alt=media&token=438a5b73-fac9-4762-9b9b-d84fed4542aa',
           width: size.width,
           fit: BoxFit.fitWidth,
         ),
@@ -75,9 +76,12 @@ class MainSliderTablet extends StatelessWidget {
               ],
             ),
             SizedBox(width: 20),
-            Image.asset(
-              'assets/images/mainSlider/mockup-app.png',
+            FadeInImage.memoryNetwork(
+              placeholder: kTransparentImage,
+              image:
+                  'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2Fmockup%2Fmockup-app.png?alt=media&token=51348c15-5d39-40c6-a0ca-e87e1d3df1dc',
               width: sizeofmockup(),
+              height: 500,
             ),
           ],
         ), //Mockup
@@ -106,7 +110,7 @@ class _Dividerek extends StatelessWidget {
       width: 70,
       height: 4,
       decoration: BoxDecoration(
-        color: ColFirst.withOpacity(0.6),
+        color: colFirst.withOpacity(0.6),
         borderRadius: BorderRadius.circular(12),
       ),
     );

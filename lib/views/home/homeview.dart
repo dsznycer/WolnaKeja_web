@@ -41,13 +41,13 @@ class Homeview extends StatelessWidget {
                 ),
                 centerTitle: true,
                 iconTheme: IconThemeData(
-                  color: ColFirst,
+                  color: colFirst,
                   size: 35,
                 ),
               )
             : null,
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? NavigationDrawer(
+            ? NavigDrawer(
                 functOnGest: scrollToItem,
                 key1: itemKeyA,
                 key2: itemKeyB,
@@ -67,7 +67,7 @@ class Homeview extends StatelessWidget {
                 keyB3: itemKeyD,
                 keyB4: itemKeyE,
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               CenteredView(
                 child: Column(
                   children: [

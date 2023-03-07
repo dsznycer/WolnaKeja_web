@@ -3,17 +3,17 @@ import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'package:wolnakeja/widgets/urlService.dart';
 
-class footerMobile extends StatelessWidget {
-  footerMobile({Key? key}) : super(key: key);
+class FooterMobile extends StatelessWidget {
+  FooterMobile({Key? key}) : super(key: key);
 
-  final urlService urlservice = urlService();
+  final UrlService urlservice = UrlService();
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: ColThird.withOpacity(0.3),
-        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
+        color: colThird.withOpacity(0.3),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(18)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -22,7 +22,7 @@ class footerMobile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              constraints: BoxConstraints(maxWidth: 1600),
+              constraints: const BoxConstraints(maxWidth: 1600),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -112,7 +112,7 @@ class footerMobile extends StatelessWidget {
                                       width: 40,
                                     ),
                                     SizedBox(width: 20),
-                                    Text('kontakt@wolnakeja.pl'),
+                                    Text('kontakt@wolna-keja.pl'),
                                   ],
                                 ),
                               ),
@@ -147,7 +147,7 @@ class footerMobile extends StatelessWidget {
               ),
             ),
             Divider(
-              color: ColFirst,
+              color: colFirst,
             ),
             Align(
               alignment: Alignment.bottomLeft,

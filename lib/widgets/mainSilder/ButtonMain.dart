@@ -13,9 +13,9 @@ class buttonMain extends StatelessWidget {
       height: 60,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: ColFive,
+          color: colFive,
           border: Border.all(
-            color: ColFive,
+            color: colFive,
             width: 0.8,
           ),
           boxShadow: [shadow1]),

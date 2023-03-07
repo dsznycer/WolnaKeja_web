@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 
 class MainSliderMobile extends StatelessWidget {
@@ -19,7 +20,7 @@ class MainSliderMobile extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.fitWidth,
             ),
-            SizedBox(height: 200),
+            SizedBox(height: 250),
           ],
         ),
         Positioned(
@@ -43,8 +44,16 @@ class MainSliderMobile extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 50),
-              Image.asset('assets/images/mainSlider/mockupMobile.png',
-                  width: size.width * 0.75, fit: BoxFit.contain),
+              Container(
+                height: size.height * 0.7,
+                width: size.width * 0.75,
+                child: FadeInImage.memoryNetwork(
+                    placeholder: kTransparentImage,
+                    image:
+                        'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2Fmockup%2FmockupMobile.png?alt=media&token=284e6959-85fc-4b5b-885e-588ff4e7248c',
+                    width: size.width * 0.75,
+                    fit: BoxFit.contain),
+              ),
             ],
           ),
         ),

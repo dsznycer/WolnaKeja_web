@@ -57,7 +57,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: ColThird,
+            color: colThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),

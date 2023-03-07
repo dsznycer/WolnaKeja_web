@@ -15,7 +15,7 @@ class textTile extends StatelessWidget {
           shadow1,
         ],
         borderRadius: BorderRadius.circular(12),
-        color: ColSix,
+        color: colSix,
       ),
       child: Text(
         tekst,

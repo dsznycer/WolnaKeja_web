@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 
 //***Colors***//
 
-const Color ColFirst = Color(0xFF003459);
-const Color ColSecond = Color(0xFFA9C9F8);
-const Color ColThird = Color(0xFF849CB7);
-const Color ColFour = Color(0xFFDDA01E);
-const Color ColFive = Color(0xFFF1F1E6);
-const Color ColSix = Color(0xFFFAFAFF);
+const Color colFirst = Color(0xFF003459);
+const Color colSecond = Color(0xFFA9C9F8);
+const Color colThird = Color(0xFF849CB7);
+const Color colFour = Color(0xFFDDA01E);
+const Color colFive = Color(0xFFF1F1E6);
+const Color colSix = Color(0xFFFAFAFF);
 
-const Color Bgrd = Color(0xFFE5E5E5);
+const Color bgrd = Color(0xFFE5E5E5);
 
 //****TextStyle/Desktop****//
 
 const H2drk = TextStyle(
   fontSize: 32,
   fontWeight: FontWeight.w800,
-  color: ColFirst,
+  color: colFirst,
 );
 const TextStyle H3wht = TextStyle(
   fontSize: 20,

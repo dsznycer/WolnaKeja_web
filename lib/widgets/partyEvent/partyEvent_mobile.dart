@@ -9,7 +9,7 @@ class PartyEvent_mobile extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: ColSix,
+        color: colSix,
       ),
       child: Column(
         children: [
@@ -59,7 +59,7 @@ class _Dividerek extends StatelessWidget {
           width: 50,
           height: 3,
           decoration: BoxDecoration(
-            color: ColThird,
+            color: colThird,
             borderRadius: BorderRadius.circular(20),
           ),
         ),

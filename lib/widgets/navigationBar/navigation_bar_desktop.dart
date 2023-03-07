@@ -30,7 +30,7 @@ class NavigationBarDesktop extends StatelessWidget {
           Container(
             height: 55,
             decoration: BoxDecoration(
-              color: ColFive,
+              color: colFive,
               borderRadius: BorderRadius.circular(12),
               boxShadow: [shadow1],
             ),

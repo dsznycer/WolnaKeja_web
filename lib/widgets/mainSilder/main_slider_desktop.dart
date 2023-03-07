@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_desktop.dart';
 
@@ -80,9 +81,15 @@ class MainSliderDesktop extends StatelessWidget {
               ],
             ),
             SizedBox(width: 20),
-            Image.asset(
-              'assets/images/mainSlider/mockup-app.png',
+            Container(
               width: sizeofmockup(),
+              height: size.height * 0.7,
+              child: FadeInImage.memoryNetwork(
+                placeholder: kTransparentImage,
+                width: sizeofmockup(),
+                image:
+                    'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2Fmockup%2Fmockup-app.png?alt=media&token=51348c15-5d39-40c6-a0ca-e87e1d3df1dc',
+              ),
             ),
           ],
         ), //Mockup
@@ -111,7 +118,7 @@ class _Dividerek extends StatelessWidget {
       width: 70,
       height: 4,
       decoration: BoxDecoration(
-        color: ColFirst.withOpacity(0.6),
+        color: colFirst.withOpacity(0.6),
         borderRadius: BorderRadius.circular(12),
       ),
     );

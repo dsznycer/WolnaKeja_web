@@ -16,7 +16,7 @@ class navButton extends StatelessWidget {
           style: TextStyle(
             fontSize: fontSize.toDouble(),
             fontWeight: FontWeight.bold,
-            color: ColFirst,
+            color: colFirst,
           ),
         ),
         Icon(Icons.keyboard_arrow_down_sharp),

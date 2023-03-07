@@ -3,16 +3,16 @@ import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'package:wolnakeja/widgets/urlService.dart';
 
-class footerDesktop extends StatelessWidget {
-  footerDesktop({Key? key}) : super(key: key);
+class FooterDesktop extends StatelessWidget {
+  FooterDesktop({Key? key}) : super(key: key);
 
-  urlService urlservice = urlService();
+  UrlService urlservice = UrlService();
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: ColThird.withOpacity(0.3),
+        color: colThird.withOpacity(0.3),
         borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
       ),
       child: Padding(
@@ -22,12 +22,12 @@ class footerDesktop extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              constraints: BoxConstraints(maxWidth: 1600),
+              constraints: const BoxConstraints(maxWidth: 1600),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Align(
+                  const Align(
                     alignment: Alignment.bottomLeft,
                     child: logoWidget(160),
                   ), //Logo
@@ -100,8 +100,8 @@ class footerDesktop extends StatelessWidget {
                                   'assets/images/footer/mail_icon.png',
                                   width: 40,
                                 ),
-                                SizedBox(width: 20),
-                                Text('kontakt@wolnakeja.pl'),
+                                const SizedBox(width: 20),
+                                const Text('kontakt@wolna-keja.pl'),
                               ],
                             ),
                           ),
@@ -133,7 +133,7 @@ class footerDesktop extends StatelessWidget {
               ),
             ),
             Divider(
-              color: ColFirst,
+              color: colFirst,
             ),
             Align(
               alignment: Alignment.bottomLeft,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
-import 'package:wolnakeja/widgets/urlService.dart';
+import 'package:wolnakeja/services/urlService.dart';
 
 class FooterDesktop extends StatelessWidget {
   FooterDesktop({Key? key}) : super(key: key);

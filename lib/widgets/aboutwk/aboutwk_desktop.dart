@@ -9,7 +9,7 @@ class aboutwk_desktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
+        const Text(
           'O aplikacji',
           style: H2,
         ),
@@ -17,7 +17,7 @@ class aboutwk_desktop extends StatelessWidget {
           children: [
             Flexible(
               child: Container(
-                margin: EdgeInsets.all(40),
+                margin: const EdgeInsets.all(40),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(14),
                   child: Image.asset(
@@ -29,10 +29,10 @@ class aboutwk_desktop extends StatelessWidget {
             ),
             Flexible(
               child: Container(
-                margin: EdgeInsets.all(40),
+                margin: const EdgeInsets.all(40),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     TextRenderer(
                       text: Text(
                         'Wygodnie zarezerwuj i opłać miejsce przy kei.',

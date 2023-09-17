@@ -1,8 +1,13 @@
 enum TermsType {
-  appRegulations('test'),
-  privacyPolicy('text');
+  appRegulations(
+      title: 'Regulamin aplikacji',
+      path: 'assets/documents/privacy_policy.txt'),
+  privacyPolicy(
+      title: 'Polityka prywatności',
+      path: 'assets/documents/privacy_policy.txt');
 
-  const TermsType(this.path);
+  const TermsType({required this.path, required this.title});
 
   final String path;
+  final String title;
 }

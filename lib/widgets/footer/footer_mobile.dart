@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'package:wolnakeja/services/urlService.dart';
+import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterMobile extends StatelessWidget {
   FooterMobile({Key? key}) : super(key: key);
@@ -40,22 +41,21 @@ class FooterMobile extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 'Śledź nas w mediach społecznościowych!',
                                 style: H3,
                               ),
-                              SizedBox(height: 30),
+                              const SizedBox(height: 30),
                               GestureDetector(
-                                onTap: () {
-                                  urlservice.urlLauncher(urlservice.urlInsta);
-                                },
+                                onTap: () =>
+                                    urlservice.urlLauncher(urlservice.urlInsta),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Image.asset(
                                         'assets/images/footer/fb_logo.png',
                                         height: 30),
-                                    SizedBox(width: 10),
+                                    const SizedBox(width: 10),
                                     Image.asset(
                                         'assets/images/footer/insta_logo.png',
                                         height: 30),
@@ -66,6 +66,7 @@ class FooterMobile extends StatelessWidget {
                           ),
                         ),
                       ),
+                      const TermsAndConditions(),
                     ],
                   ),
                   const SizedBox(height: 10), //Logo

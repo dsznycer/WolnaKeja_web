@@ -1,0 +1,44 @@
+Przetwarzanie i analiza danych
+
+Usługi FishPRO służą do rejestrowania i analizowania danych wprowadzanych przez Użytkownika.
+Podczas interakcji z naszymi Usługami, Użytkownik może zdecydować się na przekazanie informacji, w tym danych osobowych, takich jak: imię i nazwisko, nazwa użytkownika, hasło, adres e-mail, numer telefonu, dane dotyczące lokalizacji, zdjęcie profilowe, kraj, wszelkie inne informacje dotyczące konta lub profilu/ustawień, wszelkie inne treści generowane przez użytkownika, które mogą być identyfikowalne, takie jak zdjęcia i filmy, wszelkie informacje wysyłane za pośrednictwem lub umieszczane w naszych usługach, takie jak posty i wiadomości bezpośrednie.
+
+Aplikacja FishPRO agreguje, przetwarza i analizuje wprowadzone dane w celu zbudowania personalnych statystyk wędkarza oraz statystyk społeczności. 
+Dane połowów, lokalizacji, a także poszczególne dane Użytkownika mogą być upublicznione za jego zgodą w funkcjonalności aplikacji FishPRO. 
+
+Aplikacja Fishpro gromadzi następujące dane:
+
+Informacje o sprzęcie i urządzeniach używanych przez Użytkownika aplikacji 
+
+Kontakty Użytkownika
+Za zgodą Użytkownika możemy zbierać informacje z książki telefonicznej danego urządzenia.
+
+Aparat i zdjęcia.
+Niektóre z Usług FishPRO wymagają dostępu do obrazów i innych informacji z aparatu i zdjęć urządzenia. Na przykład, aby przesłać zdjęcia z rolki aparatu, aplikacja musi uzyskać dostęp do aparatu i/lub zdjęć.
+
+Informacje o lokalizacji
+Gdy użytkownik korzysta z naszych Usług, aplikacja FishPRO może zbierać informacje o jego lokalizacji. Za zgodą użytkownika może również zbierać informacje o jego dokładnej lokalizacji, korzystając z metod obejmujących GPS, sieci bezprzewodowe, wieże komórkowe, punkty dostępu Wi-Fi oraz inne czujniki, takie jak żyroskopy, akcelerometry i kompasy.
+
+Informacje zbierane przez pliki cookie i inne technologie
+Podobnie jak większość usług online i aplikacji mobilnych, aplikacja FishPRO gromadzi oraz przetwarza pliki cookie i inne technologie, takie jak sygnały nawigacyjne, zestawy do tworzenia oprogramowania oraz pamięć internetową i inne identyfikatory do gromadzenia informacji o aktywności użytkownika, jego przeglądarce i urządzeniu. 
+
+Informacje o sesji
+Aplikacja FishPRO może mierzyć i gromadzić informacje dotyczące sesji w witrynie internetowej i aplikacjach, w tym, w stosownych przypadkach, czasy reakcji strony, błędy pobierania, długość wizyt na określonych stronach, informacje o interakcji ze stroną (takie jak przewijanie, kliknięcia i przesunięcia myszy), metody używane do odchodzenia od strony oraz długość i częstotliwość korzystania z aplikacji.
+
+
+Wykorzystanie informacji
+Dane zebrane i/lub przechowywane przez nas są wykorzystywane do:
+Rozwijania, obsługi, ulepszania, dostarczania, utrzymywania, ulepszania i ochrony naszych Usług.Wysyłania powiadomień w aplikacjiBudowania statystyk wędkarskich
+Wysyłania wiadomości, w tym za pośrednictwem poczty elektronicznej
+Monitorowania i analizowania trendów w wędkarstwie
+Personalizacji usług poprzez, między innymi, sugerowanie użytkownikom kont do interakcji lub dostosowywanie treści, które zostaną wyświetlone użytkownikowi (w tym wykorzystywanie dokładnych informacji o lokalizacji, jeśli użytkownik udzielił zgody na zbieranie takich informacji).
+Zwiększenie bezpieczeństwa i ochrony Usług w aplikacji FishPRO
+Weryfikacji tożsamości użytkownika i zapobieganie oszustwom lub innym nieuprawnionym lub nielegalnym działaniom. 
+
+Reklamy
+Na podstawie interakcji z innymi Użytkownikami, a także wprowadzanych danych, FishPRO może rekomendować Użytkownikowi produkty w formie linków afiliacyjnych do sklepów partnerskich.
+
+Dane osobowe i backup
+Aplikacja przechowuje dane profilu/konta, takie jak nazwa użytkownika, hasło, adres e-mail, numer telefonu, 
+lokalizacja oraz treści stworzone przez Użytkownika, takie jak posty, zdjęcia i filmy (oraz powiązane informacje o lokalizacji), tak długo, jak jest to konieczne do świadczenia naszych usług w aplikacji FishPRO. 
+Jeśli Użytkownik zdecyduje się przestać korzystać z Usług FishPRO, może zarządać usunięcia swojego konta wraz z danymi wrażliwymi.

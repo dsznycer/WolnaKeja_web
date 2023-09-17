@@ -68,23 +68,23 @@ class FooterMobile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10), //Logo
+                  const SizedBox(height: 10), //Logo
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Flexible(
                         child: Container(
-                          constraints: BoxConstraints(maxWidth: 300),
+                          constraints: const BoxConstraints(maxWidth: 300),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Text(
+                              const Text(
                                 'Masz pytania? Pomysły? Odezwij się do nas.',
                                 style: H3M,
                                 textAlign: TextAlign.justify,
                               ),
-                              SizedBox(height: 25),
+                              const SizedBox(height: 25),
                               GestureDetector(
                                 onTap: () {
                                   urlservice.urlLauncher(urlservice.phone);
@@ -111,8 +111,8 @@ class FooterMobile extends StatelessWidget {
                                       'assets/images/footer/mail_icon.png',
                                       width: 40,
                                     ),
-                                    SizedBox(width: 20),
-                                    Text('kontakt@wolna-keja.pl'),
+                                    const SizedBox(width: 20),
+                                    const Text('kontakt@wolna-keja.pl'),
                                   ],
                                 ),
                               ),
@@ -120,14 +120,14 @@ class FooterMobile extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Flexible(
                         child: Container(
-                          padding: EdgeInsets.only(right: 10),
-                          constraints: BoxConstraints(maxWidth: 270),
+                          padding: const EdgeInsets.only(right: 10),
+                          constraints: const BoxConstraints(maxWidth: 270),
                           child: Column(
                             children: [
-                              Text(
+                              const Text(
                                 'Aplikacja dostępna wkrótce na urządzenia z systemem Android i iOS',
                                 style: descriptionM,
                                 textAlign: TextAlign.justify,
@@ -146,10 +146,10 @@ class FooterMobile extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               color: colFirst,
             ),
-            Align(
+            const Align(
               alignment: Alignment.bottomLeft,
               child: Row(children: [
                 SizedBox(width: 10),

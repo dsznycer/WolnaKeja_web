@@ -23,30 +23,32 @@ class TermsAndConditionsDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     final futureTerms = readFileAsString(termsType.path);
     return AlertDialog(
-      actions: [
-        SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(10),
-                //TODO: delete future builder and use bloc
-                child: FutureBuilder<String>(
-                    future: futureTerms,
-                    builder: (context, snapshot) {
-                      if (snapshot.hasData) {
-                        return SelectableText(
-                          snapshot.data!,
-                          textAlign: TextAlign.justify,
-                          style: const TextStyle(fontSize: 10),
-                        );
-                      }
-                      return const CircularProgressIndicator();
-                    }),
-              ),
-            ],
-          ),
+      title: Text(termsType.title),
+      content: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: FutureBuilder<String>(
+                  future: futureTerms,
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      return SelectableText(
+                        snapshot.data!,
+                        textAlign: TextAlign.justify,
+                        style: const TextStyle(fontSize: 12),
+                      );
+                    }
+                    return const CircularProgressIndicator();
+                  }),
+            ),
+            TextButton.icon(
+                onPressed: () => Navigator.of(context).pop(),
+                icon: const Icon(Icons.arrow_back),
+                label: const Text('Wróć'))
+          ],
         ),
-      ],
+      ),
     );
   }
 }

@@ -13,16 +13,26 @@ class TermsAndConditions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        InkWell(
-          onTap: () => _showDialog(TermsType.privacyPolicy, context),
-          child: Text(TermsType.privacyPolicy.title),
-        ),
-        InkWell(
+    return Padding(
+      padding: const EdgeInsets.only(left: 12),
+      child: Row(
+        children: [
+          InkWell(
+              onTap: () => _showDialog(TermsType.appRegulations, context),
+              child: Text(
+                TermsType.appRegulations.title,
+                style: const TextStyle(fontWeight: FontWeight.w500),
+              )),
+          const SizedBox(width: 25),
+          InkWell(
             onTap: () => _showDialog(TermsType.privacyPolicy, context),
-            child: Text(TermsType.appRegulations.title)),
-      ],
+            child: Text(
+              TermsType.privacyPolicy.title,
+              style: const TextStyle(fontWeight: FontWeight.w500),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

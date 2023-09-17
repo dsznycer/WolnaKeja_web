@@ -59,7 +59,6 @@ class FooterDesktop extends StatelessWidget {
                                   height: 30),
                             ],
                           ),
-                          const TermsAndConditions(),
                         ],
                       ),
                     ),
@@ -134,9 +133,8 @@ class FooterDesktop extends StatelessWidget {
                 ],
               ),
             ),
-            const Divider(
-              color: colFirst,
-            ),
+            const TermsAndConditions(),
+            const Divider(color: colFirst),
             const Align(
               alignment: Alignment.bottomLeft,
               child: Row(children: [

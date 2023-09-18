@@ -66,9 +66,9 @@ class FooterMobile extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const TermsAndConditions(),
                     ],
                   ),
+                  const TermsAndConditions(),
                   const SizedBox(height: 10), //Logo
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
 import 'package:wolnakeja/services/urlService.dart';
+import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterDesktop extends StatelessWidget {
   FooterDesktop({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class FooterDesktop extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: colThird.withOpacity(0.3),
-        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(18)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(30.0),
@@ -33,15 +34,15 @@ class FooterDesktop extends StatelessWidget {
                   ), //Logo
                   Flexible(
                     child: Container(
-                      constraints: BoxConstraints(maxWidth: 270),
+                      constraints: const BoxConstraints(maxWidth: 270),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             'Śledź nas w mediach społecznościowych!',
                             style: H3,
                           ),
-                          SizedBox(height: 40),
+                          const SizedBox(height: 40),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
@@ -53,7 +54,7 @@ class FooterDesktop extends StatelessWidget {
                                     'assets/images/footer/fb_logo.png',
                                     height: 30),
                               ),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 10),
                               Image.asset('assets/images/footer/insta_logo.png',
                                   height: 30),
                             ],
@@ -64,16 +65,16 @@ class FooterDesktop extends StatelessWidget {
                   ),
                   Flexible(
                     child: Container(
-                      constraints: BoxConstraints(maxWidth: 300),
+                      constraints: const BoxConstraints(maxWidth: 300),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Text(
+                          const Text(
                             'Masz pytania? Pomysły? Odezwij się do nas.',
                             style: H3,
                             textAlign: TextAlign.justify,
                           ),
-                          SizedBox(height: 25),
+                          const SizedBox(height: 25),
                           GestureDetector(
                             onTap: () {
                               urlservice.urlLauncher(urlservice.phone);
@@ -89,7 +90,7 @@ class FooterDesktop extends StatelessWidget {
                               ],
                             ),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           GestureDetector(
                             onTap: () {
                               urlservice.urlLauncher(urlservice.email);
@@ -111,11 +112,11 @@ class FooterDesktop extends StatelessWidget {
                   ),
                   Flexible(
                     child: Container(
-                      padding: EdgeInsets.only(right: 10),
-                      constraints: BoxConstraints(maxWidth: 270),
+                      padding: const EdgeInsets.only(right: 10),
+                      constraints: const BoxConstraints(maxWidth: 270),
                       child: Column(
                         children: [
-                          Text(
+                          const Text(
                             'Aplikacja dostępna wkrótce na urządzenia z systemem Android i iOS',
                             style: description,
                             textAlign: TextAlign.justify,
@@ -132,10 +133,9 @@ class FooterDesktop extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(
-              color: colFirst,
-            ),
-            Align(
+            const TermsAndConditions(),
+            const Divider(color: colFirst),
+            const Align(
               alignment: Alignment.bottomLeft,
               child: Row(children: [
                 SizedBox(width: 10),

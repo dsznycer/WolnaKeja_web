@@ -1,0 +1,126 @@
+ Polityka prywatności aplikacji mobilnej
+
+§1. Postanowienia ogólne
+
+1. Administratorem danych osobowych w rozumieniu art. 4 pkt 4 rozporządzenia Parlamentu Europejskiego i Rady (UE)
+2016/679 z dn. 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
+sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej RODO) jest Alteca Spółka z
+ograniczoną odpowiedzialnością z siedzibą w Katowicach pod adresem Al. Wojciecha Korfantego 125a, 40-156 Katowice,
+NIP: 9542807755, REGON: 384354306, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego pod
+numerem KRS: 0000803811, sąd rejestrowy: Sąd Rejonowy Katowice – Wschód w Katowicach, VIII Wydział
+Gospodarczy Krajowego Rejestru Sądowego, kapitał zakładowy: 5.000,00 zł.
+2. Adres poczty elektronicznej Administratora danych: kontakt@wolna-keja.pl.
+3. Administrator w myśl art. 32 ust. 1 RODO przestrzega zasady ochrony danych osobowych oraz stosuje odpowiednie
+środki techniczne i organizacyjne w celu zapobieżenia przypadkowego lub niezgodnego z prawem zniszczenia, utraty,
+modyfikacji, nieuprawnionego ujawnienia lub nieuprawnionego dostępu do danych osobowych przetwarzanych w związku
+z prowadzoną działalnością.
+4. Podanie danych osobowych przez użytkownika jest dobrowolne.
+5. Zakres danych przetwarzanych przez administratora danych w każdym przypadku pozostaje adekwatny w stosunku do
+celu, dla którego pobrano dane.
+6. Aplikacja mobilna za zgodą użytkownika może uzyskać dostęp do następujących uprawnień na urządzeniu mobilnym, m.
+in.:
+a) danych technicznych,
+b) danych o lokalizacji urządzenia,
+c) dostęp do kamery,
+d) wyświetlania powiadomień.
+
+§2. Cel i podstawy przetwarzania danych osobowych
+
+Administrator przetwarza dane osobowe w następujących celach:
+a) świadczenie usług drogą elektroniczną za pośrednictwem Aplikacji, na podstawie zawartej umowy (art. 6 ust. 1 lit. b
+RODO);
+b) obsługa procesu reklamacyjnego, na podstawie obowiązku ciążącym na administratorze danych w związku z
+obowiązującymi przepisami prawa (art. 6 ust. 1 lit. c RODO);
+c) kontakt z użytkownikami, w szczególności w odpowiedzi na zapytania kierowane do administratora danych, co jest
+prawnie uzasadnionym interesem administratora danych (art. 6 ust. 1 lit. f RODO);
+d) przesyłanie informacji technicznych dotyczących funkcjonowania Aplikacji i usług, z których korzysta użytkownik, co
+jest prawnie uzasadnionym interesem administratora danych (art. 6 ust. 1 lit. f RODO).
+
+§3. Odbiorcy danych. Przekazywanie danych do państw trzecich
+
+1. Odbiorcami danych osobowych przetwarzanych przez administratora danych mogą być podwykonawcy – podmioty, z
+których usług korzysta administrator danych przy przetwarzaniu danych np. dostawcy usług hostingowych, opiekunowie
+techniczni Aplikacji.
+2. Dane osobowe w związku z wykorzystywaniem przez administratora narzędzi do analizy i śledzenia ruchu mogą zostać
+przekazane do podmiotu mającego siedzibę poza Europejskim Obszarem Gospodarczym, np. do Google LLC. Jako
+właściwy środek ochrony danych, administrator danych zgodził się na standardowe klauzule umowne zgodnie z art. 46
+RODO z dostawcami tych usług. Więcej informacji na ten temat jest dostępnych tutaj: https://ec.europa.eu/info/law/lawtopic/
+data-protection/data-transfers-outside-eu_en.
+
+§4. Okres przechowywania danych osobowych
+
+Administrator danych przechowuje dane osobowe przez okres korzystania z Aplikacji przez użytkownika, tj. do czasu usunięcia
+Użytkownika z Aplikacji.
+
+§5. Uprawnienia osoby, której dane dotyczą
+
+1. Każda osoba, której dane dotyczą, ma prawo:
+a) dostępu – uzyskania od administratora potwierdzenia, czy przetwarzane są jej dane osobowe. Jeżeli dane o osobie są
+przetwarzane, jest ona uprawniona do uzyskania dostępu do nich oraz uzyskania następujących informacji: o celach
+przetwarzania, kategoriach danych osobowych, informacji o odbiorcach lub kategoriach odbiorców, którym dane zostały
+lub zostaną ujawnione, o okresie przechowywania danych lub o kryteriach ich ustalania, o prawie do żądania
+sprostowania, usunięcia lub ograniczenia przetwarzania danych osobowych przysługujących osobie, której dane
+dotyczą, oraz do wniesienia sprzeciwu wobec takiego przetwarzania (art. 15 RODO);
+b) do otrzymania kopii danych – uzyskania kopii danych podlegających przetwarzaniu, przy czym pierwsza kopia jest
+bezpłatna, a za kolejne kopie administrator może nałożyć opłatę w rozsądnej wysokości wynikającą z kosztów
+administracyjnych (art. 15 ust. 3 RODO);
+c) do sprostowania – żądania sprostowania dotyczących jej danych osobowych, które są nieprawidłowe lub uzupełnienia
+niekompletnych danych (art. 16 RODO);
+d) do usunięcia danych – żądania usunięcia jej danych osobowych, jeżeli administrator nie ma już podstawy prawnej do
+ich przetwarzania lub dane nie są już niezbędne do celów przetwarzania (art. 17 RODO);
+e) do ograniczenia przetwarzania – żądania ograniczenia przetwarzania danych osobowych (art. 18 RODO), gdy:
+- osoba, której dane dotyczą, kwestionuje prawidłowość danych osobowych – na okres pozwalający administratorowi
+sprawdzić prawidłowość tych danych,
+- przetwarzanie jest niezgodne z prawem, a osoba, której dane dotyczą, sprzeciwia się ich usunięciu, żądając
+ograniczenia ich wykorzystywania,
+- administrator nie potrzebuje już tych danych, ale są one potrzebne osobie, której dane dotyczą, do ustalenia,
+dochodzenia lub obrony roszczeń,
+- osoba, której dane dotyczą, wniosła sprzeciw wobec przetwarzania – do czasu stwierdzenia, czy prawnie uzasadnione
+podstawy po stronie administratora są nadrzędne wobec podstaw sprzeciwu osoby, której dane dotyczą;
+f) do przenoszenia danych – otrzymania w ustrukturyzowanym, powszechnie używanym formacie nadającym się do
+odczytu maszynowego danych osobowych jej dotyczących, które dostarczyła administratorowi, oraz żądania przesłania
+tych danych innemu administratorowi, jeżeli dane są przetwarzane na podstawie zgody osoby, której dane dotyczą lub
+umowy z nią zawartej oraz jeżeli dane są przetwarzane w sposób zautomatyzowany (art. 20 RODO);
+g) do sprzeciwu – wniesienia sprzeciwu wobec przetwarzania jej danych osobowych w prawnie uzasadnionych celach
+administratora, z przyczyn związanych z jej szczególną sytuacją, w tym wobec profilowania. Wówczas administrator
+dokonuje oceny istnienia ważnych prawnie uzasadnionych podstaw do przetwarzania, nadrzędnych wobec interesów,
+praw i wolności osób, których dane dotyczą, lub podstaw do ustalenia, dochodzenia lub obrony roszczeń. Jeżeli zgodnie
+z oceną interesy osoby, której dane dotyczą, będą ważniejsze od interesów administratora, administrator będzie
+zobowiązany zaprzestać przetwarzania danych w tych celach (art. 21 RODO).
+2. Aby skorzystać z wyżej wymienionych praw, osoba, której dane dotyczą, powinna skontaktować się, wykorzystując
+podane dane kontaktowe, z administratorem i poinformować go, z którego prawa i w jakim zakresie chce skorzystać.
+3. Osoba, której dane dotyczą, ma prawo wnieść skargę do organu nadzoru, którym jest Prezes Urzędu Ochrony Danych
+Osobowych w Warszawie.
+
+§6. Automatyczne przetwarzanie danych. Profilowanie
+
+1. Administrator może przetwarzać dane użytkownika w zakresie częstotliwości korzystania z Aplikacji przez użytkownika
+oraz wykorzystywanych przez niego funkcjonalnościach.
+2. Administrator przetwarza dane, o których mowa w ust. 1 w celu udoskonalania Aplikacji.
+3. Użytkownik, który nie zgadza się z przetwarzaniem jego danych w sposób określony w ust. 1 może złożyć sprzeciw wobec
+automatycznego przetwarzania danych co jednakże może skutkować niemożnością korzystania z Aplikacji.
+
+§7. Google Analytics
+
+1. Administrator używa Google Analytics, usługę analityczną dostarczaną przez Google Inc. z siedzibą w USA.
+2. Google Analytics używa mechanizmów, które umożliwiają analizę korzystania przez użytkownika z Aplikacji. Informacje
+na temat korzystania Aplikacji są przekazywane i zapisywane na serwerze Google. Na zlecenie Administratora, Google
+będzie wykorzystywał te informacje, aby przeanalizować korzystanie z Aplikacji przez użytkowników w celu
+przygotowania raportów na temat aktywności w Aplikacji oraz świadczenia innych usług związanych z korzystaniem z
+Aplikacji.
+3. Dane nie będą wykorzystywane do celów identyfikacji jakiejkolwiek osoby fizycznej.
+§8. Pliki cookies
+1. Usługodawca zbiera dotyczące Użytkownika dane w postaci tak zwanych „ciasteczek” (cookies). Pliki cookies powstają
+w toku używania Aplikacji i są plikami tekstowymi niewielkiego rozmiaru, które są przechowywane na Urządzeniu.
+2. W plikach typu cookies zapisują się dane o charakterze technicznym, związane wyłącznie z korzystaniem przez
+Użytkownika z Aplikacji, takie jak: data połączenia Aplikacji z jej serwerami, adres IP Urządzenia, daty korzystania z
+Aplikacji oraz jej poszczególnych funkcji. Dane te są wykorzystywane wyłącznie do celów określonych w ust. 3 i nie
+pozwalają na identyfikację pojedynczego Użytkownika. W plikach cookies nie zapisują się dane wprowadzane przez
+Użytkownika w innych aplikacjach Urządzenia.
+3. Usługodawca ma dostęp do plików cookies i korzysta z nich w celu ułatwienia świadczenia usług dostępnych w Aplikacji,
+jak również w celu ulepszania i rozwijania tych usług oraz samej Aplikacji poprzez analizę zachowań Użytkownika w
+Aplikacji. Usługodawca przetwarza dane zawarte w plikach cookies w sposób automatyczny.
+4. Użytkownik nie musi akceptować plików cookies (przez dokonanie odpowiednich ustawień w Urządzeniu), ale może to
+spowodować, że Aplikacja nie będzie działać w pełni poprawnie.
+5. Pliki cookies nie stanowią złośliwego oprogramowania (tzw. wirusów, koni trojańskich), nie zmieniają konfiguracji
+sprzętowych Urządzenia, oraz mogą być w każdym czasie usunięte przez Użytkownika.

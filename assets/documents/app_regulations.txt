@@ -1,0 +1,242 @@
+Regulamin aplikacji mobilnej
+
+Aplikacja mobilna udostępniona jest na zasadach określonych niniejszym dokumentem stanowiącym regulamin w myśl ustawy
+z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (zwany dalej „Regulaminem”).
+Niniejszy Regulamin określa zasady korzystania z Aplikacji, rodzaje usług elektronicznych świadczonych za pośrednictwem
+Aplikacji oraz prawa i obowiązki Użytkowników oraz Usługodawcy. Zapoznanie się z niniejszym Regulaminem stanowi
+obowiązek każdego użytkownika Aplikacji.
+
+§1. Definicje
+1. Usługodawca – Alteca Spółka z ograniczoną odpowiedzialnością z siedzibą w Katowicach pod adresem Al. Wojciecha
+Korfantego 125a, 40-156 Katowice, NIP: 9542807755, REGON: 384354306, wpisana do rejestru przedsiębiorców
+Krajowego Rejestru Sądowego pod numerem KRS: 0000803811, sąd rejestrowy: Sąd Rejonowy Katowice – Wschód w
+Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego, kapitał zakładowy: 5.000,00 zł. Adres poczty
+elektronicznej kontakt@wolna-keja.pl.
+2. Aplikacja – oprogramowanie o nazwie Wolna Keja udostępnione dla Użytkowników przez Usługodawcę, przeznaczone
+dla Urządzeń mobilnych i pozwalające na dostęp do usług świadczonych przez Usługodawcę.
+3. Użytkownik – osoba fizyczna korzystająca z Aplikacji w imieniu własnym lub w imieniu i na rzecz osoby prawnej lub
+jednostki organizacyjnej nieposiadającej osobowości prawnej, której prawo przyznaje zdolność prawną.
+4. Urządzenie – urządzenia mobilne pozwalające na instalację i korzystanie z Aplikacji, w szczególności urządzenia typu
+smartphone i tablet.
+5. Usługa – usługi świadczone przez Usługodawcę drogą elektroniczną za pomocą Aplikacji, w szczególności
+funkcjonalności dostępne w ramach Aplikacji.
+6. Administrator obiektu – podmiot udostępniający i zarządzający Obiektem, oferujący jego rezerwacją ze pośrednictwem
+Aplikacji.
+7. Ogłoszenie – przygotowane przez Administratora obiektu ogłoszenie dotyczące oferty wynajmu Obiektu stanowiące
+zaproszenie do zawarcia umowy w rozumieniu art. 71 ustawy z dnia 23 kwietnia 1964 Kodeks cywilny.
+8. Obiekt – keja udostępniona przez Administratora obiektu, w której miejsce można zarezerwować za pośrednictwem
+Aplikacji.
+9. Rezerwacja – oświadczenie woli złożone przez Użytkownika o zamiarze zawarcia Umowy najmu.
+10. Opłata rezerwacyjna – opłata o charakterze zadatku zgodnie z art. 394 Kodeksu cywilnego. wnoszona przez
+Użytkownika na zasadach określonych Regulaminem, podlegająca zaliczeniu na poczet wynagrodzenia z tytułu najmu
+Obiektu, której wniesienie warunkuje zawarcie Umowy najmu.
+11. Kwota najmu – wynagrodzenie należne Administratorowi z tytułu Umowy najmu stanowiące iloczyn dób pobytu w
+Obiekcie oraz stawki za dobę zgodnie z cennikiem Administratora.
+12. Umowa najmu – umowa najmu Obiektu zawierana na czas określony.
+13. Panel użytkownika – zbiór zasobów w systemie teleinformatycznym Usługodawcy, w którym gromadzone są informacje
+na temat Użytkownika, do którego dostęp możliwy jest za pomocą Aplikacji.
+
+§2. Postanowienia ogólne
+
+1. Aplikacja przeznaczona jest dla osób pełnoletnich posiadających pełną zdolność do czynności prawnych.
+2. Usługodawca zobowiązuje się do świadczenia usług na rzecz Użytkownika w zakresie i na warunkach określonych
+w Regulaminie.
+3. Użytkownik zobowiązuje się do korzystania z Aplikacji zgodnie z zasadami określonymi w Regulaminie, obowiązującymi
+przepisami prawa i zasadami współżycia społecznego.
+4. Usługodawca przestrzega zasady ochrony danych osobowych Użytkowników przewidziane rozporządzeniem Parlamentu
+Europejskiego i Rady (UE) 2016/679 z dn. 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem
+danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE. Użytkownik
+wyraża zgodę na gromadzenie, przechowywanie i przetwarzanie przez Usługodawcę danych osobowych w celu realizacji
+usługi. Szczegółowe zasady przetwarzania danych osobowych Użytkowników określa Polityka prywatności Aplikacji.
+5. Zakazane jest dostarczanie przez Użytkownika treści o charakterze bezprawnym lub obraźliwym. Użytkownik
+zobowiązany jest do korzystania Aplikacji w sposób niezakłócający jej funkcjonowania, w szczególności poprzez
+nieużywanie określonego oprogramowania (w tym oprogramowania złośliwego) lub urządzeń.
+6. Szczególne zagrożenia związane z korzystaniem z usług drogą elektroniczną to możliwość uzyskania przez
+nieuprawnione osoby dostępu do danych transmitowanych przez sieć lub przechowywanych na dołączonych do sieci
+urządzeniach i ingerencji w te dane, co może spowodować, w szczególności, ich utratę, nieuprawnioną zmianę lub
+uniemożliwienie korzystania z usług oferowanych z wykorzystaniem Aplikacji.
+7. Postanowienia Regulaminu dotyczące konsumentów stosuje się odpowiednio do osoby fizycznej zawierającej umowę
+bezpośrednio związaną z jej działalnością gospodarczą, gdy z treści tej umowy wynika, że nie posiada ona dla tej osoby
+charakteru zawodowego, wynikającego w szczególności z przedmiotu wykonywanej przez nią działalności gospodarczej,
+udostępnionego na podstawie przepisów o Centralnej Ewidencji i Informacji o Działalności Gospodarczej.
+
+§3. Wymagania techniczne
+
+1. Aplikacja dostępna jest dla wszystkich Urządzeń mobilnych spełniających wymagania systemowe określone w niniejszym
+rozdziale.
+2. W celu rozpoczęcia korzystania z Aplikacji, Użytkownik pobiera Aplikację na Urządzeniu mobilnym za pośrednictwem
+sklepu właściwego dla systemu obsługującego Urządzenie mobilne, tj. za pośrednictwem AppStore (dla systemu iOS)
+lub Google Play (dla systemu Android).
+3. Urządzenie mobilne w celu możliwości instalacji i uruchomienia Aplikacji musi być wyposażone w system:
+a) Android w wersji minimum 5.0;
+b) iOS w wersji minimum 13.0
+4. Do instalacji i uruchomienia Aplikacji niezbędnym jest aktywowanie na Urządzeniu mobilnym połączenia internetowego.
+5. Użytkownik ponosi opłaty związane z dostępem do sieci Internet i transmisją danych zgodnie z taryfą swojego dostawcy
+usług internetowych.
+6. Zmiana wymagań technicznych określonych w niniejszym rozdziale nie stanowi zmiany Regulaminu w rozumieniu
+postanowień §12 ust. 1.
+7. Usługodawca zastrzega sobie prawo do przeprowadzania aktualizacji i udostępniania nowych wersji Aplikacji. Instalacja
+aktualizacji lub nowej wersji Aplikacji może być wymuszona przez Usługodawcę jako niezbędna do dalszego
+niezakłóconego korzystania z Aplikacji. Instalacja aktualizacji lub nowej wersji Aplikacji dokonywana jest za
+pośrednictwem sklepu, o którym mowa w ust. 2.
+
+§4. Rejestracja
+
+1. Proces rejestracji jest wymagany do korzystania z Aplikacji.
+2. Rejestracja przeprowadzana jest przez Użytkownika z wykorzystaniem jego adresu e-mail lub poprzez konto Google.
+3. Użytkownik zarejestrowany loguje się do Aplikacji z wykorzystaniem adresu e-mail lub poprzez konto Google użyte
+uprzednio do rejestracji.
+4. Użytkownik zarejestrowany posiada możliwość dostępu do danych zgormadzonych w Aplikacji na każdym urządzeniu
+mobilnym, na którym loguje się z wykorzystaniem danych, o których mowa w ust. 3.
+
+§5. Aplikacja
+
+1. Funkcjonalności dostępne w Aplikacji pozwalają w szczególności na:
+a) dokonywanie rezerwacji Obiektu oraz wnoszenie opłaty rezerwacyjnej na rzecz Administratora obiektu;
+b) przegląd atrakcji i wydarzeń oraz pozostałych treści zamieszczonych w Aplikacji.
+2. Użytkownik po dokonaniu rejestracji posiada możliwość personalizacji własnego profilu w Aplikacji oraz uruchomienia
+Powiadomień Push. Powiadomienia Push mogę być dezaktywowane i ponownie aktywowane przez Użytkownika w
+każdym czasie.
+3. W celu korzystania z wybranych funkcjonalności Aplikacji Użytkownik może być poproszony o wyrażenie zgody na dostęp
+przez Aplikację do wybranych funkcji urządzenia mobilnego (np. kamera, lokalizacja) lub zezwolenie na otrzymywanie
+powiadomień z Aplikacji. Użytkownik może w każdym czasie na urządzeniu mobilnym zmienić uprawnienia przyznane
+Aplikacji, lecz może to skutkować ograniczeniem jej funkcjonalności.
+4. Usługodawca zastrzega sobie prawo do ograniczania lub rozszerzania funkcjonalności dostępnych w Aplikacji w każdym
+czasie. O planowanej zmianie Usługodawca będzie informował Użytkowników za pomocą komunikatów wyświetlanych w
+Aplikacji.
+
+§6. Rezerwacje
+
+1. W celu rozpoczęcia procesu rezerwacji Użytkownik wybiera interesujący go Obiekt oraz poprzez funkcjonalność dostępną
+w Aplikacji (kalendarz) dokonuje wyboru okresu rezerwacji spośród dostępnych wolnych terminów, podaje dane osobowe
+i dane do kontaktu, dokonuje akceptacji niniejszego Regulaminu oraz Warunków najmu, a następnie potwierdza
+rezerwację za pomocą przycisku „Rezerwuj z obowiązkiem zapłaty”.
+2. Po przeprowadzeniu przez Użytkownika czynności opisanych w ust. 1, Usługodawca przesyła na adres poczty
+elektronicznej Użytkownika wiadomość potwierdzającą warunki rezerwacji.
+3. Użytkownik zobowiązany jest do uiszczenia Opłaty rezerwacyjnej za pomocą metod płatności dostępnych w Aplikacji
+niezwłocznie po dokonaniu rezerwacji.
+4. Za moment wniesienia Opłaty rezerwacyjnej uznaje się poprawne dokonanie płatności za pośrednictwem systemu
+obsługującego płatności elektroniczne w Aplikacji.
+5. W momencie uiszczenia przez Użytkownika Opłaty rezerwacyjnej dochodzi do zawarcia Umowy najmu zgodnie z
+warunkami rezerwacji.
+6. Brak wniesienia Opłaty rezerwacyjnej lub wniesienie jej w niepełnej wysokości skutkuje anulowaniem rezerwacji.
+7. Opłata rezerwacyjna zostaje w całości zaliczona na poczet wynagrodzenia przysługującemu Administratorowi obiektu
+z tytułu najmu Obiektu.
+8. Usługodawca wskazuje, iż stronami rezerwacji oraz Umowy najmu są Użytkownik oraz Administrator obiektu.
+Usługodawca tym samym nie ponosi odpowiedzialności za niewykonanie lub nienależyte wykonanie zobowiązań
+ciążących na stronach. Roszczenia oraz wszelkie reklamacje dotyczące rezerwacji czy też Umowy najmu Użytkownik
+zobowiązany jest kierować do Administratora obiektu.
+9. W przypadku woli zmiany terminu rezerwacji lub jej anulowania Użytkownik kontaktuje się bezpośrednio z
+Administratorem obiektu.
+10. Usługodawca poucza, iż Użytkownikowi, który dokonał rezerwacji w związku z art. 38 pkt. 12 ustawy z dnia 30 maja 2014
+r. o prawach konsumenta nie przysługuje prawo do odstąpienia od umowy w terminie 14 dni od dnia zwarcia umowy
+(uprawnienie, o którym mowa w art. 27 wskazanej ustawy).
+
+§7. Ceny i warunki płatności
+
+1. Ceny widoczne w Aplikacji są wyrażane w polskich złotych (PLN) oraz są cenami brutto.
+2. Płatności w Aplikacji przyjmowane są za pośrednictwem systemu Przelewy24 prowadzonego przez PayPro SA ul.
+Kanclerska 15, 60-327 Poznań, zgodnie z regulaminem systemu Przelewy24 (https://www.przelewy24.pl/regulamin).
+3. W przypadku wystąpienia konieczności zwrotu środków za transakcję dokonaną przez Użytkownika kartą płatniczą,
+Usługodawca dokonana zwrotu na rachunek bankowy przypisany do karty płatniczej Użytkownika.
+
+§8. Odpowiedzialność Usługodawcy
+
+1. Usługodawca informuje, iż zgodnie z art. 15 ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną nie
+jest zobowiązany do sprawdzania przekazywanych, przechowywanych lub udostępnianych przez niego danych, o których
+mowa w art. 12-14 wskazanej ustawy.
+2. Usługodawca nie ponosi odpowiedzialności za zobowiązania Użytkowników oraz Administratora obiektu wynikające z ich
+działań za pośrednictwem Aplikacji.
+3. Usługodawca nie ponosi odpowiedzialności za dane wprowadzone przez Użytkowników w Aplikacji i nie odpowiada za
+czynności dokonane przez Użytkownika, które przyczyniły się do powstania jakiejkolwiek szkody w odniesieniu do tego
+Użytkownika lub innych Użytkowników bądź osób trzecich albo też uniemożliwiły albo utrudniły świadczenie usług przez
+Usługodawcę.
+4. Usługodawca nie ponosi odpowiedzialności za przerwy w funkcjonowaniu Aplikacji oraz szkody poniesione przez
+Użytkownika z tego tytułu, jeżeli zostały spowodowane działaniem siły wyższej, której nie dało się przewidzieć, a w
+przypadku, gdy wystąpienie siły wyższej było do przewidzenia - gdy nie dało się zapobiec skutkom jej wystąpienia.
+5. Usługodawca nie ponosi odpowiedzialności za nieprawidłowe funkcjonowanie Aplikacji wynikające z działania Urządzenia
+mobilnego Użytkownika.
+6. Usługodawca nie ponosi odpowiedzialności za skutki ujawnienia danych autoryzacyjnych umożliwiających dostęp do
+Aplikacji bądź udostępniania Panelu użytkownika w ramach Aplikacji przez Użytkownika osobom trzecim.
+7. Usługodawca nie ponosi odpowiedzialności za niedziałanie lub nienależyte działanie Aplikacji na urządzeniu nie
+spełniającym wymagań technicznych, o których mowa w §3 Regulaminu.
+8. Usługodawca nie ponosi odpowiedzialności za błędne działanie systemów operacyjnych, które są wymagane do
+uruchomienia Aplikacji, zgodnie z §3 Regulaminu, jak również oprogramowania innego niż Aplikacja, zainstalowanego na
+Urządzeniu lub pobranego na Urządzenie.
+9. Usługodawca nie ponosi odpowiedzialności za niewykonanie lub nienależyte wykonanie usług przez operatorów
+telekomunikacyjnych, z którymi Użytkownik ma zawarte umowy, w szczególności w zakresie połączenia do sieci Internet,
+jak również za wysokość opłat za te usługi.
+10. Usługodawca nie ponosi odpowiedzialności za czasową niemożność korzystania przez Użytkowników z Aplikacji,
+wywołaną przerwą techniczną, o której mowa w §12 ust. 2
+11. W przypadku szkody poniesionej przez Użytkownika, a wynikającej z umyślnego działania Usługodawcy, Usługodawca
+odpowiada jedynie za rzeczywiste szkody poniesione przez Użytkownika z zastrzeżeniem odrębnych praw
+przysługujących konsumentom.
+
+§9. Rozwiązanie umowy o świadczenie usług drogą elektroniczną
+
+1. Użytkownikowi przysługuje prawo do odstąpienia od umowy o świadczenie usług drogą elektroniczną o charakterze
+ciągłym i bezterminowym. Użytkownik może rozwiązać umowę w każdym czasie i bez podawania przyczyny.
+2. W celu rozwiązania umowy Użytkownik zobowiązany jest do skorzystania z funkcjonalności „Usuń konto” dostępnej po
+zalogowaniu się w Aplikacji, a następnie usunięcia Aplikacji z pamięci urządzenia mobilnego (odinstalowanie Aplikacji).
+3. W przypadku naruszania przez Użytkownika postanowień niniejszego Regulaminu Usługodawca zastrzega sobie prawo
+do zablokowania dostępu do Aplikacji bądź całkowitego usunięcia Użytkownika. Czynności, o których mowa zdaniu
+poprzednim Usługodawca przeprowadza po uprzednim wezwaniu Użytkownika do zaprzestania naruszeń wyznaczając
+ku temu termin nie krótszy niż 3 dni oraz informując o skutkach braku zastosowania się do wezwania.
+
+§10. Postępowanie reklamacyjne
+
+1. W przypadku niewykonania lub nienależytego wykonania przez Usługodawcę usług świadczonych za pomocą Aplikacji,
+Użytkownik jest uprawniony do złożenia reklamacji drogą elektroniczną na adres kontakt@wolna-keja.pl.
+2. Prawidłowo złożona reklamacja powinna zawierać oznaczenie Użytkownika (imię i nazwisko oraz adres poczty
+elektronicznej), przedmiot reklamacji wraz ze wskazaniem okresu, którego dotyczy reklamacja oraz okoliczności
+uzasadniające złożenie reklamacji. W przypadku podania niepełnych danych Usługodawca wezwie Użytkownika do
+uzupełnienia danych w terminie 7 dni.
+3. Reklamację rozpatruje Usługodawca w terminie do 14 dni od dnia otrzymania reklamacji.
+4. Brak informacji o sposobie rozpatrzenia reklamacji w terminie, o którym mowa w ust. 3 jest równoznaczne z jej
+uwzględnieniem przez Usługodawcę.
+
+§11. Własność intelektualna. Licencja
+
+1. Wszelkie treści zamieszczone w Aplikacji (wliczając w to grafikę, teksty, układ treści i logotypy) a nie pochodzące od
+Użytkowników lub podmiotów trzecich korzystają z ochrony przewidzianej dla praw autorskich i są wyłączną własnością
+Usługodawcy. Wykorzystywanie tych treści bez wyraźnej zgody Usługodawcy, skutkuje odpowiedzialnością cywilną oraz
+karną.
+2. Korzystanie z Aplikacji, w tym korzystanie z materiałów tekstowych, graficznych, baz danych czy innych treści cyfrowych,
+nie oznacza nabycia przez Użytkownika jakichkolwiek praw w odniesieniu do wskazanych treści, a w szczególności nie
+oznacza nabycia praw autorskich majątkowych, praw pokrewnych lub licencji z zastrzeżeniem ust. 4.
+3. Zabronione jest podejmowanie następujących czynności bez wyraźnej zgody Usługodawcy, o ile czynności te nie
+wynikają ze specyfiki i celu Usługi dostępnej w Aplikacji:
+a) kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny sposób Aplikacji lub jej części, a także
+poszczególnych treści udostępnianych za jej pomocą,
+b) rozpowszechnianie w jakikolwiek sposób publikowanych w Aplikacji treści, chyba że w Regulaminie zastrzeżono
+inaczej,
+c) pobieranie zawartości baz danych i wtórne jej wykorzystanie w całości lub części.
+4. Z chwilą pobrania Aplikacji, Usługodawca udziela Użytkownikowi licencji na korzystanie z Aplikacji zgodnie z jej
+przeznaczeniem, przy czym obejmuje to prawo do jej zwielokrotnienia wyłącznie w zakresie, w jakim zwielokrotnienie jest
+niezbędne do uruchomienia, działania i przechowywania Aplikacji w pamięci Urządzenia.
+5. Licencja, o której mowa w ust. 4, nie upoważnia Użytkownika do udzielenia dalszych licencji, ponadto Użytkownik nie ma
+prawa – w całości lub w części - zwielokrotniać (poza przypadkiem określonym w ust. 4), dystrybuować, sprzedawać bądź
+w inny sposób wprowadzać do obrotu lub rozpowszechniać Aplikacji, w tym przesyłać lub udostępniać w sieci Internet,
+sieciach komputerowych, systemach dystrybucji aplikacji mobilnych oraz w jakichkolwiek innych systemach
+teleinformatycznych.
+
+§12. Postanowienia końcowe
+
+1. Usługodawca zastrzega sobie prawo do wprowadzania zamian w Regulaminie. O planowanej zmianie Regulaminu
+Usługodawca poinformuje z co najmniej czternastodniowym wyprzedzeniem poprzez zamieszczenie odpowiedniego
+komunikatu w Aplikacji. Korzystanie przez Użytkownika z Aplikacji po wejściu w życie zmian w Regulaminie oznacza ich
+akceptację przez Użytkownika. Zmiana Regulaminu w czasie trwania stosunku umownego o charakterze ciągłym wiąże
+drugą stronę, jeżeli zostały zachowane wymagania określone w art. 384 Kodeksu cywilnego, a strona nie wypowiedziała
+umowy w terminie wypowiedzenia wynoszącym 14 dni kalendarzowych
+2. Usługodawca zachowuje sobie prawo do okresowego wyłączania dostępu do Aplikacji lub wybranych funkcjonalności
+Aplikacji w przypadku, gdy jest to niezbędne w celu rozbudowy lub konserwacji zasobów technicznych lub
+teleinformatycznych Usługodawcy związanych z działaniem Aplikacji.
+3. W pozostałych kwestiach nieuregulowanych zapisami Regulaminu mają zastosowanie odpowiednie przepisy prawa
+polskiego.
+4. Użytkownik będący konsumentem ma prawo do skorzystania z pozasądowych metod rozstrzygania sporów i dochodzenia
+roszczeń w drodze mediacji lub sądu polubownego. Niezależnie od tego konsument może zwrócić się o pomoc do
+miejskiego (powiatowego) rzecznika konsumentów. Wszelkie niezbędne informacje można uzyskać na stronie
+internetowej Urzędu Ochrony Konkurencji i Konsumentów pod adresem www.uokik.gov.pl. Użytkownik będący
+konsumentem może ponadto skorzystać z elektronicznego sposobu rozwiązywania sporów z Usługodawcą za
+pośrednictwem platformy ODR dostępnej pod adresem http://ec.europa.eu/consumers/odr/.
+5. Regulamin obowiązuje od dnia 5.12.2023.

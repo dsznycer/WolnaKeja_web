@@ -1,86 +1,126 @@
-1. Informacje ogólne
+ Polityka prywatności aplikacji mobilnej
 
-Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: wolna-keja.pl
-Operatorem serwisu oraz Administratorem danych osobowych jest: Alteca sp. z o.o. Al. Wojeciecha Korfantego 125A
-Adres kontaktowy poczty elektronicznej operatora: kontakt@wolna-keja.pl
-Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.
-Serwis wykorzystuje dane osobowe w następujących celach:
-Prezentacja oferty lub informacji
-Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:
-Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora.
-Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”).
-2. Wybrane metody ochrony danych stosowane przez Operatora
+§1. Postanowienia ogólne
 
-Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze.
-Dane osobowe przechowywane w bazie danych są zaszyfrowane w taki sposób, że jedynie posiadający Operator klucz może je odczytać. Dzięki temu dane są chronione na wypadek wykradzenia bazy danych z serwera.
-Hasła użytkowników są przechowywane w postaci hashowanej. Funkcja hashująca działa jednokierunkowo - nie jest możliwe odwrócenie jej działania, co stanowi obecnie współczesny standard w zakresie przechowywania haseł użytkowników.
-Operator okresowo zmienia swoje hasła administracyjne.
-Istotnym elementem ochrony danych jest regularna aktualizacja wszelkiego oprogramowania, wykorzystywanego przez Operatora do przetwarzania danych osobowych, co w szczególności oznacza regularne aktualizacje komponentów programistycznych.
-3. Hosting
+1. Administratorem danych osobowych w rozumieniu art. 4 pkt 4 rozporządzenia Parlamentu Europejskiego i Rady (UE)
+2016/679 z dn. 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
+sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (dalej RODO) jest Alteca Spółka z
+ograniczoną odpowiedzialnością z siedzibą w Katowicach pod adresem Al. Wojciecha Korfantego 125a, 40-156 Katowice,
+NIP: 9542807755, REGON: 384354306, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego pod
+numerem KRS: 0000803811, sąd rejestrowy: Sąd Rejonowy Katowice – Wschód w Katowicach, VIII Wydział
+Gospodarczy Krajowego Rejestru Sądowego, kapitał zakładowy: 5.000,00 zł.
+2. Adres poczty elektronicznej Administratora danych: kontakt@wolna-keja.pl.
+3. Administrator w myśl art. 32 ust. 1 RODO przestrzega zasady ochrony danych osobowych oraz stosuje odpowiednie
+środki techniczne i organizacyjne w celu zapobieżenia przypadkowego lub niezgodnego z prawem zniszczenia, utraty,
+modyfikacji, nieuprawnionego ujawnienia lub nieuprawnionego dostępu do danych osobowych przetwarzanych w związku
+z prowadzoną działalnością.
+4. Podanie danych osobowych przez użytkownika jest dobrowolne.
+5. Zakres danych przetwarzanych przez administratora danych w każdym przypadku pozostaje adekwatny w stosunku do
+celu, dla którego pobrano dane.
+6. Aplikacja mobilna za zgodą użytkownika może uzyskać dostęp do następujących uprawnień na urządzeniu mobilnym, m.
+in.:
+a) danych technicznych,
+b) danych o lokalizacji urządzenia,
+c) dostęp do kamery,
+d) wyświetlania powiadomień.
 
-Serwis jest hostowany (technicznie utrzymywany) na serwerach operatora: inna firma
-4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych
+§2. Cel i podstawy przetwarzania danych osobowych
 
-W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców:
-osoby upoważnione przez nas, pracownicy i współpracownicy, którzy muszą mieć dostęp do danych osobowych w celu wykonywania swoich obowiązków,
-firma hostingowa,
-firmy obsługująca mailingi,
-firmy obsługująca komunikaty SMS,
-firmy, z którymi Administrator współpracuje w zakresie marketingu własnego,
-kurierzy,
-ubezpieczyciele,
-kancelarie prawne i windykatorzy,
-banki,
-operatorzy płatności,
-organy publiczne.
-Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to konieczne do wykonania związanych z nimi czynności określonych osobnymi przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata.
-Przysługuje Ci prawo żądania od Administratora:
-dostępu do danych osobowych Ciebie dotyczących,
-ich sprostowania,
-usunięcia,
-ograniczenia przetwarzania,
-oraz przenoszenia danych.
-Przysługuje Ci prawo do złożenia sprzeciwu w zakresie przetwarzania wskazanego w pkt 3.3 c) wobec przetwarzania danych osobowych w celu wykonania prawnie uzasadnionych interesów realizowanych przez Administratora, w tym profilowania, przy czym prawo sprzeciwu nie będzie mogło być wykonane w przypadku istnienia ważnych prawnie uzasadnionych podstaw do przetwarzania, nadrzędnych wobec Ciebie interesów, praw i wolności, w szczególności ustalenia, dochodzenia lub obrony roszczeń.
-Na działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.
-Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu.
-W stosunku do Ciebie mogą być podejmowane czynności polegające na zautomatyzowanym podejmowaniu decyzji, w tym profilowaniu w celu świadczenia usług w ramach zawartej umowy oraz w celu prowadzenia przez Administratora marketingu bezpośredniego.
-Dane osobowe nie są przekazywane od krajów trzecich w rozumieniu przepisów o ochronie danych osobowych. Oznacza to, że nie przesyłamy ich poza teren Unii Europejskiej.
-5. Informacje w formularzach
+Administrator przetwarza dane osobowe w następujących celach:
+a) świadczenie usług drogą elektroniczną za pośrednictwem Aplikacji, na podstawie zawartej umowy (art. 6 ust. 1 lit. b
+RODO);
+b) obsługa procesu reklamacyjnego, na podstawie obowiązku ciążącym na administratorze danych w związku z
+obowiązującymi przepisami prawa (art. 6 ust. 1 lit. c RODO);
+c) kontakt z użytkownikami, w szczególności w odpowiedzi na zapytania kierowane do administratora danych, co jest
+prawnie uzasadnionym interesem administratora danych (art. 6 ust. 1 lit. f RODO);
+d) przesyłanie informacji technicznych dotyczących funkcjonowania Aplikacji i usług, z których korzysta użytkownik, co
+jest prawnie uzasadnionym interesem administratora danych (art. 6 ust. 1 lit. f RODO).
 
-Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane.
-Serwis może zapisać informacje o parametrach połączenia (oznaczenie czasu, adres IP).
-Serwis, w niektórych wypadkach, może zapisać informację ułatwiającą powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz adresu url strony zawierającej formularz.
-Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji konkretnego formularza, np. w celu dokonania procesu obsługi zgłoszenia serwisowego lub kontaktu handlowego, rejestracji usług itp. Każdorazowo kontekst i opis formularza w czytelny sposób informuje, do czego on służy.
-6. Logi Administratora
+§3. Odbiorcy danych. Przekazywanie danych do państw trzecich
 
-Informacje zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem.
-7. Istotne techniki marketingowe
+1. Odbiorcami danych osobowych przetwarzanych przez administratora danych mogą być podwykonawcy – podmioty, z
+których usług korzysta administrator danych przy przetwarzaniu danych np. dostawcy usług hostingowych, opiekunowie
+techniczni Aplikacji.
+2. Dane osobowe w związku z wykorzystywaniem przez administratora narzędzi do analizy i śledzenia ruchu mogą zostać
+przekazane do podmiotu mającego siedzibę poza Europejskim Obszarem Gospodarczym, np. do Google LLC. Jako
+właściwy środek ochrony danych, administrator danych zgodził się na standardowe klauzule umowne zgodnie z art. 46
+RODO z dostawcami tych usług. Więcej informacji na ten temat jest dostępnych tutaj: https://ec.europa.eu/info/law/lawtopic/
+data-protection/data-transfers-outside-eu_en.
 
-Operator stosuje analizę statystyczną ruchu na stronie, poprzez Google Analytics (Google Inc. z siedzibą w USA). Operator nie przekazuje do operatora tej usługi danych osobowych, a jedynie zanonimizowane informacje. Usługa bazuje na wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika. W zakresie informacji o preferencjach użytkownika gromadzonych przez sieć reklamową Google użytkownik może przeglądać i edytować informacje wynikające z plików cookies przy pomocy narzędzia: https://www.google.com/ads/preferences/
-8. Informacja o plikach cookies
+§4. Okres przechowywania danych osobowych
 
-Serwis korzysta z plików cookies.
-Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.
-Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu.
-Pliki cookies wykorzystywane są w następujących celach:
-utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;
-realizacji celów określonych powyżej w części "Istotne techniki marketingowe";
-W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika.
-Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany ustawień w tym zakresie. Przeglądarka internetowa umożliwia usunięcie plików cookies. Możliwe jest także automatyczne blokowanie plików cookies Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja przeglądarki internetowej.
-Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu.
-Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu wykorzystywane mogą być również przez współpracujące z operatorem Serwisu podmioty, w szczególności dotyczy to firm: Google (Google Inc. z siedzibą w USA), Facebook (Facebook Inc. z siedzibą w USA), Twitter (Twitter Inc. z siedzibą w USA).
-9. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?
+Administrator danych przechowuje dane osobowe przez okres korzystania z Aplikacji przez użytkownika, tj. do czasu usunięcia
+Użytkownika z Aplikacji.
 
-Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić, a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www
-W celu zarządzania ustawienia cookies wybierz z listy poniżej przeglądarkę internetową, której używasz i postępuj zgodnie z instrukcjami:
-Edge
-Internet Explorer
-Chrome
-Safari
-Firefox
-Opera
-Urządzenia mobilne:
+§5. Uprawnienia osoby, której dane dotyczą
 
-Android
-Safari (iOS)
-Windows Phone
+1. Każda osoba, której dane dotyczą, ma prawo:
+a) dostępu – uzyskania od administratora potwierdzenia, czy przetwarzane są jej dane osobowe. Jeżeli dane o osobie są
+przetwarzane, jest ona uprawniona do uzyskania dostępu do nich oraz uzyskania następujących informacji: o celach
+przetwarzania, kategoriach danych osobowych, informacji o odbiorcach lub kategoriach odbiorców, którym dane zostały
+lub zostaną ujawnione, o okresie przechowywania danych lub o kryteriach ich ustalania, o prawie do żądania
+sprostowania, usunięcia lub ograniczenia przetwarzania danych osobowych przysługujących osobie, której dane
+dotyczą, oraz do wniesienia sprzeciwu wobec takiego przetwarzania (art. 15 RODO);
+b) do otrzymania kopii danych – uzyskania kopii danych podlegających przetwarzaniu, przy czym pierwsza kopia jest
+bezpłatna, a za kolejne kopie administrator może nałożyć opłatę w rozsądnej wysokości wynikającą z kosztów
+administracyjnych (art. 15 ust. 3 RODO);
+c) do sprostowania – żądania sprostowania dotyczących jej danych osobowych, które są nieprawidłowe lub uzupełnienia
+niekompletnych danych (art. 16 RODO);
+d) do usunięcia danych – żądania usunięcia jej danych osobowych, jeżeli administrator nie ma już podstawy prawnej do
+ich przetwarzania lub dane nie są już niezbędne do celów przetwarzania (art. 17 RODO);
+e) do ograniczenia przetwarzania – żądania ograniczenia przetwarzania danych osobowych (art. 18 RODO), gdy:
+- osoba, której dane dotyczą, kwestionuje prawidłowość danych osobowych – na okres pozwalający administratorowi
+sprawdzić prawidłowość tych danych,
+- przetwarzanie jest niezgodne z prawem, a osoba, której dane dotyczą, sprzeciwia się ich usunięciu, żądając
+ograniczenia ich wykorzystywania,
+- administrator nie potrzebuje już tych danych, ale są one potrzebne osobie, której dane dotyczą, do ustalenia,
+dochodzenia lub obrony roszczeń,
+- osoba, której dane dotyczą, wniosła sprzeciw wobec przetwarzania – do czasu stwierdzenia, czy prawnie uzasadnione
+podstawy po stronie administratora są nadrzędne wobec podstaw sprzeciwu osoby, której dane dotyczą;
+f) do przenoszenia danych – otrzymania w ustrukturyzowanym, powszechnie używanym formacie nadającym się do
+odczytu maszynowego danych osobowych jej dotyczących, które dostarczyła administratorowi, oraz żądania przesłania
+tych danych innemu administratorowi, jeżeli dane są przetwarzane na podstawie zgody osoby, której dane dotyczą lub
+umowy z nią zawartej oraz jeżeli dane są przetwarzane w sposób zautomatyzowany (art. 20 RODO);
+g) do sprzeciwu – wniesienia sprzeciwu wobec przetwarzania jej danych osobowych w prawnie uzasadnionych celach
+administratora, z przyczyn związanych z jej szczególną sytuacją, w tym wobec profilowania. Wówczas administrator
+dokonuje oceny istnienia ważnych prawnie uzasadnionych podstaw do przetwarzania, nadrzędnych wobec interesów,
+praw i wolności osób, których dane dotyczą, lub podstaw do ustalenia, dochodzenia lub obrony roszczeń. Jeżeli zgodnie
+z oceną interesy osoby, której dane dotyczą, będą ważniejsze od interesów administratora, administrator będzie
+zobowiązany zaprzestać przetwarzania danych w tych celach (art. 21 RODO).
+2. Aby skorzystać z wyżej wymienionych praw, osoba, której dane dotyczą, powinna skontaktować się, wykorzystując
+podane dane kontaktowe, z administratorem i poinformować go, z którego prawa i w jakim zakresie chce skorzystać.
+3. Osoba, której dane dotyczą, ma prawo wnieść skargę do organu nadzoru, którym jest Prezes Urzędu Ochrony Danych
+Osobowych w Warszawie.
+
+§6. Automatyczne przetwarzanie danych. Profilowanie
+
+1. Administrator może przetwarzać dane użytkownika w zakresie częstotliwości korzystania z Aplikacji przez użytkownika
+oraz wykorzystywanych przez niego funkcjonalnościach.
+2. Administrator przetwarza dane, o których mowa w ust. 1 w celu udoskonalania Aplikacji.
+3. Użytkownik, który nie zgadza się z przetwarzaniem jego danych w sposób określony w ust. 1 może złożyć sprzeciw wobec
+automatycznego przetwarzania danych co jednakże może skutkować niemożnością korzystania z Aplikacji.
+
+§7. Google Analytics
+
+1. Administrator używa Google Analytics, usługę analityczną dostarczaną przez Google Inc. z siedzibą w USA.
+2. Google Analytics używa mechanizmów, które umożliwiają analizę korzystania przez użytkownika z Aplikacji. Informacje
+na temat korzystania Aplikacji są przekazywane i zapisywane na serwerze Google. Na zlecenie Administratora, Google
+będzie wykorzystywał te informacje, aby przeanalizować korzystanie z Aplikacji przez użytkowników w celu
+przygotowania raportów na temat aktywności w Aplikacji oraz świadczenia innych usług związanych z korzystaniem z
+Aplikacji.
+3. Dane nie będą wykorzystywane do celów identyfikacji jakiejkolwiek osoby fizycznej.
+§8. Pliki cookies
+1. Usługodawca zbiera dotyczące Użytkownika dane w postaci tak zwanych „ciasteczek” (cookies). Pliki cookies powstają
+w toku używania Aplikacji i są plikami tekstowymi niewielkiego rozmiaru, które są przechowywane na Urządzeniu.
+2. W plikach typu cookies zapisują się dane o charakterze technicznym, związane wyłącznie z korzystaniem przez
+Użytkownika z Aplikacji, takie jak: data połączenia Aplikacji z jej serwerami, adres IP Urządzenia, daty korzystania z
+Aplikacji oraz jej poszczególnych funkcji. Dane te są wykorzystywane wyłącznie do celów określonych w ust. 3 i nie
+pozwalają na identyfikację pojedynczego Użytkownika. W plikach cookies nie zapisują się dane wprowadzane przez
+Użytkownika w innych aplikacjach Urządzenia.
+3. Usługodawca ma dostęp do plików cookies i korzysta z nich w celu ułatwienia świadczenia usług dostępnych w Aplikacji,
+jak również w celu ulepszania i rozwijania tych usług oraz samej Aplikacji poprzez analizę zachowań Użytkownika w
+Aplikacji. Usługodawca przetwarza dane zawarte w plikach cookies w sposób automatyczny.
+4. Użytkownik nie musi akceptować plików cookies (przez dokonanie odpowiednich ustawień w Urządzeniu), ale może to
+spowodować, że Aplikacja nie będzie działać w pełni poprawnie.
+5. Pliki cookies nie stanowią złośliwego oprogramowania (tzw. wirusów, koni trojańskich), nie zmieniają konfiguracji
+sprzętowych Urządzenia, oraz mogą być w każdym czasie usunięte przez Użytkownika.

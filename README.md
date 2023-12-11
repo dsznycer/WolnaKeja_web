@@ -1,6 +1,6 @@
 # wolnakeja
 
-Website for Wolna Keja mobile app. Made 100% in Flutter framework. 
+Website for Wolna Keja mobile app. Made in 100% in Flutter framework. 
 
 
 

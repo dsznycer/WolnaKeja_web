@@ -96,16 +96,15 @@ class FooterMobile extends StatelessWidget {
                                       'assets/images/footer/phone_icon.png',
                                       width: 40,
                                     ),
-                                    SizedBox(width: 20),
-                                    Text('516 248 020')
+                                    const SizedBox(width: 20),
+                                    const SelectableText('516 248 020')
                                   ],
                                 ),
                               ),
-                              SizedBox(height: 10),
+                              const SizedBox(height: 10),
                               GestureDetector(
-                                onTap: () {
-                                  urlservice.urlLauncher(urlservice.email);
-                                },
+                                onTap: () =>
+                                    urlservice.urlLauncher(urlservice.email),
                                 child: Row(
                                   children: [
                                     Image.asset(

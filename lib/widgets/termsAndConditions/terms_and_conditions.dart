@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/enums.dart';
+import 'package:wolnakeja/widgets/prices/prices_dialog.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions_dialog.dart';
 
 class TermsAndConditions extends StatelessWidget {
@@ -29,6 +30,15 @@ class TermsAndConditions extends StatelessWidget {
             child: Text(
               TermsType.privacyPolicy.title,
               style: const TextStyle(fontWeight: FontWeight.w500),
+            ),
+          ),
+          const SizedBox(width: 25),
+          InkWell(
+            onTap: () => showDialog(
+                context: context, builder: (_) => const PricesDialog()),
+            child: const Text(
+              'Cennik',
+              style: TextStyle(fontWeight: FontWeight.w500),
             ),
           ),
         ],

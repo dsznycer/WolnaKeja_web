@@ -3,14 +3,16 @@ import 'package:wolnakeja/style.dart';
 import 'text_tile.dart';
 
 class PortPanelDesktop extends StatelessWidget {
-  const PortPanelDesktop({Key? key}) : super(key: key);
+  const PortPanelDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text('Żeglarze rezerwują miejsca, Ty wygodnie zarządzasz portem',
-            style: H2),
+        const Text(
+          'Żeglarze rezerwują miejsca, Ty wygodnie zarządzasz portem',
+          style: H2,
+        ),
         const SizedBox(height: 30),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -37,7 +39,8 @@ class PortPanelDesktop extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   TextTile(
-                      'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone '),
+                    'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone ',
+                  ),
                   SizedBox(height: 25),
                   TextTile('Ostatnie rezerwacje w porcie'),
                   SizedBox(height: 25),
@@ -47,7 +50,7 @@ class PortPanelDesktop extends StatelessWidget {
             ),
             const SizedBox(width: 10),
           ],
-        )
+        ),
       ],
     );
   }

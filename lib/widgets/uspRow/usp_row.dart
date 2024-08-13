@@ -4,7 +4,7 @@ import 'usprow_desktop.dart';
 import 'usprow_mobile.dart';
 
 class UspRow extends StatelessWidget {
-  const UspRow({Key? key}) : super(key: key);
+  const UspRow({super.key});
 
   @override
   Widget build(BuildContext context) {

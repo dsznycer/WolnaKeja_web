@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class PortInfoDesktop extends StatelessWidget {
-  const PortInfoDesktop({Key? key}) : super(key: key);
+  const PortInfoDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    double widthP = size.width * 0.32;
+    final size = MediaQuery.of(context).size;
+    final widthP = size.width * 0.32;
 
     return Column(
       children: [
@@ -15,8 +15,8 @@ class PortInfoDesktop extends StatelessWidget {
           children: [
             Flexible(
               child: Container(
-                margin:
-                    const EdgeInsets.only(right: 40, left: 60, top: 40, bottom: 40),
+                margin: const EdgeInsets.only(right: 40, left: 60) +
+                    const EdgeInsets.symmetric(vertical: 40),
                 child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -29,7 +29,7 @@ class PortInfoDesktop extends StatelessWidget {
                       'Wprowadź zupełnie za darmo nowoczesny system zarządzania swoim portem. Reklamuj port oraz jego infrastrukturę w aplikacji mobilnej i docieraj do nowych klientów. Dodatkowo sprzedawaj miejsca oraz zarządzaj rezerwacjami. Wszystko to w jednym miejscu.',
                       style: description,
                       textAlign: TextAlign.justify,
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -48,14 +48,14 @@ class PortInfoDesktop extends StatelessWidget {
               ),
             ),
           ],
-        )
+        ),
       ],
     );
   }
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PricesDialog extends StatelessWidget {
-  const PricesDialog({
-    Key? key,
-  }) : super(key: key);
+  const PricesDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +15,10 @@ class PricesDialog extends StatelessWidget {
               child: _PricesTable(),
             ),
             TextButton.icon(
-                onPressed: () => Navigator.of(context).pop(),
-                icon: const Icon(Icons.arrow_back),
-                label: const Text('Wróć'))
+              onPressed: () => Navigator.of(context).pop(),
+              icon: const Icon(Icons.arrow_back),
+              label: const Text('Wróć'),
+            ),
           ],
         ),
       ),
@@ -35,25 +34,30 @@ class _PricesTable extends StatelessWidget {
     return const Column(
       children: [
         SizedBox(height: 25),
-        Row(children: [
-          _Text(text: 'Rezerwacja w porcie'),
-          _Text(text: '50zł')
-        ]),
+        Row(
+          children: [_Text(text: 'Rezerwacja w porcie'), _Text(text: '50zł')],
+        ),
         SizedBox(height: 15),
-        Row(children: [
-          _Text(text: 'Cena za osobę w porcie podczas cumowania'),
-          _Text(text: '10zł')
-        ]),
+        Row(
+          children: [
+            _Text(text: 'Cena za osobę w porcie podczas cumowania'),
+            _Text(text: '10zł'),
+          ],
+        ),
         SizedBox(height: 15),
-        Row(children: [
-          _Text(text: 'Podłączenie łodzi do prądu na czas rezerwacji'),
-          _Text(text: '15zł')
-        ]),
+        Row(
+          children: [
+            _Text(text: 'Podłączenie łodzi do prądu na czas rezerwacji'),
+            _Text(text: '15zł'),
+          ],
+        ),
         SizedBox(height: 15),
-        Row(children: [
-          _Text(text: 'Napełnienie zbiornika z wodą'),
-          _Text(text: '20zł')
-        ]),
+        Row(
+          children: [
+            _Text(text: 'Napełnienie zbiornika z wodą'),
+            _Text(text: '20zł'),
+          ],
+        ),
         SizedBox(height: 25),
       ],
     );

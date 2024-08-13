@@ -5,23 +5,20 @@ import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_tablet.dart';
 
 class MainSliderTablet extends StatelessWidget {
-  const MainSliderTablet(
-      {Key? key,
-      required this.functA1,
-      required this.keyA1,
-      required this.keyA2,
-      required this.keyA3,
-      required this.keyA4,})
-      : super(key: key);
+  const MainSliderTablet({
+    super.key,
+    required this.functA1,
+    required this.keyA1,
+    required this.keyA2,
+    required this.keyA3,
+    required this.keyA4,
+  });
 
-
-  final Function functA1;
+  final void Function(GlobalKey) functA1;
   final GlobalKey keyA1;
   final GlobalKey keyA2;
   final GlobalKey keyA3;
   final GlobalKey keyA4;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -56,16 +53,20 @@ class MainSliderTablet extends StatelessWidget {
                 const SizedBox(height: 15),
                 const _Dividerek(),
                 const SizedBox(height: 15),
-                const Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3Tab),
-                const Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
-                    style: H3Tab),
+                const Text(
+                  'Rezerwuj miejsce przy kei w aplikacji.',
+                  style: H3Tab,
+                ),
+                const Text(
+                  'Przeglądaj porty, imprezy oraz lokalne atrakcje.',
+                  style: H3Tab,
+                ),
                 const Text('Wszystko to w jednym miejscu.', style: H3Tab),
                 const SizedBox(height: 15),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const Text(
-                      "Wkrótce na:",
+                      'Wkrótce na:',
                       style: H3Tab,
                     ),
                     Image.asset(
@@ -95,11 +96,12 @@ class MainSliderTablet extends StatelessWidget {
           right: width,
           left: width,
           child: NavigationBarTablet(
-              funct: functA1,
-              key1: keyA1,
-              key2: keyA2,
-              key3: keyA3,
-              key4: keyA4,),
+            funct: functA1,
+            key1: keyA1,
+            key2: keyA2,
+            key3: keyA3,
+            key4: keyA4,
+          ),
         ),
       ],
     );
@@ -107,7 +109,7 @@ class MainSliderTablet extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

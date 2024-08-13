@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class UspRowMobile extends StatelessWidget {
-  const UspRowMobile({Key? key}) : super(key: key);
+  const UspRowMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         const Text(
-          "Jak to działa?",
+          'Jak to działa?',
           style: H2M,
         ),
         SizedBox(
@@ -19,28 +19,24 @@ class UspRowMobile extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: const [
                 TileMobileRow(
-            
                   picture: 'assets/images/uspRow/latarnia.png',
                   title: 'Wybór portu',
                   descript:
                       'Pływający przegląda porty w okolicy i wybiera ten, który interesuje go najbardziej. Może sprawdzić jaką port posiada infrastrukturę, co znajduje się w okolicy oraz czy organizuje jakieś wydarzenia.',
                 ),
                 TileMobileRow(
-                
                   picture: 'assets/images/uspRow/moring.png',
                   title: 'Wybór miejsca',
                   descript:
                       'Po wybraniu portu wystarczy wpisać jaką długość ma łódź, ile osób na niej przebywa oraz jaką ma nazwę. Następnie można wybrać miejsce do cumowania.',
                 ),
                 TileMobileRow(
-              
                   picture: 'assets/images/uspRow/platnosc.png',
                   title: 'Opłacenie postoju',
                   descript:
                       'Port i miejsce wybrane, następnym krokiem jest opłacenie rezerwacji. Port otrzymuje informację, że dokonana została nowa rezerwacja, a opłacone miejsce oznaczane jest w systemie jako zajęte.',
                 ),
                 TileMobileRow(
-                
                   picture: 'assets/images/uspRow/kotwica.png',
                   title: 'Czas zacumować',
                   descript:
@@ -56,13 +52,12 @@ class UspRowMobile extends StatelessWidget {
 }
 
 class TileMobileRow extends StatelessWidget {
-  const TileMobileRow({super.key, 
-
+  const TileMobileRow({
+    super.key,
     required this.picture,
     required this.title,
     required this.descript,
   });
-
 
   final String picture;
   final String title;
@@ -80,7 +75,6 @@ class TileMobileRow extends StatelessWidget {
         boxShadow: const [shadow1],
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Image.asset(
             picture,
@@ -98,7 +92,7 @@ class TileMobileRow extends StatelessWidget {
               style: descriptionM,
               textAlign: TextAlign.justify,
             ),
-          )
+          ),
         ],
       ),
     );

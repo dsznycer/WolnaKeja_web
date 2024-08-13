@@ -4,16 +4,16 @@ import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'nav_button.dart';
 
 class NavigationBarTablet extends StatelessWidget {
-  const NavigationBarTablet(
-      {Key? key,
-      required this.funct,
-      required this.key1,
-      required this.key2,
-      required this.key3,
-      required this.key4})
-      : super(key: key);
+  const NavigationBarTablet({
+    super.key,
+    required this.funct,
+    required this.key1,
+    required this.key2,
+    required this.key3,
+    required this.key4,
+  });
 
-  final Function funct;
+  final void Function(GlobalKey) funct;
   final GlobalKey key1;
   final GlobalKey key2;
   final GlobalKey key3;
@@ -32,7 +32,7 @@ class NavigationBarTablet extends StatelessWidget {
             decoration: BoxDecoration(
               color: colFive,
               borderRadius: BorderRadius.circular(12),
-              boxShadow: const[shadow1],
+              boxShadow: const [shadow1],
             ),
             child: Row(
               children: [

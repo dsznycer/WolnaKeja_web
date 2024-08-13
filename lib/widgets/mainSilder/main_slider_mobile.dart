@@ -3,14 +3,13 @@ import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 
 class MainSliderMobile extends StatelessWidget {
-  const MainSliderMobile({Key? key}) : super(key: key);
+  const MainSliderMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
 
     return Stack(
-      fit: StackFit.loose,
       alignment: Alignment.center,
       children: [
         Column(
@@ -52,7 +51,7 @@ class MainSliderMobile extends StatelessWidget {
                     image:
                         'https://firebasestorage.googleapis.com/v0/b/wolna-keja-web.appspot.com/o/assets%2Fmockup%2FmockupMobile.png?alt=media&token=284e6959-85fc-4b5b-885e-588ff4e7248c',
                     width: size.width * 0.75,
-                    fit: BoxFit.contain),
+                    fit: BoxFit.contain,),
               ),
             ],
           ),

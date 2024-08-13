@@ -4,7 +4,7 @@ import 'package:wolnakeja/widgets/portPanel/port_panel_mobile.dart';
 import 'port_panel_desktop.dart';
 
 class PortPanel extends StatelessWidget {
-  const PortPanel({Key? key}) : super(key: key);
+  const PortPanel({super.key});
 
   @override
   Widget build(BuildContext context) {

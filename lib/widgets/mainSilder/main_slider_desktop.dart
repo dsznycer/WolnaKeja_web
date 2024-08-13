@@ -6,25 +6,20 @@ import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_desktop.dart';
 
 class MainSliderDesktop extends StatelessWidget {
-  const MainSliderDesktop(
-      {Key? key,
-      required this.functA1,
-      required this.keyA1,
-      required this.keyA2,
-      required this.keyA3,
-      required this.keyA4,})
-      : super(key: key);
+  const MainSliderDesktop({
+    super.key,
+    required this.functA1,
+    required this.keyA1,
+    required this.keyA2,
+    required this.keyA3,
+    required this.keyA4,
+  });
 
-
-
-
-  final Function functA1;
+  final void Function(GlobalKey) functA1;
   final GlobalKey keyA1;
   final GlobalKey keyA2;
   final GlobalKey keyA3;
   final GlobalKey keyA4;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -63,15 +58,16 @@ class MainSliderDesktop extends StatelessWidget {
                 const _Dividerek(),
                 const SizedBox(height: 30),
                 const Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3),
-                const Text('Przeglądaj porty, imprezy oraz lokalne atrakcje.',
-                    style: H3),
+                const Text(
+                  'Przeglądaj porty, imprezy oraz lokalne atrakcje.',
+                  style: H3,
+                ),
                 const Text('Wszystko to w jednym miejscu.', style: H3),
                 const SizedBox(height: 30),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const Text(
-                      "Wkrótce na:",
+                      'Wkrótce na:',
                       style: H3Tab,
                     ),
                     Image.asset(
@@ -104,11 +100,12 @@ class MainSliderDesktop extends StatelessWidget {
           right: width,
           left: width,
           child: NavigationBarDesktop(
-              funct: functA1,
-              key1: keyA1,
-              key2: keyA2,
-              key3: keyA3,
-              key4: keyA4),
+            funct: functA1,
+            key1: keyA1,
+            key2: keyA2,
+            key3: keyA3,
+            key4: keyA4,
+          ),
         ),
       ],
     );
@@ -116,7 +113,7 @@ class MainSliderDesktop extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

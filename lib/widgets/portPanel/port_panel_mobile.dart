@@ -3,7 +3,7 @@ import 'package:wolnakeja/style.dart';
 import 'text_tile.dart';
 
 class PortPanelMobile extends StatelessWidget {
-  const PortPanelMobile({Key? key}) : super(key: key);
+  const PortPanelMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,8 @@ class PortPanelMobile extends StatelessWidget {
                   child: Column(
                     children: [
                       TextTile(
-                          'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone'),
+                        'Panel, w którym sprawdzisz czy zajęte miejsca zostały opłacone',
+                      ),
                       SizedBox(height: 25),
                       TextTile('Ostatnie rezerwacje w porcie'),
                       SizedBox(height: 25),
@@ -52,7 +53,7 @@ class PortPanelMobile extends StatelessWidget {
             ),
             Image.asset('assets/images/portPanel/ipad_wk.png'),
           ],
-        )
+        ),
       ],
     );
   }

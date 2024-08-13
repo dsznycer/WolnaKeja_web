@@ -3,7 +3,7 @@ import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
 
 class AboutWKDesktop extends StatelessWidget {
-  const AboutWKDesktop({Key? key}) : super(key: key);
+  const AboutWKDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,20 +46,20 @@ class AboutWKDesktop extends StatelessWidget {
                         style: description,
                         textAlign: TextAlign.justify,
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
           ],
-        )
+        ),
       ],
     );
   }
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

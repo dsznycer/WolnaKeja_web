@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class PortInfoMobile extends StatelessWidget {
-  const PortInfoMobile({Key? key}) : super(key: key);
+  const PortInfoMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    double widthP = size.width * 0.65;
+    final size = MediaQuery.of(context).size;
+    final widthP = size.width * 0.65;
 
     return Column(
       children: [
@@ -25,7 +25,7 @@ class PortInfoMobile extends StatelessWidget {
                 'Wprowadź zupełnie za darmo nowoczesny system zarządzania swoim portem. Reklamuj port oraz jego infrastrukturę w aplikacji mobilnej i docieraj do nowych klientów. Dodatkowo sprzedawaj miejsca oraz zarządzaj rezerwacjami. Wszystko to w jednym miejscu.',
                 style: description,
                 textAlign: TextAlign.justify,
-              )
+              ),
             ],
           ),
         ),
@@ -35,7 +35,7 @@ class PortInfoMobile extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),
             child: Image.asset(
-              "assets/images/portPanel/portfoto.png",
+              'assets/images/portPanel/portfoto.png',
               width: widthP,
               fit: BoxFit.fitWidth,
             ),
@@ -47,7 +47,7 @@ class PortInfoMobile extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

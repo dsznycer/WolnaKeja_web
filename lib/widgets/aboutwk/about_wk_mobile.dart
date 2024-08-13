@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class AboutWKMobile extends StatelessWidget {
-  const AboutWKMobile({Key? key}) : super(key: key);
+  const AboutWKMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class AboutWKMobile extends StatelessWidget {
                 'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiedzać lokalne atrakcje? A może szukasz miejsca, aby zagrać w paintball? ',
                 style: description,
                 textAlign: TextAlign.justify,
-              )
+              ),
             ],
           ),
         ),
@@ -46,7 +46,7 @@ class AboutWKMobile extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

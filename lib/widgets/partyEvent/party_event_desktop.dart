@@ -3,7 +3,7 @@ import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
 
 class PartyEventDesktop extends StatelessWidget {
-  const PartyEventDesktop({Key? key}) : super(key: key);
+  const PartyEventDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class PartyEventDesktop extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

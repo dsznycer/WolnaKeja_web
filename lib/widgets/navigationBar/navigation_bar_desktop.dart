@@ -4,16 +4,16 @@ import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'nav_button.dart';
 
 class NavigationBarDesktop extends StatelessWidget {
-  const NavigationBarDesktop(
-      {Key? key,
-      required this.funct,
-      required this.key1,
-      required this.key2,
-      required this.key3,
-      required this.key4})
-      : super(key: key);
+  const NavigationBarDesktop({
+    super.key,
+    required this.funct,
+    required this.key1,
+    required this.key2,
+    required this.key3,
+    required this.key4,
+  });
 
-  final Function funct;
+  final void Function(GlobalKey) funct;
   final GlobalKey key1;
   final GlobalKey key2;
   final GlobalKey key3;
@@ -38,9 +38,7 @@ class NavigationBarDesktop extends StatelessWidget {
               children: [
                 const SizedBox(width: 40),
                 GestureDetector(
-                  onTap: () {
-                    funct(key1);
-                  },
+                  onTap: () => funct(key1),
                   child: const NavButton(
                     tekst: 'O aplikacji',
                     fontSize: 18,
@@ -48,9 +46,7 @@ class NavigationBarDesktop extends StatelessWidget {
                 ),
                 const SizedBox(width: 40),
                 GestureDetector(
-                  onTap: () =>
-                    funct(key2)
-                  ,
+                  onTap: () => funct(key2),
                   child: const NavButton(
                     tekst: 'Dla żeglarzy',
                     fontSize: 18,
@@ -68,9 +64,7 @@ class NavigationBarDesktop extends StatelessWidget {
                 ),
                 const SizedBox(width: 40),
                 GestureDetector(
-                  onTap: () {
-                    funct(key4);
-                  },
+                  onTap: () => funct(key4),
                   child: const NavButton(
                     tekst: 'Kontakt',
                     fontSize: 18,

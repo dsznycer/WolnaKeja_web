@@ -4,7 +4,7 @@ import 'package:wolnakeja/widgets/aboutwk/about_wk_desktop.dart';
 import 'package:wolnakeja/widgets/aboutwk/about_wk_mobile.dart';
 
 class AboutWK extends StatelessWidget {
-  const AboutWK({Key? key}) : super(key: key);
+  const AboutWK({super.key});
 
   @override
   Widget build(BuildContext context) {

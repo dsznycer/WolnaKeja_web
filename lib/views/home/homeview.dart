@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/NavigationDrawer/navigation_drawer.dart';
 import 'package:wolnakeja/widgets/aboutwk/about_wk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
@@ -10,10 +11,9 @@ import 'package:wolnakeja/widgets/portInfo/port_info.dart';
 import 'package:wolnakeja/widgets/portPanel/port_panel.dart';
 import 'package:wolnakeja/widgets/uspRow/usp_row.dart';
 import 'package:wolnakeja/widgets/valuesProduct/values_product.dart';
-import 'package:wolnakeja/style.dart';
 
 class Homeview extends StatelessWidget {
-  Homeview({Key? key}) : super(key: key);
+  Homeview({super.key});
 
   final itemKeyA = GlobalKey();
   final itemKeyB = GlobalKey();
@@ -21,11 +21,10 @@ class Homeview extends StatelessWidget {
   final itemKeyD = GlobalKey();
   final itemKeyE = GlobalKey();
 
-  Future scrollToItem(GlobalKey key) async {
-    final context = key.currentContext!;
-    await Scrollable.ensureVisible(context,
-        duration: const Duration(milliseconds: 600));
-  }
+  void scrollToItem(GlobalKey key) => Scrollable.ensureVisible(
+        key.currentContext!,
+        duration: const Duration(milliseconds: 600),
+      );
 
   @override
   Widget build(BuildContext context) {

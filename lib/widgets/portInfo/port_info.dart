@@ -4,7 +4,7 @@ import 'package:wolnakeja/widgets/portInfo/port_info_mobile.dart';
 import 'port_info_desktop.dart';
 
 class PortInfo extends StatelessWidget {
-  const PortInfo({Key? key}) : super(key: key);
+  const PortInfo({super.key});
 
   @override
   Widget build(BuildContext context) {

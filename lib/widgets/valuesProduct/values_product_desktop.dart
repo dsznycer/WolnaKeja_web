@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class ValuesProductDesktop extends StatelessWidget {
-  const ValuesProductDesktop({Key? key}) : super(key: key);
+  const ValuesProductDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    double widthP = size.width * 0.25;
+    final size = MediaQuery.of(context).size;
+    final widthP = size.width * 0.25;
 
     return Column(
       children: [
@@ -45,20 +45,20 @@ class ValuesProductDesktop extends StatelessWidget {
                       'Mazury to polska perełka żeglarska. Niestety coraz więcej jachtów chce cumować w marinach, które niestety nie powiększają się z każdym rokiem. Z naszą aplikacją zaplanujesz podróż po Krainie Wielkich Jezior oraz wykupisz miejsca w dogodnych portach. Nigdy więcej nie martw się czy znajdziesz miejsce w porcie. I ciesz się przyrodą.  ',
                       style: description,
                       textAlign: TextAlign.justify,
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
           ],
-        )
+        ),
       ],
     );
   }
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

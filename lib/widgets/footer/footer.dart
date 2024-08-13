@@ -4,7 +4,7 @@ import 'package:wolnakeja/widgets/footer/footer_desktop.dart';
 import 'package:wolnakeja/widgets/footer/footer_mobile.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key? key}) : super(key: key);
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {

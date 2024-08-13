@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class PartyEventMobile extends StatelessWidget {
-  const PartyEventMobile({Key? key}) : super(key: key);
+  const PartyEventMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class PartyEventMobile extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {

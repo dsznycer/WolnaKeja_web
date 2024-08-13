@@ -11,9 +11,7 @@ class TextTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
       decoration: BoxDecoration(
-        boxShadow: const [
-          shadow1
-        ],
+        boxShadow: const [shadow1],
         borderRadius: BorderRadius.circular(12),
         color: colSix,
       ),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:wolnakeja/services/url_service.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
-import 'package:wolnakeja/services/urlService.dart';
+import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterMobile extends StatelessWidget {
-  FooterMobile({Key? key}) : super(key: key);
+  FooterMobile({super.key});
 
   final UrlService urlservice = UrlService();
 
@@ -17,10 +17,9 @@ class FooterMobile extends StatelessWidget {
         borderRadius: const BorderRadius.vertical(top: Radius.circular(18)),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.all(30),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               constraints: const BoxConstraints(maxWidth: 1600),
@@ -32,7 +31,7 @@ class FooterMobile extends StatelessWidget {
                     children: [
                       const Flexible(
                         child: Align(
-                          child: logoWidget(150),
+                          child: LogoWidget(150),
                         ),
                       ),
                       Flexible(
@@ -50,15 +49,14 @@ class FooterMobile extends StatelessWidget {
                                 onTap: () =>
                                     urlservice.urlLauncher(urlservice.urlInsta),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Image.asset(
                                         'assets/images/footer/fb_logo.png',
-                                        height: 30),
+                                        height: 30,),
                                     const SizedBox(width: 10),
                                     Image.asset(
                                         'assets/images/footer/insta_logo.png',
-                                        height: 30),
+                                        height: 30,),
                                   ],
                                 ),
                               ),
@@ -78,7 +76,7 @@ class FooterMobile extends StatelessWidget {
                         child: Container(
                           constraints: const BoxConstraints(maxWidth: 300),
                           child: Column(
-                            mainAxisSize: MainAxisSize.max,
+                           
                             children: [
                               const Text(
                                 'Masz pytania? Pomysły? Odezwij się do nas.',
@@ -87,9 +85,9 @@ class FooterMobile extends StatelessWidget {
                               ),
                               const SizedBox(height: 25),
                               GestureDetector(
-                                onTap: () {
-                                  urlservice.urlLauncher(urlservice.phone);
-                                },
+                                onTap: () =>
+                                  urlservice.urlLauncher(urlservice.phone)
+                                ,
                                 child: Row(
                                   children: [
                                     Image.asset(
@@ -97,7 +95,7 @@ class FooterMobile extends StatelessWidget {
                                       width: 40,
                                     ),
                                     const SizedBox(width: 20),
-                                    const SelectableText('516 248 020')
+                                    const SelectableText('516 248 020'),
                                   ],
                                 ),
                               ),
@@ -134,9 +132,9 @@ class FooterMobile extends StatelessWidget {
                               ),
                               Image.asset(
                                   'assets/images/footer/google-play-badge.png',
-                                  height: 52),
+                                  height: 52,),
                               Image.asset('assets/images/footer/iosbadge.png',
-                                  height: 40),
+                                  height: 40,),
                             ],
                           ),
                         ),
@@ -154,7 +152,7 @@ class FooterMobile extends StatelessWidget {
               child: Row(children: [
                 SizedBox(width: 10),
                 Text('All Rights Reserved © Wolna Keja'),
-              ]),
+              ],),
             ),
           ],
         ),

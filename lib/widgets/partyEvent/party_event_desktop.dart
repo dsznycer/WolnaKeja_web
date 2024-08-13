@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
 
-class partyEvent_desktop extends StatelessWidget {
-  const partyEvent_desktop({Key? key}) : super(key: key);
+class PartyEventDesktop extends StatelessWidget {
+  const PartyEventDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +16,11 @@ class partyEvent_desktop extends StatelessWidget {
         children: [
           Flexible(
             child: Container(
-              margin: EdgeInsets.all(40),
-              child: Column(
+              margin: const EdgeInsets.all(40),
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  const Text(
+                children: [
+                  Text(
                     'Przejrzyj koncerty i wydarzenia, które dzieją się w portach',
                     style: H3,
                   ),
@@ -38,7 +38,7 @@ class partyEvent_desktop extends StatelessWidget {
           ),
           Flexible(
             child: Container(
-              margin: EdgeInsets.all(40),
+              margin: const EdgeInsets.all(40),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(14),
                 child: Image.asset(
@@ -55,13 +55,13 @@ class partyEvent_desktop extends StatelessWidget {
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -70,7 +70,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

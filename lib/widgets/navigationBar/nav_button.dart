@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class navButton extends StatelessWidget {
-  const navButton({required this.tekst, required this.fontSize});
+class NavButton extends StatelessWidget {
+  const NavButton({super.key, required this.tekst, required this.fontSize});
 
   final String tekst;
   final int fontSize;
@@ -19,7 +19,7 @@ class navButton extends StatelessWidget {
             color: colFirst,
           ),
         ),
-        Icon(Icons.keyboard_arrow_down_sharp),
+        const Icon(Icons.keyboard_arrow_down_sharp),
       ],
     );
   }

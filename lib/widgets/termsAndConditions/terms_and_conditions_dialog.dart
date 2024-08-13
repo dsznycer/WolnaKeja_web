@@ -5,8 +5,8 @@ import 'package:wolnakeja/enums.dart';
 class TermsAndConditionsDialog extends StatelessWidget {
   const TermsAndConditionsDialog({
     required this.termsType,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final TermsType termsType;
 
@@ -30,22 +30,24 @@ class TermsAndConditionsDialog extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: FutureBuilder<String>(
-                  future: futureTerms,
-                  builder: (context, snapshot) {
-                    if (snapshot.hasData) {
-                      return SelectableText(
-                        snapshot.data!,
-                        textAlign: TextAlign.justify,
-                        style: const TextStyle(fontSize: 12),
-                      );
-                    }
-                    return const CircularProgressIndicator();
-                  }),
+                future: futureTerms,
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return SelectableText(
+                      snapshot.data!,
+                      textAlign: TextAlign.justify,
+                      style: const TextStyle(fontSize: 12),
+                    );
+                  }
+                  return const CircularProgressIndicator();
+                },
+              ),
             ),
             TextButton.icon(
-                onPressed: () => Navigator.of(context).pop(),
-                icon: const Icon(Icons.arrow_back),
-                label: const Text('Wróć'))
+              onPressed: () => Navigator.of(context).pop(),
+              icon: const Icon(Icons.arrow_back),
+              label: const Text('Wróć'),
+            ),
           ],
         ),
       ),

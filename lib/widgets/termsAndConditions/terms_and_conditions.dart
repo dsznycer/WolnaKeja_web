@@ -6,11 +6,11 @@ import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions_dialog
 class TermsAndConditions extends StatelessWidget {
   const TermsAndConditions({super.key});
 
-  void _showDialog(TermsType termsType, BuildContext context) async {
-    return showDialog(
+  Future<void> _showDialog(TermsType termsType, BuildContext context) =>
+      showDialog(
         context: context,
-        builder: (context) => TermsAndConditionsDialog(termsType: termsType));
-  }
+        builder: (context) => TermsAndConditionsDialog(termsType: termsType),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,12 @@ class TermsAndConditions extends StatelessWidget {
       child: Row(
         children: [
           InkWell(
-              onTap: () => _showDialog(TermsType.appRegulations, context),
-              child: Text(
-                TermsType.appRegulations.title,
-                style: const TextStyle(fontWeight: FontWeight.w500),
-              )),
+            onTap: () => _showDialog(TermsType.appRegulations, context),
+            child: Text(
+              TermsType.appRegulations.title,
+              style: const TextStyle(fontWeight: FontWeight.w500),
+            ),
+          ),
           const SizedBox(width: 25),
           InkWell(
             onTap: () => _showDialog(TermsType.privacyPolicy, context),
@@ -34,8 +35,10 @@ class TermsAndConditions extends StatelessWidget {
           ),
           const SizedBox(width: 25),
           InkWell(
-            onTap: () => showDialog(
-                context: context, builder: (_) => const PricesDialog()),
+            onTap: () => showDialog<void>(
+              context: context,
+              builder: (_) => const PricesDialog(),
+            ),
             child: const Text(
               'Cennik',
               style: TextStyle(fontWeight: FontWeight.w500),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
 
-class aboutwk_desktop extends StatelessWidget {
-  const aboutwk_desktop({Key? key}) : super(key: key);
+class AboutWKDesktop extends StatelessWidget {
+  const AboutWKDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +30,9 @@ class aboutwk_desktop extends StatelessWidget {
             Flexible(
               child: Container(
                 margin: const EdgeInsets.all(40),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     TextRenderer(
                       text: Text(
                         'Wygodnie zarezerwuj i opłać miejsce przy kei.',
@@ -46,26 +46,26 @@ class aboutwk_desktop extends StatelessWidget {
                         style: description,
                         textAlign: TextAlign.justify,
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
             ),
           ],
-        )
+        ),
       ],
     );
   }
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -74,7 +74,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:wolnakeja/widgets/NavigationDrawer/NavigationDrawer.dart';
-import 'package:wolnakeja/widgets/aboutwk/aboutwk.dart';
+import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/widgets/NavigationDrawer/navigation_drawer.dart';
+import 'package:wolnakeja/widgets/aboutwk/about_wk.dart';
 import 'package:wolnakeja/widgets/centeredview/centeredview.dart';
 import 'package:wolnakeja/widgets/footer/footer.dart';
 import 'package:wolnakeja/widgets/mainSilder/mainslider.dart';
-import 'package:wolnakeja/widgets/partyEvent/partyEvent.dart';
-import 'package:wolnakeja/widgets/portInfo/portInfo.dart';
-import 'package:wolnakeja/widgets/portPanel/portPanel.dart';
-import 'package:wolnakeja/widgets/uspRow/usprow.dart';
-import 'package:wolnakeja/widgets/valuesProduct/valuesProduct.dart';
-import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/widgets/partyEvent/party_event.dart';
+import 'package:wolnakeja/widgets/portInfo/port_info.dart';
+import 'package:wolnakeja/widgets/portPanel/port_panel.dart';
+import 'package:wolnakeja/widgets/uspRow/usp_row.dart';
+import 'package:wolnakeja/widgets/valuesProduct/values_product.dart';
 
 class Homeview extends StatelessWidget {
-  Homeview({Key? key}) : super(key: key);
+  Homeview({super.key});
 
   final itemKeyA = GlobalKey();
   final itemKeyB = GlobalKey();
@@ -21,11 +21,10 @@ class Homeview extends StatelessWidget {
   final itemKeyD = GlobalKey();
   final itemKeyE = GlobalKey();
 
-  Future scrollToItem(GlobalKey key) async {
-    final context = key.currentContext!;
-    await Scrollable.ensureVisible(context,
-        duration: Duration(milliseconds: 600));
-  }
+  void scrollToItem(GlobalKey key) => Scrollable.ensureVisible(
+        key.currentContext!,
+        duration: const Duration(milliseconds: 600),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +39,7 @@ class Homeview extends StatelessWidget {
                   height: 60,
                 ),
                 centerTitle: true,
-                iconTheme: IconThemeData(
+                iconTheme: const IconThemeData(
                   color: colFirst,
                   size: 35,
                 ),
@@ -71,22 +70,22 @@ class Homeview extends StatelessWidget {
               CenteredView(
                 child: Column(
                   children: [
-                    aboutwk(key: itemKeyA),
-                    SizedBox(height: 40),
-                    usprow(key: itemKeyB),
-                    SizedBox(height: 70),
-                    partyEvent(key: itemKeyC),
-                    SizedBox(height: 70),
-                    valuesProduct(),
-                    SizedBox(height: 100),
-                    portPanel(key: itemKeyD),
-                    SizedBox(height: 80),
-                    portInfo(),
-                    SizedBox(height: 80),
+                    AboutWK(key: itemKeyA),
+                    const SizedBox(height: 40),
+                    UspRow(key: itemKeyB),
+                    const SizedBox(height: 70),
+                    PartyEvent(key: itemKeyC),
+                    const SizedBox(height: 70),
+                    const ValuesProduct(),
+                    const SizedBox(height: 100),
+                    PortPanel(key: itemKeyD),
+                    const SizedBox(height: 80),
+                    const PortInfo(),
+                    const SizedBox(height: 80),
                   ],
                 ),
               ),
-              footer(key: itemKeyE),
+              Footer(key: itemKeyE),
             ],
           ),
         ),

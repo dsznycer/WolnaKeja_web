@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
 class ButtonDrawer extends StatelessWidget {
-  const ButtonDrawer({required this.tekst});
+  const ButtonDrawer({super.key, required this.tekst});
 
   final String tekst;
 
@@ -10,16 +10,16 @@ class ButtonDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       Padding(
-        padding: EdgeInsets.symmetric(vertical: 15),
+        padding: const EdgeInsets.symmetric(vertical: 15),
         child: Text(
           tekst,
           style: H3,
         ),
       ),
-      Icon(
+      const Icon(
         Icons.keyboard_arrow_down_sharp,
         size: 18,
       ),
-    ]);
+    ],);
   }
 }

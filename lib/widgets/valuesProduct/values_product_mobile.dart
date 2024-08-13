@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class valuesProduct_mobile extends StatelessWidget {
-  const valuesProduct_mobile({Key? key}) : super(key: key);
+class ValuesProductMobile extends StatelessWidget {
+  const ValuesProductMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    double widthP = size.width * 0.65;
+    final size = MediaQuery.of(context).size;
+    final widthP = size.width * 0.65;
 
     return Column(
       children: [
         Container(
-          constraints: BoxConstraints(maxWidth: 400),
+          constraints: const BoxConstraints(maxWidth: 400),
           alignment: Alignment.center,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),
@@ -24,8 +24,8 @@ class valuesProduct_mobile extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.all(40),
-          child: Column(
+          margin: const EdgeInsets.all(40),
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
@@ -37,23 +37,23 @@ class valuesProduct_mobile extends StatelessWidget {
                 'Mazury to polska perełka żeglarska. Niestety coraz więcej jachtów chce cumować w marinach, które niestety nie powiększają się z każdym rokiem. Z naszą aplikacją zaplanujesz podróż po Krainie Wielkich Jezior oraz wykupisz miejsca w dogodnych portach. Nigdy więcej nie martw się czy znajdziesz miejsce w porcie. I ciesz się przyrodą.  ',
                 style: description,
                 textAlign: TextAlign.justify,
-              )
+              ),
             ],
           ),
-        )
+        ),
       ],
     );
   }
 }
 
 class _Dividerek extends StatelessWidget {
-  const _Dividerek({Key? key}) : super(key: key);
+  const _Dividerek();
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -62,7 +62,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

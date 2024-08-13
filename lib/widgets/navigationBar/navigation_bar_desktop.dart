@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
-import 'navButton.dart';
+import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
+import 'nav_button.dart';
 
 class NavigationBarDesktop extends StatelessWidget {
-  const NavigationBarDesktop(
-      {Key? key,
-      required this.funct,
-      required this.key1,
-      required this.key2,
-      required this.key3,
-      required this.key4})
-      : super(key: key);
+  const NavigationBarDesktop({
+    super.key,
+    required this.funct,
+    required this.key1,
+    required this.key2,
+    required this.key3,
+    required this.key4,
+  });
 
-  final Function funct;
+  final void Function(GlobalKey) funct;
   final GlobalKey key1;
   final GlobalKey key2;
   final GlobalKey key3;
@@ -26,57 +26,51 @@ class NavigationBarDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const logoWidget(170),
+          const LogoWidget(170),
           Container(
             height: 55,
             decoration: BoxDecoration(
               color: colFive,
               borderRadius: BorderRadius.circular(12),
-              boxShadow: [shadow1],
+              boxShadow: const [shadow1],
             ),
             child: Row(
               children: [
-                SizedBox(width: 40),
+                const SizedBox(width: 40),
                 GestureDetector(
-                  onTap: () {
-                    funct(key1);
-                  },
-                  child: navButton(
+                  onTap: () => funct(key1),
+                  child: const NavButton(
                     tekst: 'O aplikacji',
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(width: 40),
+                const SizedBox(width: 40),
                 GestureDetector(
-                  onTap: () {
-                    funct(key2);
-                  },
-                  child: navButton(
+                  onTap: () => funct(key2),
+                  child: const NavButton(
                     tekst: 'Dla żeglarzy',
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(width: 40),
+                const SizedBox(width: 40),
                 GestureDetector(
                   onTap: () {
                     funct(key3);
                   },
-                  child: navButton(
+                  child: const NavButton(
                     tekst: 'Dla portów',
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(width: 40),
+                const SizedBox(width: 40),
                 GestureDetector(
-                  onTap: () {
-                    funct(key4);
-                  },
-                  child: navButton(
+                  onTap: () => funct(key4),
+                  child: const NavButton(
                     tekst: 'Kontakt',
                     fontSize: 18,
                   ),
                 ),
-                SizedBox(width: 40),
+                const SizedBox(width: 40),
               ],
             ),
           ),

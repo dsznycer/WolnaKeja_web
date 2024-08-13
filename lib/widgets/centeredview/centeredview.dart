@@ -9,7 +9,7 @@ class CenteredView extends StatelessWidget {
     return Container(
       alignment: Alignment.topCenter,
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1400),
+        constraints: const BoxConstraints(maxWidth: 1400),
         child: child,
       ),
     );

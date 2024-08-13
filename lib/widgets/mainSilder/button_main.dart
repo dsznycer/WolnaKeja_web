@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class buttonMain extends StatelessWidget {
-  const buttonMain(this.tekst);
+class ButtonMain extends StatelessWidget {
+  const ButtonMain(this.tekst, {super.key});
 
   final String tekst;
 
@@ -18,7 +18,7 @@ class buttonMain extends StatelessWidget {
             color: colFive,
             width: 0.8,
           ),
-          boxShadow: [shadow1]),
+          boxShadow: const [shadow1]),
       child: Align(
         alignment: Alignment.center,
         child: Text(

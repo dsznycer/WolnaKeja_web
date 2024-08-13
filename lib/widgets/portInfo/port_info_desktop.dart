@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class portInfo_desktop extends StatelessWidget {
-  const portInfo_desktop({Key? key}) : super(key: key);
+class PortInfoDesktop extends StatelessWidget {
+  const PortInfoDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class portInfo_desktop extends StatelessWidget {
             Flexible(
               child: Container(
                 margin:
-                    EdgeInsets.only(right: 40, left: 60, top: 40, bottom: 40),
-                child: Column(
+                    const EdgeInsets.only(right: 40, left: 60, top: 40, bottom: 40),
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
@@ -61,7 +61,7 @@ class _Dividerek extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -70,7 +70,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

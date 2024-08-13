@@ -20,31 +20,31 @@ class MainSliderMobile extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.fitWidth,
             ),
-            SizedBox(height: 250),
+            const SizedBox(height: 250),
           ],
         ),
         Positioned(
           top: 50,
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 width: size.width * 0.7,
-                child: Text(
+                child: const Text(
                   'Aplikacja do rezerwacji miejsc w portach mazurskich.',
                   style: H2M,
                 ),
               ),
-              SizedBox(height: 20),
-              Container(
+              const SizedBox(height: 20),
+              SizedBox(
                 width: size.width * 0.7,
-                child: Text(
+                child: const Text(
                   'Rezerwuj miejsce przy kei w aplikacji. Przeglądaj porty, imprezy oraz lokalne atrakcje. '
                   'Wszysto to w jednym miejscu.',
                   style: H3M,
                 ),
               ),
-              SizedBox(height: 50),
-              Container(
+              const SizedBox(height: 50),
+              SizedBox(
                 height: size.height * 0.7,
                 width: size.width * 0.75,
                 child: FadeInImage.memoryNetwork(

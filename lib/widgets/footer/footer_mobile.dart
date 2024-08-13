@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
-import 'package:wolnakeja/services/urlService.dart';
+import 'package:wolnakeja/services/url_service.dart';
+import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterMobile extends StatelessWidget {
@@ -32,7 +32,7 @@ class FooterMobile extends StatelessWidget {
                     children: [
                       const Flexible(
                         child: Align(
-                          child: logoWidget(150),
+                          child: LogoWidget(150),
                         ),
                       ),
                       Flexible(

@@ -1,27 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
 
-class aboutwk_desktop extends StatelessWidget {
-  const aboutwk_desktop({Key? key}) : super(key: key);
+class ValuesProductDesktop extends StatelessWidget {
+  const ValuesProductDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    double widthP = size.width * 0.25;
+
     return Column(
       children: [
         const Text(
-          'O aplikacji',
+          'Wolna keja.',
           style: H2,
         ),
         Row(
           children: [
             Flexible(
               child: Container(
-                margin: const EdgeInsets.all(40),
+                alignment: Alignment.center,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(14),
                   child: Image.asset(
-                    'assets/images/aboutwk/reservations-kopia.png',
+                    'assets/images/valuesProduct/valueofproduct.png',
+                    width: widthP,
                     fit: BoxFit.fitWidth,
                   ),
                 ),
@@ -30,22 +33,18 @@ class aboutwk_desktop extends StatelessWidget {
             Flexible(
               child: Container(
                 margin: const EdgeInsets.all(40),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    TextRenderer(
-                      text: Text(
-                        'Wygodnie zarezerwuj i opłać miejsce przy kei.',
-                        style: H3,
-                      ),
+                  children: [
+                    Text(
+                      'Planuj, rezerwuj i ciesz się mazurami.',
+                      style: H3,
                     ),
                     _Dividerek(),
-                    TextRenderer(
-                      text: Text(
-                        'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiedzać lokalne atrakcje? A może szukasz miejsca, aby zagrać w paintball?   ',
-                        style: description,
-                        textAlign: TextAlign.justify,
-                      ),
+                    Text(
+                      'Mazury to polska perełka żeglarska. Niestety coraz więcej jachtów chce cumować w marinach, które niestety nie powiększają się z każdym rokiem. Z naszą aplikacją zaplanujesz podróż po Krainie Wielkich Jezior oraz wykupisz miejsca w dogodnych portach. Nigdy więcej nie martw się czy znajdziesz miejsce w porcie. I ciesz się przyrodą.  ',
+                      style: description,
+                      textAlign: TextAlign.justify,
                     )
                   ],
                 ),
@@ -65,7 +64,7 @@ class _Dividerek extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -74,7 +73,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
-import 'package:wolnakeja/services/urlService.dart';
+import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
+import 'package:wolnakeja/services/url_service.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterDesktop extends StatelessWidget {
   FooterDesktop({Key? key}) : super(key: key);
 
-  UrlService urlservice = UrlService();
+  final UrlService urlservice = UrlService(); //FIXME
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class FooterDesktop extends StatelessWidget {
                 children: [
                   const Align(
                     alignment: Alignment.bottomLeft,
-                    child: logoWidget(160),
+                    child: LogoWidget(160),
                   ), //Logo
                   Flexible(
                     child: Container(
@@ -85,8 +85,8 @@ class FooterDesktop extends StatelessWidget {
                                   'assets/images/footer/phone_icon.png',
                                   width: 40,
                                 ),
-                                SizedBox(width: 20),
-                                Text('516 248 020'),
+                                const SizedBox(width: 20),
+                                const Text('516 248 020'),
                               ],
                             ),
                           ),

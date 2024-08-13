@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class valuesProduct_mobile extends StatelessWidget {
-  const valuesProduct_mobile({Key? key}) : super(key: key);
+class ValuesProductMobile extends StatelessWidget {
+  const ValuesProductMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class valuesProduct_mobile extends StatelessWidget {
     return Column(
       children: [
         Container(
-          constraints: BoxConstraints(maxWidth: 400),
+          constraints: const BoxConstraints(maxWidth: 400),
           alignment: Alignment.center,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),
@@ -24,8 +24,8 @@ class valuesProduct_mobile extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.all(40),
-          child: Column(
+          margin: const EdgeInsets.all(40),
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
@@ -53,7 +53,7 @@ class _Dividerek extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -62,7 +62,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

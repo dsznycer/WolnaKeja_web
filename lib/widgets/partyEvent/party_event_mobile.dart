@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class PartyEvent_mobile extends StatelessWidget {
-  const PartyEvent_mobile({Key? key}) : super(key: key);
+class PartyEventMobile extends StatelessWidget {
+  const PartyEventMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +15,9 @@ class PartyEvent_mobile extends StatelessWidget {
         children: [
           Container(
             margin: const EdgeInsets.all(30),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   'Przejrzyj koncerty i wydarzenia, które dzieją się w portach',
                   style: H3,

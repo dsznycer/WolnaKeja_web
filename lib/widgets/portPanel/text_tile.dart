@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class textTile extends StatelessWidget {
-  const textTile(this.tekst);
+class TextTile extends StatelessWidget {
+  const TextTile(this.tekst, {super.key});
 
   final String tekst;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
       decoration: BoxDecoration(
-        boxShadow: [
-          shadow1,
+        boxShadow: const [
+          shadow1
         ],
         borderRadius: BorderRadius.circular(12),
         color: colSix,

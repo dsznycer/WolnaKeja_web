@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:wolnakeja/style.dart';
-import 'package:wolnakeja/widgets/NavigationDrawer/ButtonDrawer.dart';
-import 'package:wolnakeja/widgets/logoWidget/logoWidget.dart';
+import 'package:wolnakeja/widgets/NavigationDrawer/button_drawer.dart';
+import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 
 class NavigDrawer extends StatelessWidget {
-  final Function functOnGest;
-  final GlobalKey key1;
-  final GlobalKey key2;
-  final GlobalKey key3;
-  final GlobalKey key4;
+  
 
   const NavigDrawer(
       {Key? key,
@@ -19,6 +14,15 @@ class NavigDrawer extends StatelessWidget {
       required this.key3,
       required this.key4})
       : super(key: key);
+      
+
+
+
+      final Function functOnGest;
+  final GlobalKey key1;
+  final GlobalKey key2;
+  final GlobalKey key3;
+  final GlobalKey key4;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +36,7 @@ class NavigDrawer extends StatelessWidget {
             alignment: AlignmentDirectional.center,
             children: [
               Container(
-                padding: EdgeInsets.only(right: 10),
+                padding: const EdgeInsets.only(right: 10),
                 height: 220,
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
@@ -41,7 +45,7 @@ class NavigDrawer extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              logoWidget(160),
+              const LogoWidget(160),
             ],
           ),
           GestureDetector(
@@ -49,26 +53,26 @@ class NavigDrawer extends StatelessWidget {
               functOnGest(key1);
               Navigator.pop(context);
             },
-            child: ButtonDrawer(tekst: 'O aplikacji'),
+            child: const ButtonDrawer(tekst: 'O aplikacji'),
           ),
           GestureDetector(
               onTap: () {
                 functOnGest(key2);
                 Navigator.pop(context);
               },
-              child: ButtonDrawer(tekst: 'Dla żeglarzy')),
+              child: const ButtonDrawer(tekst: 'Dla żeglarzy')),
           GestureDetector(
               onTap: () {
                 functOnGest(key3);
                 Navigator.pop(context);
               },
-              child: ButtonDrawer(tekst: 'Dla portów')),
+              child: const ButtonDrawer(tekst: 'Dla portów')),
           GestureDetector(
               onTap: () {
                 functOnGest(key4);
                 Navigator.pop(context);
               },
-              child: ButtonDrawer(tekst: 'Kontakt')),
+              child: const ButtonDrawer(tekst: 'Kontakt')),
         ],
       ),
     );

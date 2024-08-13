@@ -1,29 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
 
-class aboutwk_mobile extends StatelessWidget {
-  const aboutwk_mobile({Key? key}) : super(key: key);
+class PortInfoMobile extends StatelessWidget {
+  const PortInfoMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    double widthP = size.width * 0.65;
+
     return Column(
       children: [
-        Text(
-          'O aplikacji',
-          style: H2,
-        ),
         Container(
-          margin: EdgeInsets.all(20),
-          child: Column(
+          margin: const EdgeInsets.all(40),
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Wygodnie zarezerwuj i opłać miejsce przy kei.',
+              Text(
+                'Nowoczesny system zarządzania portem',
                 style: H3,
               ),
               _Dividerek(),
-              const Text(
-                'Wolna Keja to aplikacja służąca do rezerwacji miejsc w portach mazurskich. Żeglarze mają możliwość wybrania oraz opłacenia wybranego przez siebie miejsca w porcie. Porty natomiast, mogą pokazać swoją infrastrukturę, udogodnienia czy atrakcje dostępne w pobliżu. Szukasz apteki, chcesz pozwiedzać lokalne atrakcje? A może szukasz miejsca, aby zagrać w paintball? ',
+              Text(
+                'Wprowadź zupełnie za darmo nowoczesny system zarządzania swoim portem. Reklamuj port oraz jego infrastrukturę w aplikacji mobilnej i docieraj do nowych klientów. Dodatkowo sprzedawaj miejsca oraz zarządzaj rezerwacjami. Wszystko to w jednym miejscu.',
                 style: description,
                 textAlign: TextAlign.justify,
               )
@@ -31,11 +30,13 @@ class aboutwk_mobile extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.all(20),
+          constraints: const BoxConstraints(maxWidth: 500),
+          alignment: Alignment.center,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),
             child: Image.asset(
-              'assets/images/aboutwk/reservations-kopia.png',
+              "assets/images/portPanel/portfoto.png",
+              width: widthP,
               fit: BoxFit.fitWidth,
             ),
           ),
@@ -52,7 +53,7 @@ class _Dividerek extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Container(
           width: 50,
           height: 3,
@@ -61,7 +62,7 @@ class _Dividerek extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
   }

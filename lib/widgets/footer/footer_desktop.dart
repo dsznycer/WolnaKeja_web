@@ -7,7 +7,8 @@ import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 class FooterDesktop extends StatelessWidget {
   FooterDesktop({super.key});
 
-  final UrlService urlservice = UrlService(); //FIXME
+  final UrlService urlservice =
+      UrlService(); // TODO URLService should abstract final class with static access
 
   @override
   Widget build(BuildContext context) {

@@ -4,6 +4,7 @@ import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_desktop.dart';
+import 'package:wolnakeja/widgets/shared/dividerek.dart';
 
 class MainSliderDesktop extends StatelessWidget {
   const MainSliderDesktop({
@@ -55,7 +56,12 @@ class MainSliderDesktop extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 30),
-                const _Dividerek(),
+                Dividerek(
+                  height: 4,
+                  width: 70,
+                  color: colFirst.withOpacity(0.6),
+                  borderRadius: 12,
+                ),
                 const SizedBox(height: 30),
                 const Text('Rezerwuj miejsce przy kei w aplikacji.', style: H3),
                 const Text(
@@ -108,22 +114,6 @@ class MainSliderDesktop extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _Dividerek extends StatelessWidget {
-  const _Dividerek();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 70,
-      height: 4,
-      decoration: BoxDecoration(
-        color: colFirst.withOpacity(0.6),
-        borderRadius: BorderRadius.circular(12),
-      ),
     );
   }
 }

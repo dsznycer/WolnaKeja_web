@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/widgets/shared/dividerek.dart';
 
 class PortInfoMobile extends StatelessWidget {
   const PortInfoMobile({super.key});
@@ -20,7 +21,7 @@ class PortInfoMobile extends StatelessWidget {
                 'Nowoczesny system zarządzania portem',
                 style: H3,
               ),
-              _Dividerek(),
+              Dividerek(),
               Text(
                 'Wprowadź zupełnie za darmo nowoczesny system zarządzania swoim portem. Reklamuj port oraz jego infrastrukturę w aplikacji mobilnej i docieraj do nowych klientów. Dodatkowo sprzedawaj miejsca oraz zarządzaj rezerwacjami. Wszystko to w jednym miejscu.',
                 style: description,
@@ -41,28 +42,6 @@ class PortInfoMobile extends StatelessWidget {
             ),
           ),
         ),
-      ],
-    );
-  }
-}
-
-class _Dividerek extends StatelessWidget {
-  const _Dividerek();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SizedBox(height: 20),
-        Container(
-          width: 50,
-          height: 3,
-          decoration: BoxDecoration(
-            color: colThird,
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
-        const SizedBox(height: 20),
       ],
     );
   }

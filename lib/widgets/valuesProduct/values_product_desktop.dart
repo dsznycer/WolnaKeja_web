@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/widgets/shared/dividerek.dart';
 
 class ValuesProductDesktop extends StatelessWidget {
   const ValuesProductDesktop({super.key});
@@ -40,7 +41,7 @@ class ValuesProductDesktop extends StatelessWidget {
                       'Planuj, rezerwuj i ciesz się mazurami.',
                       style: H3,
                     ),
-                    _Dividerek(),
+                    Dividerek(),
                     Text(
                       'Mazury to polska perełka żeglarska. Niestety coraz więcej jachtów chce cumować w marinach, które niestety nie powiększają się z każdym rokiem. Z naszą aplikacją zaplanujesz podróż po Krainie Wielkich Jezior oraz wykupisz miejsca w dogodnych portach. Nigdy więcej nie martw się czy znajdziesz miejsce w porcie. I ciesz się przyrodą.  ',
                       style: description,
@@ -52,28 +53,6 @@ class ValuesProductDesktop extends StatelessWidget {
             ),
           ],
         ),
-      ],
-    );
-  }
-}
-
-class _Dividerek extends StatelessWidget {
-  const _Dividerek();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SizedBox(height: 20),
-        Container(
-          width: 50,
-          height: 3,
-          decoration: BoxDecoration(
-            color: colThird,
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
-        const SizedBox(height: 20),
       ],
     );
   }

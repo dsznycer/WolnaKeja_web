@@ -138,7 +138,7 @@ class FooterDesktop extends StatelessWidget {
                 ],
               ),
             ),
-            TermsAndConditions(showOnLoad: showOnLoad),
+            const TermsAndConditions(),
             const Divider(color: colFirst),
             const Align(
               alignment: Alignment.bottomLeft,

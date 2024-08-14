@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:seo_renderer/renderers/text_renderer/text_renderer_vm.dart';
 import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/widgets/shared/dividerek.dart';
 
 class PartyEventDesktop extends StatelessWidget {
   const PartyEventDesktop({super.key});
@@ -24,7 +25,7 @@ class PartyEventDesktop extends StatelessWidget {
                     'Przejrzyj koncerty i wydarzenia, które dzieją się w portach',
                     style: H3,
                   ),
-                  _Dividerek(),
+                  Dividerek(),
                   TextRenderer(
                     text: Text(
                       'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będziecie mogli sprawdzić co się w nim dzieje. ',
@@ -50,28 +51,6 @@ class PartyEventDesktop extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class _Dividerek extends StatelessWidget {
-  const _Dividerek();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SizedBox(height: 20),
-        Container(
-          width: 50,
-          height: 3,
-          decoration: BoxDecoration(
-            color: colThird,
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
-        const SizedBox(height: 20),
-      ],
     );
   }
 }

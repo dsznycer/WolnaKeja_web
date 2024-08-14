@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_tablet.dart';
+import 'package:wolnakeja/widgets/shared/dividerek.dart';
 
 class MainSliderTablet extends StatelessWidget {
   const MainSliderTablet({
@@ -51,7 +52,12 @@ class MainSliderTablet extends StatelessWidget {
                   style: H2Tab,
                 ),
                 const SizedBox(height: 15),
-                const _Dividerek(),
+                Dividerek(
+                  height: 4,
+                  width: 70,
+                  color: colFirst.withOpacity(0.6),
+                  borderRadius: 12,
+                ),
                 const SizedBox(height: 15),
                 const Text(
                   'Rezerwuj miejsce przy kei w aplikacji.',
@@ -104,22 +110,6 @@ class MainSliderTablet extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _Dividerek extends StatelessWidget {
-  const _Dividerek();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 70,
-      height: 4,
-      decoration: BoxDecoration(
-        color: colFirst.withOpacity(0.6),
-        borderRadius: BorderRadius.circular(12),
-      ),
     );
   }
 }

@@ -5,9 +5,7 @@ import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterMobile extends StatelessWidget {
-  FooterMobile({required this.showOnLoad, super.key});
-
-  final bool showOnLoad;
+  FooterMobile({super.key});
 
   final UrlService urlservice = UrlService();
 

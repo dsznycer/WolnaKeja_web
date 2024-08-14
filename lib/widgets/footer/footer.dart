@@ -4,15 +4,13 @@ import 'package:wolnakeja/widgets/footer/footer_desktop.dart';
 import 'package:wolnakeja/widgets/footer/footer_mobile.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({required this.showOnLoad, super.key});
-
-  final bool showOnLoad;
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: FooterMobile(showOnLoad: showOnLoad),
-      desktop: FooterDesktop(showOnLoad: showOnLoad),
+      mobile: FooterMobile(),
+      desktop: FooterDesktop(),
     );
   }
 }

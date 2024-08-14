@@ -13,12 +13,7 @@ import 'package:wolnakeja/widgets/uspRow/usp_row.dart';
 import 'package:wolnakeja/widgets/valuesProduct/values_product.dart';
 
 class Homeview extends StatelessWidget {
-  Homeview({
-    required this.show,
-    super.key,
-  });
-
-  final bool show;
+  Homeview({super.key});
 
   final itemKeyA = GlobalKey();
   final itemKeyB = GlobalKey();
@@ -90,10 +85,7 @@ class Homeview extends StatelessWidget {
                   ],
                 ),
               ),
-              Footer(
-                key: itemKeyE,
-                showOnLoad: show,
-              ),
+              Footer(key: itemKeyE),
             ],
           ),
         ),

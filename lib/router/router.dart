@@ -11,8 +11,7 @@ final router = GoRouter(
   routes: [
     GoRoute(
       path: '/home',
-      pageBuilder: (context, state) =>
-          MaterialPage(child: Homeview(show: false)),
+      pageBuilder: (context, state) => MaterialPage(child: Homeview()),
       routes: [
         DialogGoRoute(
           child: const TermsAndConditionsDialog.privacyPolicy(),

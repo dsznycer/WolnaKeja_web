@@ -51,12 +51,14 @@ class FooterMobile extends StatelessWidget {
                                 child: Row(
                                   children: [
                                     Image.asset(
-                                        'assets/images/footer/fb_logo.png',
-                                        height: 30,),
+                                      'assets/images/footer/fb_logo.png',
+                                      height: 30,
+                                    ),
                                     const SizedBox(width: 10),
                                     Image.asset(
-                                        'assets/images/footer/insta_logo.png',
-                                        height: 30,),
+                                      'assets/images/footer/insta_logo.png',
+                                      height: 30,
+                                    ),
                                   ],
                                 ),
                               ),
@@ -76,7 +78,6 @@ class FooterMobile extends StatelessWidget {
                         child: Container(
                           constraints: const BoxConstraints(maxWidth: 300),
                           child: Column(
-                           
                             children: [
                               const Text(
                                 'Masz pytania? Pomysły? Odezwij się do nas.',
@@ -86,8 +87,7 @@ class FooterMobile extends StatelessWidget {
                               const SizedBox(height: 25),
                               GestureDetector(
                                 onTap: () =>
-                                  urlservice.urlLauncher(urlservice.phone)
-                                ,
+                                    urlservice.urlLauncher(urlservice.phone),
                                 child: Row(
                                   children: [
                                     Image.asset(
@@ -131,10 +131,13 @@ class FooterMobile extends StatelessWidget {
                                 textAlign: TextAlign.justify,
                               ),
                               Image.asset(
-                                  'assets/images/footer/google-play-badge.png',
-                                  height: 52,),
-                              Image.asset('assets/images/footer/iosbadge.png',
-                                  height: 40,),
+                                'assets/images/footer/google-play-badge.png',
+                                height: 52,
+                              ),
+                              Image.asset(
+                                'assets/images/footer/iosbadge.png',
+                                height: 40,
+                              ),
                             ],
                           ),
                         ),
@@ -149,10 +152,12 @@ class FooterMobile extends StatelessWidget {
             ),
             const Align(
               alignment: Alignment.bottomLeft,
-              child: Row(children: [
-                SizedBox(width: 10),
-                Text('All Rights Reserved © Wolna Keja'),
-              ],),
+              child: Row(
+                children: [
+                  SizedBox(width: 10),
+                  Text('All Rights Reserved © Wolna Keja'),
+                ],
+              ),
             ),
           ],
         ),

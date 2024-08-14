@@ -7,7 +7,9 @@ class UrlService {
       'mailto:kontakt@wolna-keja.pl?subject=Kontakt w sprawie aplikacji Wolna Keja.&body=Dzień dobry, kontaktuje się z Państwem w sprawie';
   final String fb = 'https://www.facebook.com/WolnaKeja';
 
-  Future<void >urlLauncher(String urlString) async {
+  Future<void> urlLauncher(String urlString) async {
+    // TODO
+    // ignore: deprecated_member_use
     await launch(urlString);
   }
 }

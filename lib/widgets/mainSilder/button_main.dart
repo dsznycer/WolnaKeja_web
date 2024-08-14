@@ -12,15 +12,15 @@ class ButtonMain extends StatelessWidget {
       width: 120,
       height: 60,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(16),
+        color: colFive,
+        border: Border.all(
           color: colFive,
-          border: Border.all(
-            color: colFive,
-            width: 0.8,
-          ),
-          boxShadow: const [shadow1],),
+          width: 0.8,
+        ),
+        boxShadow: const [shadow1],
+      ),
       child: Align(
-       
         child: Text(
           tekst,
           style: H3,

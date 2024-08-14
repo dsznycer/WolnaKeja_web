@@ -4,7 +4,9 @@ import 'package:wolnakeja/widgets/prices/prices_dialog.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions_dialog.dart';
 
 class TermsAndConditions extends StatelessWidget {
-  const TermsAndConditions({super.key});
+  const TermsAndConditions({required this.showOnLoad, super.key});
+
+  final bool showOnLoad;
 
   Future<void> _showDialog(TermsType termsType, BuildContext context) =>
       showDialog(
@@ -14,6 +16,12 @@ class TermsAndConditions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (showOnLoad) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _showDialog(TermsType.privacyPolicy, context);
+      });
+    }
+
     return Padding(
       padding: const EdgeInsets.only(left: 12),
       child: Row(

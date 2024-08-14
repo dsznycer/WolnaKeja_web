@@ -14,6 +14,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  go_router: ^14.2.3
   responsive_builder: ^0.4.1
   seo_renderer: ^0.4.0
   transparent_image: ^2.0.0

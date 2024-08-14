@@ -5,7 +5,9 @@ import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterDesktop extends StatelessWidget {
-  FooterDesktop({super.key});
+  FooterDesktop({required this.showOnLoad, super.key});
+
+  final bool showOnLoad;
 
   final UrlService urlservice =
       UrlService(); // TODO URLService should abstract final class with static access
@@ -136,7 +138,7 @@ class FooterDesktop extends StatelessWidget {
                 ],
               ),
             ),
-            const TermsAndConditions(),
+            TermsAndConditions(showOnLoad: showOnLoad),
             const Divider(color: colFirst),
             const Align(
               alignment: Alignment.bottomLeft,

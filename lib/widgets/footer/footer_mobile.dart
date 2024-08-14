@@ -5,7 +5,9 @@ import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions.dart';
 
 class FooterMobile extends StatelessWidget {
-  FooterMobile({super.key});
+  FooterMobile({required this.showOnLoad, super.key});
+
+  final bool showOnLoad;
 
   final UrlService urlservice = UrlService();
 
@@ -68,7 +70,7 @@ class FooterMobile extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const TermsAndConditions(),
+                  TermsAndConditions(showOnLoad: showOnLoad),
                   const SizedBox(height: 10), //Logo
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -147,9 +149,7 @@ class FooterMobile extends StatelessWidget {
                 ],
               ),
             ),
-            const Divider(
-              color: colFirst,
-            ),
+            const Divider(color: colFirst),
             const Align(
               alignment: Alignment.bottomLeft,
               child: Row(

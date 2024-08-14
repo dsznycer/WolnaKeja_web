@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:wolnakeja/style.dart';
 import 'package:wolnakeja/widgets/NavigationDrawer/navigation_drawer.dart';
@@ -13,7 +14,12 @@ import 'package:wolnakeja/widgets/uspRow/usp_row.dart';
 import 'package:wolnakeja/widgets/valuesProduct/values_product.dart';
 
 class Homeview extends StatelessWidget {
-  Homeview({super.key});
+  Homeview({
+    required this.show,
+    super.key,
+  });
+
+  final bool show;
 
   final itemKeyA = GlobalKey();
   final itemKeyB = GlobalKey();
@@ -85,7 +91,10 @@ class Homeview extends StatelessWidget {
                   ],
                 ),
               ),
-              Footer(key: itemKeyE),
+              Footer(
+                key: itemKeyE,
+                showOnLoad: show,
+              ),
             ],
           ),
         ),

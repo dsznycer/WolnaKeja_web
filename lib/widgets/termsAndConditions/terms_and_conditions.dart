@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:wolnakeja/enums.dart';
+import 'package:wolnakeja/router/router.dart';
 import 'package:wolnakeja/widgets/prices/prices_dialog.dart';
-import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions_dialog.dart';
 
 class TermsAndConditions extends StatelessWidget {
   const TermsAndConditions({super.key});
-
-  Future<void> _showDialog(TermsType termsType, BuildContext context) =>
-      showDialog(
-        context: context,
-        builder: (context) => TermsAndConditionsDialog(termsType: termsType),
-      );
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +13,7 @@ class TermsAndConditions extends StatelessWidget {
       child: Row(
         children: [
           InkWell(
-            onTap: () => _showDialog(TermsType.appRegulations, context),
+            onTap: context.goRegulations,
             child: Text(
               TermsType.appRegulations.title,
               style: const TextStyle(fontWeight: FontWeight.w500),
@@ -27,7 +21,7 @@ class TermsAndConditions extends StatelessWidget {
           ),
           const SizedBox(width: 25),
           InkWell(
-            onTap: () => _showDialog(TermsType.privacyPolicy, context),
+            onTap: context.goPolicy,
             child: Text(
               TermsType.privacyPolicy.title,
               style: const TextStyle(fontWeight: FontWeight.w500),

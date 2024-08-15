@@ -147,9 +147,7 @@ class FooterMobile extends StatelessWidget {
                 ],
               ),
             ),
-            const Divider(
-              color: colFirst,
-            ),
+            const Divider(color: colFirst),
             const Align(
               alignment: Alignment.bottomLeft,
               child: Row(

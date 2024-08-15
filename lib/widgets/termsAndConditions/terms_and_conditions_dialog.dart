@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import 'package:wolnakeja/enums.dart';
 
 class TermsAndConditionsDialog extends StatelessWidget {
-  const TermsAndConditionsDialog({
-    required this.termsType,
+  const TermsAndConditionsDialog.privacyPolicy({
     super.key,
-  });
+  }) : termsType = TermsType.privacyPolicy;
+
+  const TermsAndConditionsDialog.appRegulations({
+    super.key,
+  }) : termsType = TermsType.appRegulations;
 
   final TermsType termsType;
 
@@ -22,6 +26,7 @@ class TermsAndConditionsDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final futureTerms = readFileAsString(termsType.path);
+
     return AlertDialog(
       title: Text(termsType.title),
       content: SingleChildScrollView(
@@ -44,7 +49,7 @@ class TermsAndConditionsDialog extends StatelessWidget {
               ),
             ),
             TextButton.icon(
-              onPressed: () => Navigator.of(context).pop(),
+              onPressed: () => context.go('/home'),
               icon: const Icon(Icons.arrow_back),
               label: const Text('Wróć'),
             ),

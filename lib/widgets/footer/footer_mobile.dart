@@ -69,7 +69,7 @@ class FooterMobile extends StatelessWidget {
                     ],
                   ),
                   const TermsAndConditions(),
-                  const SizedBox(height: 10), //Logo
+                  const SizedBox(height: 10), // Logo
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,

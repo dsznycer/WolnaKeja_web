@@ -31,7 +31,7 @@ class FooterDesktop extends StatelessWidget {
                   const Align(
                     alignment: Alignment.bottomLeft,
                     child: LogoWidget(160),
-                  ), //Logo
+                  ), // Logo
                   Flexible(
                     child: Container(
                       constraints: const BoxConstraints(maxWidth: 270),

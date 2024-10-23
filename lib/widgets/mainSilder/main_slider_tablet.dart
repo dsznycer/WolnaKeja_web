@@ -2,24 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:wolnakeja/style.dart';
+import 'package:wolnakeja/views/home/homeview.dart';
 import 'package:wolnakeja/widgets/navigationBar/navigation_bar_tablet.dart';
 import 'package:wolnakeja/widgets/shared/dividerek.dart';
 
 class MainSliderTablet extends StatelessWidget {
   const MainSliderTablet({
     super.key,
-    required this.functA1,
-    required this.keyA1,
-    required this.keyA2,
-    required this.keyA3,
-    required this.keyA4,
+    required this.scrollToItem,
+    required this.buttonsData,
   });
 
-  final void Function(GlobalKey) functA1;
-  final GlobalKey keyA1;
-  final GlobalKey keyA2;
-  final GlobalKey keyA3;
-  final GlobalKey keyA4;
+  final void Function(GlobalKey) scrollToItem;
+  final List<ButtonData> buttonsData;
 
   @override
   Widget build(BuildContext context) {
@@ -96,17 +91,14 @@ class MainSliderTablet extends StatelessWidget {
               height: 500,
             ),
           ],
-        ), //Mockup
+        ), // Mockup
         Positioned(
           top: 0,
           right: width,
           left: width,
           child: NavigationBarTablet(
-            funct: functA1,
-            key1: keyA1,
-            key2: keyA2,
-            key3: keyA3,
-            key4: keyA4,
+            scrollToItem: scrollToItem,
+            buttonsData: buttonsData,
           ),
         ),
       ],

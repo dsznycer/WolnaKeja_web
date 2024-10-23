@@ -27,7 +27,7 @@ class PartyEventDesktop extends StatelessWidget {
                   ),
                   Dividerek(),
                   TextRenderer(
-                    text: Text(
+                    child: Text(
                       'W Wolnej Kei znajdziesz również informację o koncertach i lokalanych wydarzeniach. Macie ochotę na wspólne ognisko? A może chcecie posłuchać szantów w portowym barze? Przed przypłynieciem do konkretnego portu, będziecie mogli sprawdzić co się w nim dzieje. ',
                       style: description,
                       textAlign: TextAlign.justify,

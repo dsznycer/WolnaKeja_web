@@ -8,9 +8,9 @@ class PartyEvent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const PartyEventMobile(),
-      desktop: const PartyEventDesktop(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const PartyEventMobile(),
+      desktop: (_) => const PartyEventDesktop(),
     );
   }
 }

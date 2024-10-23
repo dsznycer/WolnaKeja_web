@@ -8,9 +8,9 @@ class PortPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const PortPanelMobile(),
-      desktop: const PortPanelDesktop(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const PortPanelMobile(),
+      desktop: (_) => const PortPanelDesktop(),
     );
   }
 }

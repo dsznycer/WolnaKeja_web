@@ -7,9 +7,9 @@ class ValuesProduct extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const ValuesProductMobile(),
-      desktop: const ValuesProductMobile(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const ValuesProductMobile(),
+      desktop: (_) => const ValuesProductMobile(),
     );
   }
 }

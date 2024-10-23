@@ -8,9 +8,9 @@ class PortInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const PortInfoMobile(),
-      desktop: const PortInfoDesktop(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const PortInfoMobile(),
+      desktop: (_) => const PortInfoDesktop(),
     );
   }
 }

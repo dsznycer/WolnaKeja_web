@@ -8,9 +8,9 @@ class AboutWK extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const AboutWKMobile(),
-      desktop: const AboutWKDesktop(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const AboutWKMobile(),
+      desktop: (_) => const AboutWKDesktop(),
     );
   }
 }

@@ -8,9 +8,9 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: FooterMobile(),
-      desktop: FooterDesktop(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => FooterMobile(),
+      desktop: (_) => FooterDesktop(),
     );
   }
 }

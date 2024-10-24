@@ -8,9 +8,9 @@ class UspRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const UspRowMobile(),
-      desktop: const UspRowDesktop(),
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const UspRowMobile(),
+      desktop: (_) => const UspRowDesktop(),
     );
   }
 }

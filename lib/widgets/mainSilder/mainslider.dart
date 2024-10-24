@@ -22,16 +22,16 @@ class MainSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: const MainSliderMobile(),
-      tablet: MainSliderTablet(
+    return ScreenTypeLayout.builder(
+      mobile: (_) => const MainSliderMobile(),
+      tablet: (_) => MainSliderTablet(
         functA1: functB1,
         keyA1: keyB1,
         keyA2: keyB2,
         keyA3: keyB3,
         keyA4: keyB4,
       ),
-      desktop: MainSliderDesktop(
+      desktop: (_) => MainSliderDesktop(
         functA1: functB1,
         keyA1: keyB1,
         keyA2: keyB2,

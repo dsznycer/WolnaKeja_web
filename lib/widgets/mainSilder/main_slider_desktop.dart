@@ -44,13 +44,13 @@ class MainSliderDesktop extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const TextRenderer(
-                  text: Text(
+                  child: Text(
                     'Aplikacja do rezerwacji miejsc',
                     style: H2drk,
                   ),
                 ),
                 const TextRenderer(
-                  text: Text(
+                  child: Text(
                     'w portach mazurskich',
                     style: H2drk,
                   ),

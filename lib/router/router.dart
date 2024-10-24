@@ -6,7 +6,7 @@ import 'package:wolnakeja/views/home/homeview.dart';
 import 'package:wolnakeja/widgets/termsAndConditions/terms_and_conditions_dialog.dart';
 
 final router = GoRouter(
-  observers: [routeObserver],
+  observers: [seoRouteObserver],
   initialLocation: '/home',
   routes: [
     GoRoute(

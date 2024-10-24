@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:wolnakeja/views/home/homeview.dart';
 import 'package:wolnakeja/widgets/NavigationDrawer/button_drawer.dart';
 import 'package:wolnakeja/widgets/logoWidget/logo_widget.dart';
 
 class NavigDrawer extends StatelessWidget {
   const NavigDrawer({
     super.key,
-    required this.functOnGest,
-    required this.key1,
-    required this.key2,
-    required this.key3,
-    required this.key4,
+    required this.scrollToItem,
+    required this.buttonsData,
   });
 
-  final void Function(GlobalKey key) functOnGest;
-  final GlobalKey key1;
-  final GlobalKey key2;
-  final GlobalKey key3;
-  final GlobalKey key4;
+  final void Function(GlobalKey key) scrollToItem;
+  final List<ButtonData> buttonsData;
 
   @override
   Widget build(BuildContext context) {
@@ -42,34 +37,14 @@ class NavigDrawer extends StatelessWidget {
               const LogoWidget(160),
             ],
           ),
-          GestureDetector(
-            onTap: () {
-              functOnGest(key1);
-              Navigator.pop(context);
-            },
-            child: const ButtonDrawer(tekst: 'O aplikacji'),
-          ),
-          GestureDetector(
-            onTap: () {
-              functOnGest(key2);
-              Navigator.pop(context);
-            },
-            child: const ButtonDrawer(tekst: 'Dla żeglarzy'),
-          ),
-          GestureDetector(
-            onTap: () {
-              functOnGest(key3);
-              Navigator.pop(context);
-            },
-            child: const ButtonDrawer(tekst: 'Dla portów'),
-          ),
-          GestureDetector(
-            onTap: () {
-              functOnGest(key4);
-              Navigator.pop(context);
-            },
-            child: const ButtonDrawer(tekst: 'Kontakt'),
-          ),
+          for (final buttonData in buttonsData)
+            ButtonDrawer(
+              tekst: buttonData.buttonLabel,
+              onTap: () {
+                scrollToItem(buttonData.$1);
+                Navigator.pop(context);
+              },
+            ),
         ],
       ),
     );

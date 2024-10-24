@@ -12,14 +12,28 @@ import 'package:wolnakeja/widgets/portPanel/port_panel.dart';
 import 'package:wolnakeja/widgets/uspRow/usp_row.dart';
 import 'package:wolnakeja/widgets/valuesProduct/values_product.dart';
 
-class Homeview extends StatelessWidget {
-  Homeview({super.key});
+typedef SectionData = (GlobalKey key, {String? buttonLabel});
+typedef ButtonData = (GlobalKey key, {String buttonLabel});
 
-  final itemKeyA = GlobalKey();
-  final itemKeyB = GlobalKey();
-  final itemKeyC = GlobalKey();
-  final itemKeyD = GlobalKey();
-  final itemKeyE = GlobalKey();
+extension on SectionData {
+  ButtonData toButtonData() => ($1, buttonLabel: buttonLabel!);
+}
+
+class Homeview extends StatelessWidget {
+  const Homeview({super.key});
+
+  static final _aboutWK = (GlobalKey(), buttonLabel: 'O aplikacji');
+  static final _uspRow = (GlobalKey(), buttonLabel: 'Dla żeglarzy');
+  static final _partyEvent = (GlobalKey(), buttonLabel: null);
+  static final _portPanel = (GlobalKey(), buttonLabel: 'Dla portów');
+  static final _footer = (GlobalKey(), buttonLabel: 'Kontakt');
+
+  static final _buttonsData = [
+    _aboutWK.toButtonData(),
+    _uspRow.toButtonData(),
+    _portPanel.toButtonData(),
+    _footer.toButtonData(),
+  ];
 
   void scrollToItem(GlobalKey key) => Scrollable.ensureVisible(
         key.currentContext!,
@@ -29,67 +43,68 @@ class Homeview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
-      builder: (context, sizingInformation) => Scaffold(
-        appBar: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? AppBar(
-                backgroundColor: Colors.white,
-                toolbarHeight: 80,
-                title: Image.asset(
-                  'assets/images/NavigationBarMobile/logoMobile.png',
-                  height: 60,
+      builder: (_, sizingInformation) {
+        final mobile =
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile;
+
+        return Scaffold(
+          appBar: mobile
+              ? AppBar(
+                  backgroundColor: Colors.white,
+                  toolbarHeight: 80,
+                  title: Image.asset(
+                    'assets/images/NavigationBarMobile/logoMobile.png',
+                    height: 60,
+                  ),
+                  centerTitle: true,
+                  iconTheme: const IconThemeData(
+                    color: colFirst,
+                    size: 35,
+                  ),
+                )
+              : null,
+          drawer: mobile
+              ? NavigDrawer(
+                  scrollToItem: scrollToItem,
+                  buttonsData: _buttonsData,
+                )
+              : null,
+          backgroundColor: Colors.white,
+          body: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MainSlider(
+                  scrollToItem: scrollToItem,
+                  buttonsData: _buttonsData,
                 ),
-                centerTitle: true,
-                iconTheme: const IconThemeData(
-                  color: colFirst,
-                  size: 35,
+                const SizedBox(height: 40),
+                CenteredView(
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 80),
+                    child: Column(
+                      children: [
+                        AboutWK(key: _aboutWK.$1),
+                        const SizedBox(height: 40),
+                        UspRow(key: _uspRow.$1),
+                        const SizedBox(height: 70),
+                        PartyEvent(key: _partyEvent.$1),
+                        const SizedBox(height: 70),
+                        const ValuesProduct(),
+                        const SizedBox(height: 100),
+                        PortPanel(key: _portPanel.$1),
+                        const SizedBox(height: 80),
+                        const PortInfo(),
+                      ],
+                    ),
+                  ),
                 ),
-              )
-            : null,
-        drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? NavigDrawer(
-                functOnGest: scrollToItem,
-                key1: itemKeyA,
-                key2: itemKeyB,
-                key3: itemKeyD,
-                key4: itemKeyE,
-              )
-            : null,
-        backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              MainSlider(
-                functB1: scrollToItem,
-                keyB1: itemKeyA,
-                keyB2: itemKeyB,
-                keyB3: itemKeyD,
-                keyB4: itemKeyE,
-              ),
-              const SizedBox(height: 40),
-              CenteredView(
-                child: Column(
-                  children: [
-                    AboutWK(key: itemKeyA),
-                    const SizedBox(height: 40),
-                    UspRow(key: itemKeyB),
-                    const SizedBox(height: 70),
-                    PartyEvent(key: itemKeyC),
-                    const SizedBox(height: 70),
-                    const ValuesProduct(),
-                    const SizedBox(height: 100),
-                    PortPanel(key: itemKeyD),
-                    const SizedBox(height: 80),
-                    const PortInfo(),
-                    const SizedBox(height: 80),
-                  ],
-                ),
-              ),
-              Footer(key: itemKeyE),
-            ],
+                Footer(key: _footer.$1),
+              ],
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 }

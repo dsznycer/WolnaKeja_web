@@ -38,6 +38,14 @@ class TermsAndConditions extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
           ),
+          const SizedBox(width: 25),
+          InkWell(
+            onTap: context.goDeleteAccountInfo,
+            child: const Text(
+              'Informacje o usuwaniu konta',
+              style: TextStyle(fontWeight: FontWeight.w500),
+            ),
+          ),
         ],
       ),
     );

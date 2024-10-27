@@ -18,8 +18,8 @@ class TermsAndConditionsDialog extends StatelessWidget {
     try {
       final fileContents = await rootBundle.loadString(filePath);
       return fileContents;
-    } catch (e) {
-      return e.toString();
+    } catch (err) {
+      return err.toString();
     }
   }
 
